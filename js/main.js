@@ -11,6 +11,8 @@ let briefcase = document.getElementById('briefcase');
 let contact = document.getElementById('contact');
 let blog = document.getElementById('blog');
 
+let principal = document.getElementById('principal');
+
 homeBtn.onclick = homeFunction;
 aboutBtn.onclick = aboutFunction;
 briefcaseBtn.onclick = briefcaseFunction;
@@ -23,7 +25,7 @@ function homeFunction() {
     briefcaseBtn.classList.remove("current")
     contactBtn.classList.remove("current")
     blogBtn.classList.remove("current")
-    
+
     home.style.display = "block";
     about.style.display = "none";
     briefcase.style.display = "none";
@@ -36,7 +38,7 @@ function aboutFunction() {
     briefcaseBtn.classList.remove("current")
     contactBtn.classList.remove("current")
     blogBtn.classList.remove("current")
-    
+
     home.style.display = "none";
     about.style.display = "block";
     briefcase.style.display = "none";
@@ -49,7 +51,7 @@ function briefcaseFunction() {
     briefcaseBtn.classList.add("current")
     contactBtn.classList.remove("current")
     blogBtn.classList.remove("current")
-    
+
     home.style.display = "none";
     about.style.display = "none";
     briefcase.style.display = "block";
@@ -62,12 +64,13 @@ function contactFunction() {
     briefcaseBtn.classList.remove("current")
     contactBtn.classList.add("current")
     blogBtn.classList.remove("current")
-    
+
     home.style.display = "none";
     about.style.display = "none";
     briefcase.style.display = "none";
     contact.style.display = "block";
     blog.style.display = "none";
+
 }
 function blogFunction() {
     homeBtn.classList.remove("current")
@@ -75,10 +78,13 @@ function blogFunction() {
     briefcaseBtn.classList.remove("current")
     contactBtn.classList.remove("current")
     blogBtn.classList.add("current")
-    
+
     home.style.display = "none";
     about.style.display = "none";
     briefcase.style.display = "none";
     contact.style.display = "none";
     blog.style.display = "block";
+
+    principal.classList.remove('tab-panel_list')
+    principal.classList.add('tab-panel_list')
 }
