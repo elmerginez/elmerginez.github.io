@@ -5,8 +5,9 @@
     <!-- METAS -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- TITLE WEB PAGE -->
-    <title>Document</title>
+    <title>Video Player Oxh Zxh</title>
 
     <!-- FAVICON -->
     <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
@@ -72,44 +73,35 @@
 
             <!-- START VIDEO PLAYER -->
             <div class="main-video">
-                <div class="video">
+                <div class="video" id="videofx">
                     <video id="video-main" src=""></video>
 
                     <div id="video-controls">
                         <div id="left-buttons">
                             <!-- PREVIOUS BUTTON -->
-                            <!-- <button id="last-video-button"> -->
-                                <img id="last-video-button" src="icons/previous.svg">
-                            <!-- </button> -->
+                            <img id="last-video-button" src="icons/previous.svg">
                             <!-- PLAY PAUSE BUTTON -->
-                            <button>
-                                <img id="play-pause-video-button" src="icons/play.svg">
-                            </button>
-                           
+                            <img id="play-pause-video-button" src="icons/play.svg">
                             <!-- NEXT BUTTON -->
-                            <!-- <button id="next-video-button"> -->
-                                <img id="next-video-button" src="icons/next.svg">
-                            <!-- </button> -->
+                            <img id="next-video-button" src="icons/next.svg">
                         </div>
+                        <div>
+                            <span id="time-current">00:00</span>/<span id="time-complete">03:45</span>
+                        </div>
+
                         <!-- PROGRESS BAR -->
                         <div id="progress-bar-box">
-                            <div id="progress-bar"></div>
-                            <div id="progress-ball"></div>
+                            <span id="progress-bar"></span>
+                            <span id="progress-ball"></span>
                         </div>
 
                         <div id="right-buttons">
                             <!-- MUTE UNMUTE BUTTON -->
-                            <!-- <button id="mute-unmute-audio-button"> -->
-                                <img id="mute-unmute-audio-button" src="icons/volume-max.svg">
-                            <!-- </button> -->
+                            <img id="mute-unmute-audio-button" src="icons/volume-max.svg">
                             <!-- FULLSCREEN BUTTON -->
-                            <!-- <button id="fullscreen-video-button"> -->
-                                <img id="fullscreen-video-button" src="icons/fullscreen.svg">
-                            <!-- </button> -->
+                            <img id="fullscreen-video-button" src="icons/fullscreen.svg">
                         </div>
                     </div>
-
-
                 </div>
                 <h3 id="title-main"></h3>
             </div>
