@@ -37,21 +37,33 @@ const toggleMobileMenu = (toggleId, navId) => {
 
 toggleMobileMenu('nav-toggle', 'nav-menu');
 
-// /*===== ACTIVE LINK AND HIDE MOBILE MENU =====*/
-// const navLinks = document.querySelectorAll('.nav_link');
+/*===== ACTIVE LINK AND HIDE MOBILE MENU =====*/
+const navLinks = document.querySelectorAll('.nav_link');
 
-// function activateLink() {
-//     navLinks.forEach(link => link.classList.remove('active'));
-//     this.classList.add('active');
+function activateLink() {
+    navLinks.forEach(link => link.classList.remove('active'));
+    this.classList.add('active');
 
-//     const mobileNav = document.getElementById('nav-menu');
-//     mobileNav.classList.remove('show');
+    const mobileNav = document.getElementById('nav-menu');
+    mobileNav.classList.remove('show');
 
-//     const checkBox = document.getElementById('checkbox');
-//     checkBox.checked = false;
-// }
+    const checkBox = document.getElementById('checkbox');
+    checkBox.checked = false;
+}
 
-// navLinks.forEach(link => link.addEventListener('click', activateLink));
+navLinks.forEach(link => link.addEventListener('click', activateLink));
+
+/*======= NAVIGATION BAR BACKGROUND =======*/
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', function () {
+    if (window.scrollY > 150) {
+        nav.style.background = 'var(--color-background)';
+        nav.classList.add('shadow');
+    } else {
+        nav.style.background = 'none';
+        nav.classList.remove('shadow');
+    }
+});
 
 /*===== SCROLL REVEAL ANIMATION =====*/
 const scrollReveal = ScrollReveal({
