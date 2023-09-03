@@ -69,26 +69,26 @@ window.addEventListener('scroll', function () {
 const scrollReveal = ScrollReveal({
     origin: 'top',
     distance: '80px',
-    duration: 2000,
+    duration: 1500,
     reset: true,
 });
 
 /* SCROLL HOME */
 scrollReveal.reveal('.home_title', {});
-scrollReveal.reveal('.button', { delay: 200 });
-scrollReveal.reveal('.home_img', { delay: 400 });
-scrollReveal.reveal('.home__social-icon', { interval: 200 });
+scrollReveal.reveal('.button', { delay: 100 });
+scrollReveal.reveal('.home_img', { delay: 200 });
+scrollReveal.reveal('.home__social-icon', { interval: 100 });
 
 /* SCROLL ABOUT */
 scrollReveal.reveal('.about_img', {});
-scrollReveal.reveal('.about_subtitle', { delay: 400 });
-scrollReveal.reveal('.about_text', { delay: 400 });
+scrollReveal.reveal('.about_subtitle', { delay: 200 });
+scrollReveal.reveal('.about_text', { delay: 200 });
 
 /* SCROLL PORTFOLIO */
-scrollReveal.reveal('.portfolio', { interval: 200 });
+scrollReveal.reveal('.portfolio', { interval: 100 });
 
 /* SCROLL SERVICE */
-scrollReveal.reveal('.service', { interval: 200 });
+scrollReveal.reveal('.service', { interval: 100 });
 
 /* SCROLL CONTACT */
-scrollReveal.reveal('.contact_input', { interval: 200 });
+scrollReveal.reveal('.contact_input', { interval: 100 });
