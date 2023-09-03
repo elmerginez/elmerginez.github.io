@@ -773,7 +773,7 @@ img {
 *   09 start footer styles   *
 ******************************/
 .footer {
-  background-color: var(--second-color);
+  background-color: var(--color-background);
   color: #fff;
   text-align: center;
   font-weight: 500;
