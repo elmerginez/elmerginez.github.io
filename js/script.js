@@ -38,7 +38,7 @@ const toggleMobileMenu = (toggleId, navId) => {
 toggleMobileMenu('nav-toggle', 'nav-menu');
 
 /*===== ACTIVE LINK AND HIDE MOBILE MENU =====*/
-const navLinks = document.querySelectorAll('.nav_link');
+const navLinks = document.querySelectorAll('.nav-link');
 
 function activateLink() {
     navLinks.forEach(link => link.classList.remove('active'));

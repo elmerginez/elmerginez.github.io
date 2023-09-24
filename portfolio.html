@@ -17,7 +17,8 @@
     <link href='https://unpkg.com/boxicons@2.0.8/css/boxicons.min.css' rel='stylesheet'>
 
     <!--==================== STYLE SHEET ===================-->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+
 </head>
 
 <body>
@@ -25,139 +26,114 @@
     <div id="loader">
         <div class="loader-inner"></div>
     </div>
+
     <!--==================== HEADER ===================-->
-    <header class="l-header">
-        <nav class="nav bg-grid">
-            <div>
-                <a href="index.html" class="nav_logo">Oxh Zxh</a>
-            </div>
-
-            <div class="nav_menu" id="nav-menu">
-                <ul class="nav_list">
-                    <li class="nav_item"><a href="index.html" class="nav_link">Inicio</a></li>
-                    <li class="nav_item"><a href="about.html" class="nav_link">Acerca de mi</a></li>
-                    <li class="nav_item"><a href="portfolio.html" class="nav_link active">Portafolio</a></li>
-                    <li class="nav_item"><a href="index.html" class="nav_link">Servicios</a></li>
-                    <li class="nav_item"><a href="contact.html" class="nav_link">Contacto</a></li>
-                </ul>
-            </div>
-
-            <input type="checkbox" id="checkbox">
-            <div class="nav-btn" id="nav-toggle">
-                <label for="checkbox" class="toggle">
-                    <div class="bars" id="bar1"></div>
-                    <div class="bars" id="bar2"></div>
-                    <div class="bars" id="bar3"></div>
-                </label>
-            </div>
-
-        </nav>
+    <header>
+        <a href="index.html">Oxh Zxh</a>
     </header>
-    <main class="l-main">
-        <!--============ PORTFOLIO =============-->
-        <section class="portfolio section" id="portfolio">
-            <h2 class="section_title">Portafolio</h2>
+    <!--============ PORTFOLIO =============-->
+    <section class="portfolio section" id="portfolio">
+        <h2 class="section_title">Portafolio</h2>
 
-            <div class="portfolio_container bg-grid">
-                <div class="card">
-                    <div class="portfolio_img">
-                        <img src="img/trabajo-1.jpg" alt="">
-                        <h3>Reproductor de video</h3>
-                    </div>
-                    <div class="card__content">
-                        <p class="card__description">
-                            Desarrollo de un aplicaion web para reproduccion de videos que permite a los clientes explorar y
-                            reproducir videos locales. Utilizamos HTML, CSS y JavaScript para crear una
-                            experiencia de usuario atractiva y optimizada.
-                        </p>
-                        <a href="src/video-player/video.html" class="button">Ver</a>
-                    </div>
+        <div class="portfolio_container bg-grid">
+            <div class="card">
+                <div class="portfolio_img">
+                    <img src="img/trabajo-1.jpg" alt="">
+                    <h3>Reproductor de video</h3>
                 </div>
-                <div class="card">
-                    <div class="portfolio_img">
-                        <img src="img/trabajo-2.jpg" alt="">
-                        <h3>Implementación de Seguridad en Red para una Institución Educativa</h3>
-                    </div>
-                    <div class="card__content">
-                        <p class="card__description">
-                            Configuramos un sistema de seguridad en red para una institución educativa, incluyendo
-                            firewall, VPN y autenticación de usuarios. Garantizamos la protección de datos sensibles y
-                            evitamos accesos no autorizados.
-                        </p>
-                        <a href="#" class="button">Ver</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="portfolio_img">
-                        <img src="img/trabajo-3.jpg" alt="">
-                        <h3>Desarrollo de Aplicación Web de Gestión de Proyectos</h3>
-                    </div>
-                    <div class="card__content">
-                        <p class="card__description">
-                            Creamos una aplicación web personalizada para gestionar proyectos, tareas y equipos de
-                            trabajo. Utilizamos Django y React para construir una plataforma intuitiva y colaborativa.
-                        </p>
-                        <a href="#" class="button">Ver</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="portfolio_img">
-                        <img src="img/trabajo-4.jpg" alt="">
-                        <h3>Desarrollo de Sistema de Reservas para un Hotel</h3>
-                    </div>
-                    <div class="card__content">
-                        <p class="card__description">
-                            Creamos un sistema de reservas en línea para un hotel que permite a los clientes realizar
-                            reservas de habitaciones y servicios adicionales. La plataforma se desarrolló utilizando PHP
-                            y MySQL.
-                        </p>
-                        <a href="#" class="button">Ver</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="portfolio_img">
-                        <img src="img/trabajo-5.jpg" alt="">
-                        <h3>Implementación de Internet de las Cosas (IoT) en una Fábrica</h3>
-                    </div>
-                    <div class="card__content">
-                        <p class="card__description">
-                            Integramos sensores y dispositivos IoT en una fábrica para recopilar datos en tiempo real
-                            sobre producción y maquinaria. Los datos se utilizan para mejorar la eficiencia y evitar
-                            fallas en la producción.
-                        </p>
-                        <a href="#" class="button">Ver</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="portfolio_img">
-                        <img src="img/trabajo-6.jpg" alt="">
-                        <h3>Consultoría en Ciberseguridad para una Empresa Financiera</h3>
-                    </div>
-                    <div class="card__content">
-                        <p class="card__description">
-                            Realizamos una auditoría de seguridad y evaluamos la infraestructura de TI de una empresa
-                            financiera para identificar vulnerabilidades. Proporcionamos recomendaciones y soluciones
-                            para fortalecer la seguridad informática.
-                        </p>
-                        <a href="#" class="button">Ver</a>
-                    </div>
+                <div class="card__content">
+                    <p class="card__description">
+                        Desarrollo de un aplicaion web para reproduccion de videos que permite a los clientes explorar y
+                        reproducir videos locales. Utilizamos HTML, CSS y JavaScript para crear una
+                        experiencia de usuario atractiva y optimizada.
+                    </p>
+                    <a href="src/video-player/video.html" class="button">Ver</a>
                 </div>
             </div>
-        </section>
-
-        <!--================ FOOTER ================-->
-        <footer class="footer">
-
-            <div class="footer_social">
-                <a href="https://tiktok.com/@oxh_zxh" class="footer_icon" target="_blank"><i
-                        class='bx bxl-tiktok'></i></a>
-                <a href="https://instagram.com/oxh.oxh" class="footer_icon" target="_blank"><i
-                        class="bx bxl-instagram"></i></a>
-                <a href="https://github.com/elmerginez" class="footer_icon" target="_blank"><i
-                        class="bx bxl-github"></i></a>
+            <div class="card">
+                <div class="portfolio_img">
+                    <img src="img/trabajo-2.jpg" alt="">
+                    <h3>Implementación de Seguridad en Red para una Institución Educativa</h3>
+                </div>
+                <div class="card__content">
+                    <p class="card__description">
+                        Configuramos un sistema de seguridad en red para una institución educativa, incluyendo
+                        firewall, VPN y autenticación de usuarios. Garantizamos la protección de datos sensibles y
+                        evitamos accesos no autorizados.
+                    </p>
+                    <a href="#" class="button">Ver</a>
+                </div>
             </div>
-            <p>&copy; 2023 Todos los derechoa reservados</p>
-        </footer>
+            <div class="card">
+                <div class="portfolio_img">
+                    <img src="img/trabajo-3.jpg" alt="">
+                    <h3>Desarrollo de Aplicación Web de Gestión de Proyectos</h3>
+                </div>
+                <div class="card__content">
+                    <p class="card__description">
+                        Creamos una aplicación web personalizada para gestionar proyectos, tareas y equipos de
+                        trabajo. Utilizamos Django y React para construir una plataforma intuitiva y colaborativa.
+                    </p>
+                    <a href="#" class="button">Ver</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="portfolio_img">
+                    <img src="img/trabajo-4.jpg" alt="">
+                    <h3>Desarrollo de Sistema de Reservas para un Hotel</h3>
+                </div>
+                <div class="card__content">
+                    <p class="card__description">
+                        Creamos un sistema de reservas en línea para un hotel que permite a los clientes realizar
+                        reservas de habitaciones y servicios adicionales. La plataforma se desarrolló utilizando PHP
+                        y MySQL.
+                    </p>
+                    <a href="#" class="button">Ver</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="portfolio_img">
+                    <img src="img/trabajo-5.jpg" alt="">
+                    <h3>Implementación de Internet de las Cosas (IoT) en una Fábrica</h3>
+                </div>
+                <div class="card__content">
+                    <p class="card__description">
+                        Integramos sensores y dispositivos IoT en una fábrica para recopilar datos en tiempo real
+                        sobre producción y maquinaria. Los datos se utilizan para mejorar la eficiencia y evitar
+                        fallas en la producción.
+                    </p>
+                    <a href="#" class="button">Ver</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="portfolio_img">
+                    <img src="img/trabajo-6.jpg" alt="">
+                    <h3>Consultoría en Ciberseguridad para una Empresa Financiera</h3>
+                </div>
+                <div class="card__content">
+                    <p class="card__description">
+                        Realizamos una auditoría de seguridad y evaluamos la infraestructura de TI de una empresa
+                        financiera para identificar vulnerabilidades. Proporcionamos recomendaciones y soluciones
+                        para fortalecer la seguridad informática.
+                    </p>
+                    <a href="#" class="button">Ver</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--================ FOOTER ================-->
+    <footer class="footer">
+
+        <div class="footer_social">
+            <a href="https://tiktok.com/@oxh_zxh" class="footer_icon" target="_blank"><i class='bx bxl-tiktok'></i></a>
+            <a href="https://instagram.com/oxh.oxh" class="footer_icon" target="_blank"><i
+                    class="bx bxl-instagram"></i></a>
+            <a href="https://github.com/elmerginez" class="footer_icon" target="_blank"><i
+                    class="bx bxl-github"></i></a>
+        </div>
+        <p>&copy; 2023 Todos los derechoa reservados</p>
+    </footer>
 
     </main>
 
