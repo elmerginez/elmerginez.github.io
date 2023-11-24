@@ -269,7 +269,6 @@ img {
   background: linear-gradient(270deg, #17c0e9, #c96ddd, #f45162);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  border: #c9285e 1px solid;
 }
 
 .home-right {
@@ -278,7 +277,6 @@ img {
   align-self: center;
   height: 400px;
   z-index: 1;
-  border: rgb(190, 201, 40) 1px solid;
   margin-right: 20px;
 }
 
@@ -287,8 +285,6 @@ img {
   align-self: center;
   width: auto;
   height: 100%;
-
-  border: #c92d28 1px solid;
 }
 
 .home-social {
@@ -355,8 +351,6 @@ img {
     align-self: center;
     width: 100%;
     height: auto;
-
-    border: #c92d28 1px solid;
   }
 }
 
@@ -479,7 +473,6 @@ img {
   margin: auto 20px;
   display: grid;
   padding: 2rem;
-  border: yellowgreen 1px solid;
 }
 
 .about-container {
@@ -488,7 +481,6 @@ img {
   text-align: center;
   justify-content: center;
   align-items: center;
-  border: #0E8388 1px solid;
   position: relative;
   bottom: 0;
   height: 100%;
@@ -569,7 +561,6 @@ img {
 *********************************/
 
 .portfolio {
-  border: #c928bc 1px solid;
   margin: auto 20px;
   min-height: 100vh;
 }
@@ -772,7 +763,6 @@ img {
 *   08 start contact styles   *
 *******************************/
 .contact {
-  border: #6e0606 1px solid;
   margin: auto 20px;
   min-height: 85vh;
   text-align: center;
@@ -787,14 +777,12 @@ img {
   align-content: center;
   gap: 32px;
   padding: 2rem;
-  border: #0E8388 1px solid;
 }
 
 
 .contact-left {
   text-align: left;
   padding: 2rem;
-  border: #17c0e9 1px solid;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -807,7 +795,6 @@ img {
 
 .contact-right {
   text-align: center;
-  border: yellowgreen 1px solid;
   display: flex;
   flex-direction: column;
   align-items: center;
