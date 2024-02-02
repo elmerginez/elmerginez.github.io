@@ -20,9 +20,6 @@
     <!--==================== STYLE SHEET ===================-->
     <link rel="stylesheet" href="css/style.css">
 
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-
-
 </head>
 
 <body>
@@ -62,30 +59,32 @@
     <main>
         <!--==================== HOME ===================-->
         <section class="home" id="home">
-            <div class="home-left">
-                <h1 class="home-title headline push">Hi,<br>I'm <span class="home-title-color">Elmer
-                        Ginez</span><br>
-                    <span class="words-wrapper">
-                        <b class="is-visible">Software Devlopment</b>
-                        <!-- <b>Fotógrafo</b> -->
-                        <b>Web Development</b>
-                    </span>
-                </h1>
-                <!-- <a href="#contact" class="button">Contact</a> -->
-            </div>
-
-            <div class="home-right">
-                <img class="hoodie-guy" src="img/home.png" alt="">
-                <!-- <div class="circle">
-                    <span style="--i:1;"><img src="img/flutter-svgrepo-com.svg" height="50px"></span>
-                    <span style="--i:2;"><img src="img/python-svgrepo-com.svg" height="50px"></span>
-                    <span style="--i:3;"><img src="img/bash-icon-svgrepo-com.svg" height="50px"></span>
-                    <span style="--i:4;"><img src="img/nodejs-icon-svgrepo-com.svg" height="50px"></span>
-                    <span style="--i:5;"><img src="img/html-5-svgrepo-com.svg" height="50px"></span>
-                    <span style="--i:6;"><img src="img/mysql-svgrepo-com.svg" height="50px"></span>
-                    <span style="--i:7;"><img src="img/css-3-svgrepo-com.svg" height="50px"></span>
-                    <span style="--i:8;"><img src="img/javascript-svgrepo-com.svg" height="50px"></span>
-                </div> -->
+            <div class="home-container">
+                <div class="home-left">
+                    <h1 class="home-title headline push">Hi,<br>I'm <span class="home-title-color">Elmer
+                            Ginez</span><br>
+                        <span class="words-wrapper">
+                            <b class="is-visible">App Development</b>
+                            <!-- <b>Fotógrafo</b> -->
+                            <b>Web Development</b>
+                        </span>
+                    </h1>
+                    <!-- <a href="#contact" class="button">Contact</a> -->
+                </div>
+    
+                <div class="home-right">
+                    <img class="hoodie-guy" src="img/home.png" alt="">
+                    <!-- <div class="circle">
+                        <span style="--i:1;"><img src="img/flutter-svgrepo-com.svg" height="50px"></span>
+                        <span style="--i:2;"><img src="img/python-svgrepo-com.svg" height="50px"></span>
+                        <span style="--i:3;"><img src="img/bash-icon-svgrepo-com.svg" height="50px"></span>
+                        <span style="--i:4;"><img src="img/nodejs-icon-svgrepo-com.svg" height="50px"></span>
+                        <span style="--i:5;"><img src="img/html-5-svgrepo-com.svg" height="50px"></span>
+                        <span style="--i:6;"><img src="img/mysql-svgrepo-com.svg" height="50px"></span>
+                        <span style="--i:7;"><img src="img/css-3-svgrepo-com.svg" height="50px"></span>
+                        <span style="--i:8;"><img src="img/javascript-svgrepo-com.svg" height="50px"></span>
+                    </div> -->
+                </div>
             </div>
             <div class="home-social">
                 <a href="https://tiktok.com/@oxh.zxh" class="home-social-icon" target="_blank">
@@ -111,21 +110,19 @@
                 </a>
                 <a href="#" class="home-social-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" height="1em"
-                        viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path style="fill: #000000;"
-                            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                        viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
                     </svg>
                 </a>
             </div>
         </section>
         <!--================= ABOUT ==================-->
         <section class="about section" id="about">
+            <h2>About me</h2>
             <div class="about-container">
                 <div class="about-left">
-                    <h2>ABOUT ME</h2>
-                    <div class="img-container">
-                        <img src="img/download.png">
-                    </div>
+                    <img src="img/download.png">
                 </div>
                 <div class="about-right">
                     <h2>I'm Elmer Ginez</h2>
@@ -143,7 +140,7 @@
 
         <!--============ PORTFOLIO =============-->
         <section class="portfolio" id="portfolio">
-            <h2 class="heading">Latest<span>Project</span></h2>
+            <h2 class="heading">Latest projects</h2>
             <div class="portfolio-container">
                 <div class="portfolio-box">
                     <img src="img/home.png" alt="" />
@@ -154,7 +151,19 @@
                             Showcase my projects, my social media handles, my experience on
                             the website.
                         </p>
-                        <a href="#"><i class="bx bx-link-external"></i></a>
+                        <a href="#">
+                            <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path d="M7 12L16 12" stroke="#000000" stroke-width="2.16" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path d="M13 16L17 12L13 8" stroke="#000000" stroke-width="2.16"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </g>
+                            </svg>
+                        </a>
                     </div>
                 </div>
                 <div class="portfolio-box">
@@ -165,7 +174,19 @@
                             In this project I try deployed dynamics website in AWS.so that we
                             can add deleted the data by connecting to databases.
                         </p>
-                        <a href="#"><i class="bx bx-link-external"></i></a>
+                        <a href="#">
+                            <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path d="M7 12L16 12" stroke="#000000" stroke-width="2.16" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path d="M13 16L17 12L13 8" stroke="#000000" stroke-width="2.16"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </g>
+                            </svg>
+                        </a>
                     </div>
                 </div>
                 <div class="portfolio-box">
@@ -176,7 +197,19 @@
                             In this project I try detect the iris flower type by using machine
                             learning predication model.And deployed in streamlit python
                         </p>
-                        <a href="#"><i class="bx bx-link-external"></i></a>
+                        <a href="#">
+                            <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path d="M7 12L16 12" stroke="#000000" stroke-width="2.16" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path d="M13 16L17 12L13 8" stroke="#000000" stroke-width="2.16"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </g>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -315,7 +348,7 @@
     </main>
 
     <!-- SCROLL REVEAL -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
 
     <!-- SCRIPT.JS -->
     <script src="js/script.js"></script>
