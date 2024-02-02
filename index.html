@@ -20,6 +20,9 @@
     <!--==================== STYLE SHEET ===================-->
     <link rel="stylesheet" href="css/style.css">
 
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+
 </head>
 
 <body>
@@ -40,7 +43,7 @@
                 <li class="nav-item"><a href="#" class="nav-link active">HOME</a></li>
                 <li class="nav-item"><a href="#about" class="nav-link">ABOUT</a></li>
                 <li class="nav-item"><a href="#portfolio" class="nav-link">PORTFOLIO</a></li>
-                <li class="nav-item"><a href="#service" class="nav-link">SERVICES</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">SERVICES</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link">CONTACT</a></li>
             </ul>
         </div>
@@ -119,11 +122,10 @@
         <section class="about section" id="about">
             <div class="about-container">
                 <div class="about-left">
-                    <h2>ABOUT</h2>
-                    <h2>ME</h2>
-                </div>
-                <div class="about-center">
-                    <img src="img/download.png">
+                    <h2>ABOUT ME</h2>
+                    <div class="img-container">
+                        <img src="img/download.png">
+                    </div>
                 </div>
                 <div class="about-right">
                     <h2>I'm Elmer Ginez</h2>
@@ -141,130 +143,93 @@
 
         <!--============ PORTFOLIO =============-->
         <section class="portfolio" id="portfolio">
-            <h2 class="section-title">Portafolio</h2>
-
-            <div class="portfolio-container bg-grid">
-                <div class="card">
-                    <div class="portfolio-img">
-                        <img src="img/player.png" alt="">
-                        <h3>Local Video Player App</h3>
-                    </div>
-                    <div class="card-content">
-                        <p class="card-description">
-                            Development of a web application for a video player that allows users to play locally stored
-                            videos on their device. We use HTML, CSS, and JavaScript to create an engaging user
-                            experience optimized for mobile devices.
+            <h2 class="heading">Latest<span>Project</span></h2>
+            <div class="portfolio-container">
+                <div class="portfolio-box">
+                    <img src="img/home.png" alt="" />
+                    <div class="portfolio-layer">
+                        <h4>Perssonal Portfolio</h4>
+                        <p>
+                            In this project I try making my own portfolio website for myself.
+                            Showcase my projects, my social media handles, my experience on
+                            the website.
                         </p>
-                        <a href="src/video-player/video.html" class="button">Ver</a>
+                        <a href="#"><i class="bx bx-link-external"></i></a>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="portfolio-img">
-                        <img src="img/trabajo-2.jpg" alt="">
-                        <h3>Implementación de Seguridad en Red para una Institución Educativa</h3>
-                    </div>
-                    <div class="card-content">
-                        <p class="card-description">
-                            Configuramos un sistema de seguridad en red para una institución educativa, incluyendo
-                            firewall, VPN y autenticación de usuarios. Garantizamos la protección de datos sensibles y
-                            evitamos accesos no autorizados.
+                <div class="portfolio-box">
+                    <img src="img/home.png" alt="" />
+                    <div class="portfolio-layer">
+                        <h4>dynamics website Deployment in AWS</h4>
+                        <p>
+                            In this project I try deployed dynamics website in AWS.so that we
+                            can add deleted the data by connecting to databases.
                         </p>
-                        <a href="#" class="button">Ver</a>
+                        <a href="#"><i class="bx bx-link-external"></i></a>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="portfolio-img">
-                        <img src="img/trabajo-3.jpg" alt="">
-                        <h3>Desarrollo de Aplicación Web de Gestión de Proyectos</h3>
-                    </div>
-                    <div class="card-content">
-                        <p class="card-description">
-                            Creamos una aplicación web personalizada para gestionar proyectos, tareas y equipos de
-                            trabajo. Utilizamos Django y React para construir una plataforma intuitiva y colaborativa.
+                <div class="portfolio-box">
+                    <img src="img/home.png" alt="" />
+                    <div class="portfolio-layer">
+                        <h4>Iris flower detection</h4>
+                        <p>
+                            In this project I try detect the iris flower type by using machine
+                            learning predication model.And deployed in streamlit python
                         </p>
-                        <a href="#" class="button">Ver</a>
+                        <a href="#"><i class="bx bx-link-external"></i></a>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="portfolio-img">
-                        <img src="img/player.png" alt="">
-                        <h3>Local Video Player App</h3>
-                    </div>
-                    <div class="card-content">
-                        <p class="card-description">
-                            Development of a web application for a video player that allows users to play locally stored
-                            videos on their device. We use HTML, CSS, and JavaScript to create an engaging user
-                            experience optimized for mobile devices.
-                        </p>
-                        <a href="src/video-player/video.html" class="button">Ver</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="portfolio-img">
-                        <img src="img/player.png" alt="">
-                        <h3>Local Video Player App</h3>
-                    </div>
-                    <div class="card-content">
-                        <p class="card-description">
-                            Development of a web application for a video player that allows users to play locally stored
-                            videos on their device. We use HTML, CSS, and JavaScript to create an engaging user
-                            experience optimized for mobile devices.
-                        </p>
-                        <a href="src/video-player/video.html" class="button">Ver</a>
-                    </div>
-                </div>
-                <div class="card">
-
-                    <a class="button p-btn" href="portfolio.html">Ver mas trabajos</a>
                 </div>
             </div>
-
-
+            <div class="portfolio-all">
+                <a href="#">See all projects</a>
+            </div>
         </section>
         <!--============ SERVICES =============-->
-        <section class="service" id="service">
-            <h2 class="section-title">Servicios</h2>
+        <section class="services" id="services">
+            <h2 class="heading">My services</h2>
+            <div class="services-container">
+                <div class="services-box">
+                    <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M6 7.9502H6.01M9 7.9502H9.01M12 7.9502H12.01M6.2 19H17.8C18.9201 19 19.4802 19 19.908 18.782C20.2843 18.5903 20.5903 18.2843 20.782 17.908C21 17.4802 21 16.9201 21 15.8V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.07989 19 6.2 19Z"
+                                stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
+                        </g>
+                    </svg>
+                    <h3>Web Development</h3>
+                    <p>
+                        Motivated designer and developer with experience creating custom
+                        websites through PHP and CSS. Strong collaboration skills and proven
+                        history of application development. DHTML and JavaScript. MS Access
+                        and MySQL.
+                    </p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
 
-            <div class="service-container">
-                <div class="service-item">
-                    <div class="service-img">
-                        <img src="img/web-development.png" alt="">
-                    </div>
-                    <div>
-                        <h3>Desarrollo de sitios web</h3>
-                        <p>
-                            Creación y desarrollo de sitios web tanto estáticos como dinámicos utilizando tecnologías
-                            como HTML, CSS, JavaScript, y frameworks como React, Angular o Vue.js.
-                        </p>
-                    </div>
-                </div>
-                <div class="service-item">
-                    <div class="service-img">
-                        <img src="img/web-app-development.png" alt="">
-                    </div>
-                    <div>
-                        <h3>Desarrollo de aplicaciones web</h3>
-                        <p>
-                            Creación de aplicaciones web completas utilizando tecnologías del lado del servidor como
-                            Node.js, Express, Django, Ruby on Rails, etc. </p>
-                    </div>
-                </div>
-                <div class="service-item">
-                    <div class="service-img">
-                        <img src="img/mobile-app-development.png" alt="">
-                    </div>
-                    <div>
-                        <h3>Desarrollo de aplicaciones móviles</h3>
-                        <p>
-                            Creación de aplicaciones móviles para Android e iOS utilizando tecnologías como React
-                            Native, Flutter o nativamente con Java (Android) y Swift (iOS).
-                        </p>
-                    </div>
+                <div class="services-box">
+                    <svg width="64px" height="64px" viewBox="0 0 24.00 24.00" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M12 18H12.01M11 6H13M9.2 21H14.8C15.9201 21 16.4802 21 16.908 20.782C17.2843 20.5903 17.5903 20.2843 17.782 19.908C18 19.4802 18 18.9201 18 17.8V6.2C18 5.0799 18 4.51984 17.782 4.09202C17.5903 3.71569 17.2843 3.40973 16.908 3.21799C16.4802 3 15.9201 3 14.8 3H9.2C8.0799 3 7.51984 3 7.09202 3.21799C6.71569 3.40973 6.40973 3.71569 6.21799 4.09202C6 4.51984 6 5.07989 6 6.2V17.8C6 18.9201 6 19.4802 6.21799 19.908C6.40973 20.2843 6.71569 20.5903 7.09202 20.782C7.51984 21 8.07989 21 9.2 21Z"
+                                stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
+                        </g>
+                    </svg>
+                    <h3>App Development</h3>
+                    <p>
+                        I'm UI/UX Designer with a great passion to my work. The main goal is
+                        to create modern, attractive and user-friendly interfaces and find
+                        creative and simple solutions for your business.
+                    </p>
+                    <a href="#" class="btn">Read More</a>
                 </div>
             </div>
-            <!-- <div>
-                <a href="services.html">See more services</a>
-            </div> -->
         </section>
 
         <!--============= CONTACT ===============-->

@@ -13,6 +13,11 @@
   --first-color2: #eeeeee;
 
   --color-button: linear-gradient(270deg, #17c0e9, #c96ddd, #f45162);
+
+  --bg-color:#1f242d;
+  --second-bg-color:#323946;
+  --text-color:#fff;
+  --main-color:#0ef; 
 }
 
 /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
@@ -472,12 +477,12 @@ img {
   min-height: 100vh;
   margin: auto 20px;
   display: grid;
-  padding: 2rem;
+  padding: 5rem;
 }
 
 .about-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -486,19 +491,18 @@ img {
   height: 100%;
 }
 
-.about-left h2:nth-child(1) {
-  font-size: 2.3rem;
+.about-left h2{
+  font-size: 2rem;
 }
 
-.about-left h2:nth-child(2) {
-  font-size: 6rem;
-}
-
-.about-center>img {
+.about-left img {
   width: auto;
-  height: 500px;
+  height: 400px;
 }
 
+.about-right h2 {
+  font-size: 2rem;
+}
 .about-right p {
   margin: 2rem;
 }
@@ -508,7 +512,7 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .about-center>img {
+  .about-left img {
     height: 250px;
   }
 
@@ -520,15 +524,11 @@ img {
 
 @media (max-width: 767px) {
 
-  .about-left h2:nth-child(1) {
+  .about-left h2{
     font-size: 1.7rem;
   }
 
-  .about-left h2:nth-child(2) {
-    font-size: 4rem;
-  }
-
-  .about-center>img {
+  .about-left img {
     height: 200px;
   }
 }
@@ -538,15 +538,12 @@ img {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .about-left h2:nth-child(1) {
+  .about-left h2 {
     font-size: 1.3rem;
   }
 
-  .about-left h2:nth-child(2) {
-    font-size: 3.2rem;
-  }
 
-  .about-center>img {
+  .about-left>img {
     width: auto;
     height: 200px;
   }
@@ -560,85 +557,84 @@ img {
 *   06 start portfolio styles   *
 *********************************/
 
-.portfolio {
-  margin: auto 20px;
-  min-height: 100vh;
+.portfolio{
+margin: auto 2rem;
+height: 100vh;
+padding: 5rem 3rem 2rem;
 }
-
-.portfolio>h2 {
-  margin-top: 70px;
+.portfolio h2{
+  margin-bottom: 3rem;
 }
-
-.portfolio-container {
-  row-gap: 2rem;
-  text-align: center;
+.portfolio-container{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 2rem;
-}
-
-.card {
-  padding: 15px;
-  margin: 15px;
-  position: relative;
-  border-radius: 10px;
-  display: flex;
+  grid-template-columns: repeat(3,1fr);
   align-items: center;
-  justify-content: center;
+  gap: 2.5rem;
+}
+.portfolio-container .portfolio-box{
+  position: relative;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem var(--bg-color);
   overflow: hidden;
-  perspective: 1000px;
-  box-shadow: 0 0 0 1px #aaaaaaab;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
 }
-
-.portfolio-img {
-  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
-  border-radius: 0.5rem;
-  overflow: hidden;
+.portfolio-box img{
+  width: 100%;
+  transition: .5s ease;
 }
-
-.portfolio-img img {
-  transition: 1s;
-  cursor: pointer;
-  border-radius: 0.5rem;
+.portfolio-box:hover img{
+  transform: scale(1.1);
 }
-
-.card:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
-}
-
-.card-content {
+.portfolio-box .portfolio-layer{
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-  background-color: var(--color-background);
-  transform: rotateX(-90deg);
-  transform-origin: bottom;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background: linear-gradient(rgba(0,0,0, .1),var(--main-color));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 2rem;
+  transform: translateY(100%);
+  transition: .5s ease;
+}
+.portfolio-box:hover .portfolio-layer{
+  transform: translateY(0);
 }
 
-.card:hover .card-content {
-  transform: rotateX(0deg);
+.portfolio-layer h4{
+  font-size: 1.8rem;
 }
 
-.card-description {
-  margin: 10px 0 0;
-  font-size: 1rem;
-  color: #c0c0c0;
-  line-height: 1.4;
+.portfolio-layer p{
+  font-size: 1.2rem;
+  margin: .3rem 0 .5rem;
 }
 
-.btn-container {
-  width: 100%;
+.portfolio-layer a{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background: var(--text-color);
+  border-radius: 50%;
+}
+
+.portfolio-layer a i {
+  font-size: 1.5rem;
+  color: var(--second-bg-color);
+}
+
+.portfolio-all {
   text-align: end;
+  padding: 1rem;
 }
-
-.p-btn {
-  z-index: 55;
+.portfolio-all a {
+  color: black;
 }
 
 @media (max-width:991px) {
@@ -648,9 +644,13 @@ img {
 }
 
 @media (max-width: 767px) {
-  .portfolio-container {
-    grid-template-columns: repeat(1, 1fr);
-  }
+  .portfolio h2{
+    margin-bottom: 3rem;
+ }
+
+ .portfolio-container{
+    grid-template-columns: repeat(2,1fr);
+ }
 }
 
 @media (max-width: 555px) {
@@ -722,42 +722,40 @@ img {
 /******************************
 *   07 start service styles   *
 *******************************/
-.service {
-  border: #000000 1px solid;
-  margin: auto 20px;
-  min-height: 100vh;
-}
 
-.service-container {
-  row-gap: 2rem;
-  text-align: center;
+.services {
+  margin: auto 2rem;
+height: 100vh;
+padding: 5rem 3rem 2rem;
+}
+.services h2{
+  margin-bottom: 3rem;
+
+}
+.services-container{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 2rem;
+  align-items: center;
+  gap: 2rem;
+  grid-template-columns: repeat(2,1fr);
 }
-
-.service-item {
-  border: #c4c4c4 1px solid;
-  padding: 15px;
+.services-container .services-box {
+  padding: 3rem 2rem 4rem;
+  border-radius: 2rem;
+  text-align: center;
+  border: .2rem solid #a0a0a0;
+  transition: .5s ease-in-out;
 }
-
-.service-img {
-  padding: 25px 100px 25px 100px;
-  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
-  border-radius: 0.5rem;
-  overflow: hidden;
-  margin: auto;
+.services-container .services-box:hover{
+  border-color: rgb(51, 255, 0);
+  transform: scale(1.01);
 }
-
-.service-img img {
-  transition: 1s;
-  cursor: pointer;
+.services-box h3{
+  font-size: 1.8rem;
 }
-
-.service-item:hover img {
-  transform: scale(1.1);
+.services-box p{
+  font-size: 1.2rem;
+  margin: 1rem 0 3rem;
 }
-
 
 /******************************
 *   08 start contact styles   *
