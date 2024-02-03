@@ -376,7 +376,7 @@ img {
   font-weight: 800;
   background: linear-gradient(270deg, #17c0e9, #c96ddd, #f45162);
   -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .home-right {
@@ -388,12 +388,6 @@ img {
   margin-right: 20px;
 }
 
-.hoodie-guy {
-  align-items: center;
-  align-self: center;
-  width: auto;
-  height: 100%;
-}
 
 .home-social {
   display: flex;
@@ -403,10 +397,6 @@ img {
   bottom: 10px;
   left: 30px;
   z-index: 5;
-}
-
-.home-social-icon {
-  font-size: 20px;
 }
 
 /* Menos de 480px */
@@ -419,6 +409,7 @@ img {
 
   .home-container {
     grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2,1fr);
     gap: 2rem;
   }
   .home-title {
@@ -703,7 +694,7 @@ img {
 .portfolio-container .portfolio-box {
   position: relative;
   border-radius: 1rem;
-  box-shadow: 0 0 1rem var(--bg-color);
+  box-shadow: 0 0 1rem rgb(150, 150, 150);
   overflow: hidden;
   display: flex;
 }
@@ -723,7 +714,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+  background: linear-gradient(rgba(255, 255, 255, 0.322), rgb(255, 255, 255));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -750,8 +741,8 @@ img {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   background: var(--text-color);
   border-radius: 50%;
 }
@@ -766,9 +757,6 @@ img {
   padding: 1rem;
 }
 
-.portfolio-all a {
-  color: black;
-}
 
 /* Menos de 480px */
 @media only screen and (max-width: 480px) {
@@ -785,6 +773,10 @@ img {
   .portfolio-container {
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
+  }
+  .portfolio-all {
+    text-align: center;
+    padding: 1rem;
   }
 }
 
@@ -990,6 +982,21 @@ img {
   
   .contact-container {
     grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  .contact-left {
+    text-align: center;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.5rem;
+  }
+  .social {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
     gap: 2rem;
   }
 }
