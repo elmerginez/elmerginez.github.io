@@ -67,9 +67,9 @@ window.addEventListener('scroll', function () {
 
 /*===== SCROLL REVEAL ANIMATION =====*/
 const scrollReveal = ScrollReveal({
-    origin: 'top',
+    origin: 'left',
     distance: '50px',
-    duration: 1000,
+    duration: 1500,
     reset: true,
 });
 
