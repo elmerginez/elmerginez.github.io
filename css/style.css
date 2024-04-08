@@ -943,20 +943,26 @@ img {
 }
 
 .contact-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
+  text-align: center;
 }
 
 .contact-left {
-  text-align: left;
   padding: 2rem;
+}
+
+.contact-info {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contact-info a {
+  background-color: var(--second-color);
+  border-radius: 1rem;
+  padding: 1rem;
+  color: var(--text-color);
 }
 
 .social {
