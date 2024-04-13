@@ -1,0 +1,98 @@
+[
+    {
+        "title": "Plataforma de E-commerce",
+        "image_url": "img/webecomerce.webp",
+        "short_description": "Plataforma para la venta online de productos.",
+        "detailed_description": "Esta plataforma de e-commerce permite a los usuarios comprar y vender productos en línea. Cuenta con un sistema de registro de usuarios, un catálogo de productos con imágenes y descripciones detalladas, un carrito de compras y una pasarela de pagos segura. La plataforma está desarrollada con HTML, CSS, JavaScript, PHP y MySQL, y ofrece una experiencia de usuario fluida y fácil de usar.",
+        "languages": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+        "status": "finalizado"
+    },
+    {
+        "title": "Aplicación de Gestión de Tareas",
+        "image_url": "img/apptareas.webp",
+        "short_description": "Aplicación para crear y gestionar listas de tareas.",
+        "detailed_description": "Esta aplicación móvil permite a los usuarios crear, organizar y gestionar sus tareas de forma eficiente. Los usuarios pueden crear listas de tareas, añadir tareas a las listas, establecer fechas límite y prioridades, y recibir notificaciones sobre las tareas pendientes. La aplicación está desarrollada con Flutter y Firebase, y ofrece una interfaz intuitiva y fácil de usar.",
+        "languages": ["Flutter", "Firebase", "Dart"],
+        "status": "finalizado"
+    },
+    {
+        "title": "Sitio Web de Noticias en Tiempo Real",
+        "image_url": "img/webnoticias.webp",
+        "short_description": "Sitio web que muestra noticias actualizadas constantemente.",
+        "detailed_description": "Este sitio web de noticias ofrece a los usuarios la posibilidad de mantenerse informados sobre las últimas noticias de forma instantánea. El sitio web muestra noticias actualizadas en tiempo real, utilizando WebSockets, y permite a los usuarios filtrar las noticias por categoría, fuente o palabra clave. El sitio web está desarrollado con HTML, CSS, JavaScript, React, Node.js y MongoDB, y ofrece una experiencia de usuario rápida y personalizada.",
+        "languages": ["HTML", "CSS", "JavaScript", "React", "Node.js", "MongoDB"],
+        "status": "en progreso"
+    },
+    {
+        "title": "Plataforma de E-commerce",
+        "image_url": "img/webecomerce.webp",
+        "short_description": "Plataforma para la venta online de productos.",
+        "detailed_description": "Esta plataforma de e-commerce permite a los usuarios comprar y vender productos en línea. Cuenta con un sistema de registro de usuarios, un catálogo de productos con imágenes y descripciones detalladas, un carrito de compras y una pasarela de pagos segura. La plataforma está desarrollada con HTML, CSS, JavaScript, PHP y MySQL, y ofrece una experiencia de usuario fluida y fácil de usar.",
+        "languages": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+        "status": "finalizado"
+    },
+    {
+        "title": "Aplicación de Gestión de Tareas",
+        "image_url": "img/apptareas.webp",
+        "short_description": "Aplicación para crear y gestionar listas de tareas.",
+        "detailed_description": "Esta aplicación móvil permite a los usuarios crear, organizar y gestionar sus tareas de forma eficiente. Los usuarios pueden crear listas de tareas, añadir tareas a las listas, establecer fechas límite y prioridades, y recibir notificaciones sobre las tareas pendientes. La aplicación está desarrollada con Flutter y Firebase, y ofrece una interfaz intuitiva y fácil de usar.",
+        "languages": ["Flutter", "Firebase", "Dart"],
+        "status": "finalizado"
+    },
+    {
+        "title": "Sitio Web de Noticias en Tiempo Real",
+        "image_url": "img/webnoticias.webp",
+        "short_description": "Sitio web que muestra noticias actualizadas constantemente.",
+        "detailed_description": "Este sitio web de noticias ofrece a los usuarios la posibilidad de mantenerse informados sobre las últimas noticias de forma instantánea. El sitio web muestra noticias actualizadas en tiempo real, utilizando WebSockets, y permite a los usuarios filtrar las noticias por categoría, fuente o palabra clave. El sitio web está desarrollado con HTML, CSS, JavaScript, React, Node.js y MongoDB, y ofrece una experiencia de usuario rápida y personalizada.",
+        "languages": ["HTML", "CSS", "JavaScript", "React", "Node.js", "MongoDB"],
+        "status": "en progreso"
+    },
+    {
+        "title": "Plataforma de E-commerce",
+        "image_url": "img/webecomerce.webp",
+        "short_description": "Plataforma para la venta online de productos.",
+        "detailed_description": "Esta plataforma de e-commerce permite a los usuarios comprar y vender productos en línea. Cuenta con un sistema de registro de usuarios, un catálogo de productos con imágenes y descripciones detalladas, un carrito de compras y una pasarela de pagos segura. La plataforma está desarrollada con HTML, CSS, JavaScript, PHP y MySQL, y ofrece una experiencia de usuario fluida y fácil de usar.",
+        "languages": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+        "status": "finalizado"
+    },
+    {
+        "title": "Aplicación de Gestión de Tareas",
+        "image_url": "img/apptareas.webp",
+        "short_description": "Aplicación para crear y gestionar listas de tareas.",
+        "detailed_description": "Esta aplicación móvil permite a los usuarios crear, organizar y gestionar sus tareas de forma eficiente. Los usuarios pueden crear listas de tareas, añadir tareas a las listas, establecer fechas límite y prioridades, y recibir notificaciones sobre las tareas pendientes. La aplicación está desarrollada con Flutter y Firebase, y ofrece una interfaz intuitiva y fácil de usar.",
+        "languages": ["Flutter", "Firebase", "Dart"],
+        "status": "finalizado"
+    },
+    {
+        "title": "Sitio Web de Noticias en Tiempo Real",
+        "image_url": "img/webnoticias.webp",
+        "short_description": "Sitio web que muestra noticias actualizadas constantemente.",
+        "detailed_description": "Este sitio web de noticias ofrece a los usuarios la posibilidad de mantenerse informados sobre las últimas noticias de forma instantánea. El sitio web muestra noticias actualizadas en tiempo real, utilizando WebSockets, y permite a los usuarios filtrar las noticias por categoría, fuente o palabra clave. El sitio web está desarrollado con HTML, CSS, JavaScript, React, Node.js y MongoDB, y ofrece una experiencia de usuario rápida y personalizada.",
+        "languages": ["HTML", "CSS", "JavaScript", "React", "Node.js", "MongoDB"],
+        "status": "en progreso"
+    },
+    {
+        "title": "Plataforma de E-commerce",
+        "image_url": "img/webecomerce.webp",
+        "short_description": "Plataforma para la venta online de productos.",
+        "detailed_description": "Esta plataforma de e-commerce permite a los usuarios comprar y vender productos en línea. Cuenta con un sistema de registro de usuarios, un catálogo de productos con imágenes y descripciones detalladas, un carrito de compras y una pasarela de pagos segura. La plataforma está desarrollada con HTML, CSS, JavaScript, PHP y MySQL, y ofrece una experiencia de usuario fluida y fácil de usar.",
+        "languages": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+        "status": "finalizado"
+    },
+    {
+        "title": "Aplicación de Gestión de Tareas",
+        "image_url": "img/apptareas.webp",
+        "short_description": "Aplicación para crear y gestionar listas de tareas.",
+        "detailed_description": "Esta aplicación móvil permite a los usuarios crear, organizar y gestionar sus tareas de forma eficiente. Los usuarios pueden crear listas de tareas, añadir tareas a las listas, establecer fechas límite y prioridades, y recibir notificaciones sobre las tareas pendientes. La aplicación está desarrollada con Flutter y Firebase, y ofrece una interfaz intuitiva y fácil de usar.",
+        "languages": ["Flutter", "Firebase", "Dart"],
+        "status": "finalizado"
+    },
+    {
+        "title": "Sitio Web de Noticias en Tiempo Real",
+        "image_url": "img/webnoticias.webp",
+        "short_description": "Sitio web que muestra noticias actualizadas constantemente.",
+        "detailed_description": "Este sitio web de noticias ofrece a los usuarios la posibilidad de mantenerse informados sobre las últimas noticias de forma instantánea. El sitio web muestra noticias actualizadas en tiempo real, utilizando WebSockets, y permite a los usuarios filtrar las noticias por categoría, fuente o palabra clave. El sitio web está desarrollado con HTML, CSS, JavaScript, React, Node.js y MongoDB, y ofrece una experiencia de usuario rápida y personalizada.",
+        "languages": ["HTML", "CSS", "JavaScript", "React", "Node.js", "MongoDB"],
+        "status": "en progreso"
+    }
+]

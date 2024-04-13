@@ -346,6 +346,7 @@ body {
 .projects-section {
   padding: 75px 0;
 }
+
 .projects-container {
   display: flex;
   flex-wrap: wrap;
@@ -358,6 +359,12 @@ body {
   border: 1px solid #ccc;
   border-radius: 5px;
   overflow: hidden;
+  transition: ease-in-out .5s;
+}
+
+.project-card:hover {
+  border: 1px solid var(--second-color);
+  box-shadow: 0 0 10px var(--second-color);
 }
 
 .project-card img {
@@ -382,11 +389,21 @@ body {
   font-style: italic;
 }
 
+.detail-btn {
+  background: var(--second-color);
+  padding: .3rem;
+  border-radius: .4rem;
+  color: var(--text-color);
+  border: none;
+  cursor: pointer;
+  
+}
+
 /* Modal */
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 999;
   left: 0;
   top: 0;
   width: 100%;
@@ -402,8 +419,15 @@ body {
   border: 1px solid #888;
   width: 80%;
   max-width: 600px;
+  border-radius: .5rem;
 }
 
+.modal-image {
+  border-radius: .2rem;
+}
+.modal-description, .modal-languages, .modal-status {
+  margin-top: 1rem;
+}
 .close-button {
   color: #aaa;
   float: right;
@@ -418,6 +442,7 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
+
 
 .footer {
   background-color: #383838;

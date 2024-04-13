@@ -44,6 +44,10 @@
                 <li class="nav-item"><a href="#portfolio" class="nav-link">PORTAFOLIO</a></li>
                 <li class="nav-item"><a href="#services" class="nav-link">SERVICIOS</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link">CONTACTO</a></li>
+                <ul>
+                    <li><a href="#" onclick="changeLanguage('english')">English</a></li>
+                    <li><a href="#" onclick="changeLanguage('spanish')">Español</a></li>
+                </ul>
             </ul>
         </div>
 
@@ -145,88 +149,13 @@
             <p>Aún estoy trabajando en nuevos proyectos emocionantes. ¡Vuelve pronto para ver mis últimos
                 trabajos!<br><br></p>
 
-            <div class="portfolio-container">
-                <div class="portfolio-box">
-                    <img src="img/ecomerce (1).webp" alt="elmer ginez miwi" height="300px" />
-                    <div class="portfolio-layer">
-                        <h4>Plataforma de E-commerce</h4>
-                        <p>
-                            Desarrollo de plataforma de comercio electrónico con características avanzadas.
-                        </p>
-                        <div class="languages">
-                            <span>HTML</span> <span>CSS</span> <span>JavaScript</span> <span>PHP</span>
-                        </div>
-                        <a href="#">
-                            <svg width="48px" height="48px" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                <g id="SVGRepo_iconCarrier">
-                                    <path d="M7 12L16 12" stroke="#000000" stroke-width="2.16" stroke-linecap="round"
-                                        stroke-linejoin="round"></path>
-                                    <path d="M13 16L17 12L13 8" stroke="#000000" stroke-width="2.16"
-                                        stroke-linecap="round" stroke-linejoin="round"></path>
-                                </g>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="portfolio-box">
-                    <img src="img/apptareas (1).webp" alt="elmer ginez miwi code" height="300px" />
-                    <div class="portfolio-layer">
-                        <h4>Aplicación de Gestión de Tareas</h4>
-                        <p>
-                            Desarrollo de app de gestión de tareas para una organización eficiente.
-                        </p>
-                        <div class="languages">
-                            <span>Flutter</span> <span>Dart</span>
-                        </div>
-                        <a href="#">
-                            <svg width="48px" height="48px" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                <g id="SVGRepo_iconCarrier">
-                                    <path d="M7 12L16 12" stroke="#000000" stroke-width="2.16" stroke-linecap="round"
-                                        stroke-linejoin="round"></path>
-                                    <path d="M13 16L17 12L13 8" stroke="#000000" stroke-width="2.16"
-                                        stroke-linecap="round" stroke-linejoin="round"></path>
-                                </g>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="portfolio-box">
-                    <img src="img/noticias (1).webp" alt="elmer ginez miwi" height="300px"/>
-                    <div class="portfolio-layer">
-                        <h4>Sitio Web de Noticias en Tiempo Real</h4>
-                        <p>
-                            Desarrollo de sitio web de noticias con actualizaciones en tiempo real.
-                        </p>
-                        <div class="languages">
-                            <span>Node.js</span> <span>Express</span> <span>MongoDB</span> <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-                        <a href="#">
-                            <svg width="48px" height="48px" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                <g id="SVGRepo_iconCarrier">
-                                    <path d="M7 12L16 12" stroke="#000000" stroke-width="2.16" stroke-linecap="round"
-                                        stroke-linejoin="round"></path>
-                                    <path d="M13 16L17 12L13 8" stroke="#000000" stroke-width="2.16"
-                                        stroke-linecap="round" stroke-linejoin="round"></path>
-                                </g>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+            <div class="portfolio-container" id="portfolio-container">
+                <!-- Los tres primeros proyectos -->
             </div>
             <div class="portfolio-all">
                 <a href="portfolio.html" class="button">Ver todos los proyectos</a>
             </div>
+
         </section>
         <!--============ SERVICES =============-->
         <section class="services" id="services">
@@ -320,6 +249,12 @@
             <p>&copy; Todos los derechos reservados Elmer Ginez | Miwi 2024</p>
         </footer>
     </main>
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <span class="close-button" id="closeModal">&times;</span>
+            <div id="projectDetails"></div>
+        </div>
+    </div>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/script.js"></script>
 </body>

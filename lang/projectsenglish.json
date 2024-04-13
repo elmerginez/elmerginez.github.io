@@ -1,0 +1,98 @@
+[
+    {
+        "title": "E-commerce Platform",
+        "image_url": "img/webecomerce.webp",
+        "short_description": "Platform for online product sales.",
+        "detailed_description": "This e-commerce platform allows users to buy and sell products online. It features a user registration system, a product catalog with images and detailed descriptions, a shopping cart, and a secure payment gateway. The platform is developed with HTML, CSS, JavaScript, PHP, and MySQL, providing a smooth and user-friendly experience.",
+        "languages": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+        "status": "finished"
+    },
+    {
+        "title": "Task Management Application",
+        "image_url": "img/apptareas.webp",
+        "short_description": "Application for creating and managing task lists.",
+        "detailed_description": "This mobile application allows users to create, organize, and manage their tasks efficiently. Users can create task lists, add tasks to the lists, set deadlines and priorities, and receive notifications about pending tasks. The application is developed with Flutter and Firebase, offering an intuitive and user-friendly interface.",
+        "languages": ["Flutter", "Firebase", "Dart"],
+        "status": "finished"
+    },
+    {
+        "title": "Real-time News Website",
+        "image_url": "img/webnoticias.webp",
+        "short_description": "Website displaying constantly updated news.",
+        "detailed_description": "This news website offers users the ability to stay informed about the latest news instantly. The website displays real-time updated news using WebSockets, and allows users to filter news by category, source, or keyword. The website is developed with HTML, CSS, JavaScript, React, Node.js, and MongoDB, providing a fast and personalized user experience.",
+        "languages": ["HTML", "CSS", "JavaScript", "React", "Node.js", "MongoDB"],
+        "status": "in progress"
+    },
+    {
+        "title": "E-commerce Platform",
+        "image_url": "img/webecomerce.webp",
+        "short_description": "Platform for online product sales.",
+        "detailed_description": "This e-commerce platform allows users to buy and sell products online. It features a user registration system, a product catalog with images and detailed descriptions, a shopping cart, and a secure payment gateway. The platform is developed with HTML, CSS, JavaScript, PHP, and MySQL, providing a smooth and user-friendly experience.",
+        "languages": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+        "status": "finished"
+    },
+    {
+        "title": "Task Management Application",
+        "image_url": "img/apptareas.webp",
+        "short_description": "Application for creating and managing task lists.",
+        "detailed_description": "This mobile application allows users to create, organize, and manage their tasks efficiently. Users can create task lists, add tasks to the lists, set deadlines and priorities, and receive notifications about pending tasks. The application is developed with Flutter and Firebase, offering an intuitive and user-friendly interface.",
+        "languages": ["Flutter", "Firebase", "Dart"],
+        "status": "finished"
+    },
+    {
+        "title": "Real-time News Website",
+        "image_url": "img/webnoticias.webp",
+        "short_description": "Website displaying constantly updated news.",
+        "detailed_description": "This news website offers users the ability to stay informed about the latest news instantly. The website displays real-time updated news using WebSockets, and allows users to filter news by category, source, or keyword. The website is developed with HTML, CSS, JavaScript, React, Node.js, and MongoDB, providing a fast and personalized user experience.",
+        "languages": ["HTML", "CSS", "JavaScript", "React", "Node.js", "MongoDB"],
+        "status": "in progress"
+    },
+    {
+        "title": "E-commerce Platform",
+        "image_url": "img/webecomerce.webp",
+        "short_description": "Platform for online product sales.",
+        "detailed_description": "This e-commerce platform allows users to buy and sell products online. It features a user registration system, a product catalog with images and detailed descriptions, a shopping cart, and a secure payment gateway. The platform is developed with HTML, CSS, JavaScript, PHP, and MySQL, providing a smooth and user-friendly experience.",
+        "languages": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+        "status": "finished"
+    },
+    {
+        "title": "Task Management Application",
+        "image_url": "img/apptareas.webp",
+        "short_description": "Application for creating and managing task lists.",
+        "detailed_description": "This mobile application allows users to create, organize, and manage their tasks efficiently. Users can create task lists, add tasks to the lists, set deadlines and priorities, and receive notifications about pending tasks. The application is developed with Flutter and Firebase, offering an intuitive and user-friendly interface.",
+        "languages": ["Flutter", "Firebase", "Dart"],
+        "status": "finished"
+    },
+    {
+        "title": "Real-time News Website",
+        "image_url": "img/webnoticias.webp",
+        "short_description": "Website displaying constantly updated news.",
+        "detailed_description": "This news website offers users the ability to stay informed about the latest news instantly. The website displays real-time updated news using WebSockets, and allows users to filter news by category, source, or keyword. The website is developed with HTML, CSS, JavaScript, React, Node.js, and MongoDB, providing a fast and personalized user experience.",
+        "languages": ["HTML", "CSS", "JavaScript", "React", "Node.js", "MongoDB"],
+        "status": "in progress"
+    },
+    {
+        "title": "E-commerce Platform",
+        "image_url": "img/webecomerce.webp",
+        "short_description": "Platform for online product sales.",
+        "detailed_description": "This e-commerce platform allows users to buy and sell products online. It features a user registration system, a product catalog with images and detailed descriptions, a shopping cart, and a secure payment gateway. The platform is developed with HTML, CSS, JavaScript, PHP, and MySQL, providing a smooth and user-friendly experience.",
+        "languages": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+        "status": "finished"
+    },
+    {
+        "title": "Task Management Application",
+        "image_url": "img/apptareas.webp",
+        "short_description": "Application for creating and managing task lists.",
+        "detailed_description": "This mobile application allows users to create, organize, and manage their tasks efficiently. Users can create task lists, add tasks to the lists, set deadlines and priorities, and receive notifications about pending tasks. The application is developed with Flutter and Firebase, offering an intuitive and user-friendly interface.",
+        "languages": ["Flutter", "Firebase", "Dart"],
+        "status": "finished"
+    },
+    {
+        "title": "Real-time News Website",
+        "image_url": "img/webnoticias.webp",
+        "short_description": "Website displaying constantly updated news.",
+        "detailed_description": "This news website offers users the ability to stay informed about the latest news instantly. The website displays real-time updated news using WebSockets, and allows users to filter news by category, source, or keyword. The website is developed with HTML, CSS, JavaScript, React, Node.js, and MongoDB, providing a fast and personalized user experience.",
+        "languages": ["HTML", "CSS", "JavaScript", "React", "Node.js", "MongoDB"],
+        "status": "in progress"
+    }
+]
