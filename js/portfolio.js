@@ -9,7 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const date = new Date();
         date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
         const expires = "expires=" + date.toUTCString();
-        document.cookie = name + "=" + value + ";" + expires + ";path=/";
+        const cookie = name + "=" + value + ";" + expires + ";path=/;SameSite=None;Secure";
+        document.cookie = cookie;
     }
 
     function getCookie(name) {

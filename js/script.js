@@ -25,8 +25,10 @@ document.addEventListener('DOMContentLoaded', function () {
         const date = new Date();
         date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
         const expires = "expires=" + date.toUTCString();
-        document.cookie = name + "=" + value + ";" + expires + ";path=/";
+        const cookie = name + "=" + value + ";" + expires + ";path=/;SameSite=None;Secure";
+        document.cookie = cookie;
     }
+    
 
     function getCookie(name) {
         const cookieName = name + "=";
@@ -50,6 +52,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // Si hay un tema guardado, cargar ese tema por defecto
     if (savedTheme) {
         changeTheme(savedTheme);
+    } else{
+        changeTheme('light');
     }
 
     // Verificar si ya hay un idioma guardado en la cookie
@@ -58,6 +62,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // Si hay un idioma guardado, cargar ese idioma por defecto
     if (savedLanguage) {
         changeLanguage(savedLanguage);
+    } else {
+        changeLanguage('es');
     }
 
     function changeTheme(theme) {
