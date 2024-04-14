@@ -1,0 +1,46 @@
+[
+    {
+        "title": "電子商取引プラットフォーム",
+        "image_url": "img/webecomerce.webp",
+        "short_description": "商品のオンライン販売プラットフォーム。",
+        "detailed_description": "この電子商取引プラットフォームでは、ユーザーがオンラインで商品を購入および販売できます。ユーザー登録システム、画像と詳細な説明が付いた商品カタログ、ショッピングカート、安全な支払いゲートウェイが備わっています。このプラットフォームは、HTML、CSS、JavaScript、PHP、MySQLで開発されており、スムーズで使いやすいユーザーエクスペリエンスを提供しています。",
+        "languages": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "PHP",
+            "MySQL"
+        ],
+        "status": "完了",
+        "button": "プロジェクトを見る"
+    },
+    {
+        "title": "タスク管理アプリ",
+        "image_url": "img/apptareas.webp",
+        "short_description": "タスクリストの作成および管理のためのアプリ。",
+        "detailed_description": "このモバイルアプリでは、ユーザーが効率的にタスクを作成、整理、および管理できます。ユーザーはタスクリストを作成し、タスクをリストに追加し、期限や優先度を設定し、未完了のタスクに関する通知を受け取ることができます。このアプリは、FlutterとFirebaseで開発されており、直感的で使いやすいインターフェースを提供しています。",
+        "languages": [
+            "Flutter",
+            "Firebase",
+            "Dart"
+        ],
+        "status": "完了",
+        "button": "プロジェクトを見る"
+    },
+    {
+        "title": "リアルタイムニュースウェブサイト",
+        "image_url": "img/webnoticias.webp",
+        "short_description": "常に最新のニュースを表示するウェブサイト。",
+        "detailed_description": "このニュースウェブサイトでは、ユーザーが最新のニュースを即座に入手できます。WebSocketsを使用してリアルタイムで更新されるニュースを表示し、ユーザーがカテゴリ、ソース、またはキーワードでニュースをフィルタリングできます。このウェブサイトは、HTML、CSS、JavaScript、React、Node.js、MongoDBで開発されており、高速でカスタマイズ可能なユーザーエクスペリエンスを提供しています。",
+        "languages": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "Node.js",
+            "MongoDB"
+        ],
+        "status": "進行中",
+        "button": "プロジェクトを見る"
+    }
+]

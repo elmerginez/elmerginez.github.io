@@ -32,47 +32,61 @@
     <div id="loader">
         <div class="loader-inner"></div>
     </div>
-<!--==================== NAVIGATION ===================-->
-<nav class="nav" id="nav">
-    <div>
-        <img src="img/code-code.svg" alt="logo elmer ginez miwi" style="width: 18px;">
-        <a href="index.html" class="nav-logo">miwi<span class="blink">_</span></a>
-    </div>
+    <!--==================== NAVIGATION ===================-->
+    <nav class="nav" id="nav">
+        <div>
+            <img src="img/code-code.svg" alt="logo elmer ginez miwi" style="width: 18px;">
+            <a href="index.html" class="nav-logo">miwi<span class="blink">_</span></a>
+        </div>
 
-    <div class="nav-menu" id="nav-menu">
-        <ul class="nav-list">
-            <li class="nav-item"><a href="index.html" class="nav-link active">INICIO</a></li>
-            <li class="nav-item"><a href="https://wa.link/v1jz3e" class="nav-link" target="_blank">INICIAR CHAT</a></li>
-        </ul>
-    </div>
+        <div class="nav-menu" id="nav-menu">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html" class="nav-link active">INICIO</a></li>
+                <li class="nav-item"><a href="https://wa.link/v1jz3e" class="nav-link" target="_blank">INICIAR CHAT</a>
+                </li>
+                <li class="nav-item">
+                    <select name="" id="change-language-button">
+                        <option value="spanish" data-lang="es"><img src="img/flag-spain.svg" alt="flag-spain"></option>
+                        <option value="english" data-lang="en">Ingles</option>
+                        <option value="russian" data-lang="ru">Ruso</option>
+                        <option value="japanese" data-lang="jp">Japones</option>
+                    </select>
+                </li>
+                <li class="nav-item">
+                    <button id="change-theme-button">
+                        <img src="img/light.svg" alt="" height="18px">
+                    </button>
+                </li>
+            </ul>
+        </div>
 
-    <input type="checkbox" id="checkbox">
-    <div class="nav-btn" id="nav-toggle">
-        <label for="checkbox" class="toggle">
-            <div class="bars" id="bar1"></div>
-            <div class="bars" id="bar2"></div>
-            <div class="bars" id="bar3"></div>
-        </label>
-    </div>
-</nav>
+        <input type="checkbox" id="checkbox">
+        <div class="nav-btn" id="nav-toggle">
+            <label for="checkbox" class="toggle">
+                <div class="bars" id="bar1"></div>
+                <div class="bars" id="bar2"></div>
+                <div class="bars" id="bar3"></div>
+            </label>
+        </div>
+    </nav>
     <!--==================== PROYECTOS ===================-->
 
     <section class="projects-section">
         <div class="projects-container" id="projectsContainer">
             <!-- Proyectos se agregan aquí dinámicamente con JavaScript -->
         </div>
-    
+
         <div class="modal" id="projectModal">
             <div class="modal-content">
                 <span class="close-button" id="closeModal">&times;</span>
                 <div id="projectDetails"></div>
             </div>
         </div>
-        
+
     </section>
 
     <!--================ FOOTER ================-->
-    <footer class="footer">
+    <footer class="footer" id="footer">
 
         <div class="footer_social">
             <a href="https://tiktok.com/@oxh_zxh" class="footer_icon" target="_blank"><i class='bx bxl-tiktok'></i></a>
@@ -88,9 +102,9 @@
 
     <!-- SCROLL REVEAL -->
     <script src="https://unpkg.com/scrollreveal"></script>
-
+    
     <!-- SCRIPT.JS -->
-    <script src="js/script.js"></script>
+    <!-- <script src="js/script.js"></script> -->
     <script src="js/portfolio.js"></script>
 </body>
 

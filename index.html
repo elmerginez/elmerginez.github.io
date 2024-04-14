@@ -44,10 +44,15 @@
                 <li class="nav-item"><a href="#portfolio" class="nav-link">PORTAFOLIO</a></li>
                 <li class="nav-item"><a href="#services" class="nav-link">SERVICIOS</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link">CONTACTO</a></li>
-                <ul>
-                    <li><a href="#" onclick="changeLanguage('english')">English</a></li>
-                    <li><a href="#" onclick="changeLanguage('spanish')">Español</a></li>
-                </ul>
+                <select name="" id="lang-selector" onchange="changeLanguage(this.value)">
+                    <option value="spanish">Espanol</option>
+                    <option value="english">Ingles</option>
+                    <option value="russian">Ruso</option>
+                    <option value="japanese">Japones</option>
+                </select>
+                <button id="theme-selector">
+                    <img src="img/light.svg" alt=""  height="18px">
+                </button>
             </ul>
         </div>
 
@@ -67,8 +72,17 @@
         <section class="home" id="home">
             <div class="home-container">
                 <div class="home-left">
-                    <h1 class="home-title headline push">Hola,<br>Soy <span class="home-title-color">Elmer
-                            Ginez</span><br>Desarrollador de<br>
+                    <h1 class="home-title headline push">
+                        Hola,
+                        <br>
+                        Soy
+                        <span class="home-title-color">
+                            Elmer
+                            Ginez
+                        </span>
+                        <br>
+                        Desarrollador de
+                        <br>
                         <span class="words-wrapper">
                             <b class="is-visible">Aplicaciones</b>
                             <!-- <b>Fotógrafo</b> -->
@@ -245,7 +259,7 @@
         </section>
 
         <!--================ FOOTER ================-->
-        <footer class="footer">
+        <footer class="footer" id="footer">
             <p>&copy; Todos los derechos reservados Elmer Ginez | Miwi 2024</p>
         </footer>
     </main>

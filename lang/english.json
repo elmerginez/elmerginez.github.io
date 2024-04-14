@@ -1,6 +1,80 @@
-{
-    "welcome_message": "Welcome to our website!",
-    "about_us": "About Us",
-    "contact_us": "Contact Us"
+[
+  {
+    "section": "navigation",
+    "links_name": [
+      "Home",
+      "About",
+      "Portfolio",
+      "Services",
+      "Contact",
+      "Start Chat"
+    ],
+    "languages": [
+      "Spanish",
+      "English",
+      "Russian",
+      "Japanese"
+    ]
+  },
+  {
+    "section": "home",
+    "title": "Hello, I'm Elmer Ginez Web Application Developer"
+  },
+  {
+    "section": "about",
+    "title": "About Me",
+    "sub_title": "I'm Elmer Ginez",
+    "text": "I am a passionate web and mobile developer with experience in creating innovative applications and high-performance websites. My goal is to deliver creative and effective solutions that meet my clients' needs and enhance their online presence.",
+    "button": "Download CV"
+  },
+  {
+    "section": "portfolio",
+    "title": "Projects",
+    "sub_title": "",
+    "text": "Here you can see some of my completed projects. If you are interested in contacting me to develop your own project, feel free to do so.",
+    "button": "See more projects"
+  },
+  {
+    "section": "services",
+    "title": "My Services",
+    "sub_title": "",
+    "text": "Here you can see the services I offer. If you need a web or mobile developer, feel free to contact me.",
+    "button": "",
+    "services": [
+      {
+        "title": "Web Development",
+        "short_text": "Creation of modern and attractive web applications, optimized to enhance user experience.",
+        "detailed_text": "Creation of modern and attractive web applications, optimized to enhance user experience. Includes both application design and development, as well as server implementation and database setup.",
+        "languages": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "PHP",
+          "MySQL"
+        ],
+        "button": "See more"
+      },
+      {
+        "title": "Mobile Development",
+        "short_text": "Creation of native and cross-platform mobile applications, optimized to enhance user experience.",
+        "detailed_text": "Creation of native and cross-platform mobile applications, optimized to enhance user experience. Includes both application design and development, as well as implementation on the operating system and database setup.",
+        "languages": [
+          "React Native",
+          "Flutter"
+        ],
+        "button": "See more"
+      }
+    ]
+  },
+  {
+    "section": "contact",
+    "title": "Contact",
+    "sub_title": "Don't hesitate to contact me!",
+    "text": "I'm here to help. If you have a project in mind, a creative idea you want to discuss, or just want to chat, feel free to get in touch with me!",
+    "sub_text": ["You can send me an email at:", "You can also find me on social media:"]
+  },
+  {
+    "section": "footer",
+    "text": "All rights reserved Elmer Ginez | Miwi 2024"
   }
-  
+]

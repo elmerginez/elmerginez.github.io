@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener('load', function () {
         loader.style.display = 'none';
     });
+    
     function setCookie(name, value, days) {
         const date = new Date();
         date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
@@ -51,7 +52,18 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function changeLanguage(language) {
-        // Cargar el JSON de idiomas
+        // Actualizar el idioma del documento
+        fetch(`lang/projects${language}.json`)
+            .then(response => response.json())
+            .then(projectsData => {
+                // Mostrar proyectos
+                projectsData.forEach(project => {
+                    const projectCard = createProjectCard(project);
+                    projectsContainer.appendChild(projectCard);
+                });
+            })
+            .catch(error => console.error("Error al cargar el JSON de proyectos:", error));
+
         fetch(`lang/${language}.json`)
             .then(response => response.json())
             .then(lang => {
@@ -63,50 +75,10 @@ document.addEventListener("DOMContentLoaded", function () {
                         footer(element)
                     }
                 })
-
-                // Cargar el JSON de proyectos
-                fetch(`lang/projects${language}.json`)
-                .then(response => response.json())
-                .then(projectsData => {
-                    // Mostrar proyectos
-                    projectsData.forEach(project => {
-                        const projectCard = createProjectCard(project);
-                        projectsContainer.appendChild(projectCard);
-                    });
-                })
-                .catch(error => console.error("Error al cargar el JSON de proyectos:", error));
             })
             .catch(error => console.error("Error al cargar el JSON de idiomas:", error));
         // Guardar el idioma seleccionado en una cookie
         setCookie('preferredLanguage', language, 30); // 30 días de expiración
-    }
-    function navBarHtml(lang) {
-        htmlNav = `<ul class="nav-list">
-            <li class="nav-item"><a href="index.html" class="nav-link active">${lang.links_name[0]}</a></li>
-            <li class="nav-item"><a href="https://wa.link/v1jz3e" class="nav-link" target="_blank">${lang.links_name[5]}</a>
-            </li>
-            <li class="nav-item">
-                <select name="" id="change-language-button">
-                    <option value="spanish" data-lang="es">XD${lang.languages[0]}</option>
-                    <option value="english" data-lang="en">${lang.languages[1]}</option>
-                    <option value="russian" data-lang="ru">${lang.languages[2]}</option>
-                    <option value="japanese" data-lang="jp">${lang.languages[3]}</option>
-                </select>
-            </li>
-            <li class="nav-item">
-                <button id="change-theme-button">
-                    <img src="img/light.svg" alt="" height="18px">
-                </button>
-            </li>
-        </ul>`
-        const nav = document.getElementById('nav-menu')
-        nav.innerHTML = htmlNav
-        const changeLanguageButton = document.getElementById('change-language-button');
-        changeLanguageButton.addEventListener('change', function () {
-            const selectedLanguage = changeLanguageButton.value;
-            changeLanguage(selectedLanguage);
-            console.log(selectedLanguage)
-        })
     }
 });
 
@@ -115,7 +87,28 @@ const projectsContainer = document.getElementById("projectsContainer");
 
 // Cargar el JSON de proyectos
 
-
+function navBarHtml(lang) {
+    htmlNav = `<ul class="nav-list">
+        <li class="nav-item"><a href="index.html" class="nav-link active">${lang.links_name[0]}</a></li>
+        <li class="nav-item"><a href="https://wa.link/v1jz3e" class="nav-link" target="_blank">${lang.links_name[5]}</a>
+        </li>
+        <li class="nav-item">
+            <select name="" id="change-language-button">
+                <option value="spanish" data-lang="es">XD${lang.languages[0]}</option>
+                <option value="english" data-lang="en">${lang.languages[1]}</option>
+                <option value="russian" data-lang="ru">${lang.languages[2]}</option>
+                <option value="japanese" data-lang="jp">${lang.languages[3]}</option>
+            </select>
+        </li>
+        <li class="nav-item">
+            <button id="change-theme-button">
+                <img src="img/light.svg" alt="" height="18px">
+            </button>
+        </li>
+    </ul>`
+    const nav = document.getElementById('nav-menu')
+    nav.innerHTML = htmlNav
+}
 
 function footer(lang) {
     htmlFooter = `<p>&copy; ${lang.text}</p>`
