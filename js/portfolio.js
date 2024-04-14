@@ -68,6 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 fetch(`lang/projects${language}.json`)
                 .then(response => response.json())
                 .then(projectsData => {
+                    projectsContainer.innerHTML = ""
                     // Mostrar proyectos
                     projectsData.forEach(project => {
                         const projectCard = createProjectCard(project);
@@ -87,15 +88,15 @@ document.addEventListener("DOMContentLoaded", function () {
             </li>
             <li class="nav-item">
                 <select name="" id="change-language-button">
-                    <option value="spanish" data-lang="es">XD${lang.languages[0]}</option>
-                    <option value="english" data-lang="en">${lang.languages[1]}</option>
-                    <option value="russian" data-lang="ru">${lang.languages[2]}</option>
-                    <option value="japanese" data-lang="jp">${lang.languages[3]}</option>
+                    <option value="es" ${getCookie('preferredLanguage') === 'es' ? 'selected' : ''}>🇪🇸 ${lang.languages[0]}</option>
+                    <option value="en" ${getCookie('preferredLanguage') === 'en' ? 'selected' : ''}>🇺🇸 ${lang.languages[1]}</option>
+                    <option value="ru" ${getCookie('preferredLanguage') === 'ru' ? 'selected' : ''}>🇷🇺 ${lang.languages[2]}</option>
+                    <option value="jp" ${getCookie('preferredLanguage') === 'jp' ? 'selected' : ''}>🇯🇵 ${lang.languages[3]}</option>
                 </select>
             </li>
             <li class="nav-item">
-                <button id="change-theme-button">
-                    <img src="img/light.svg" alt="" height="18px">
+                <button id="change-theme-button" style="border: none; background-color: transparent; cursor: pointer;">
+                    <img src="img/${savedTheme}.svg" alt="" height="18px">
                 </button>
             </li>
         </ul>`
@@ -105,7 +106,20 @@ document.addEventListener("DOMContentLoaded", function () {
         changeLanguageButton.addEventListener('change', function () {
             const selectedLanguage = changeLanguageButton.value;
             changeLanguage(selectedLanguage);
+            changeLanguageButton.value = selectedLanguage;
             console.log(selectedLanguage)
+        })
+        const changeThemeButton = document.getElementById('change-theme-button');
+        changeThemeButton.addEventListener('click', function () {
+            const currentTheme = getCookie('preferredTheme');
+            let newTheme = 'dark';
+            if (currentTheme === 'dark') {
+                newTheme = 'light';
+            }
+            changeThemeButton.innerHTML = `<img src="img/${newTheme}.svg" alt="" height="18px">`;
+            // document.body.style.backgroundColor = newTheme === 'dark' ? '#121212' : '#ffffff';
+            // document.body.style.color = newTheme === 'dark' ? '#ffffff' : '#000000';
+            changeTheme(newTheme);
         })
     }
 });

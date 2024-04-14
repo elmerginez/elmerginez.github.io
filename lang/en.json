@@ -18,7 +18,16 @@
   },
   {
     "section": "home",
-    "title": "Hello, I'm Elmer Ginez Web Application Developer"
+    "greeting": [
+      "Hello!",
+      "I'm",
+      "Elmer Ginez"
+    ],
+    "role": [
+      "Web Developer",
+      "Mobile Developer"
+    ],
+    "title": ""
   },
   {
     "section": "about",
@@ -71,7 +80,10 @@
     "title": "Contact",
     "sub_title": "Don't hesitate to contact me!",
     "text": "I'm here to help. If you have a project in mind, a creative idea you want to discuss, or just want to chat, feel free to get in touch with me!",
-    "sub_text": ["You can send me an email at:", "You can also find me on social media:"]
+    "sub_text": [
+      "You can send me an email at:",
+      "You can also find me on social media:"
+    ]
   },
   {
     "section": "footer",

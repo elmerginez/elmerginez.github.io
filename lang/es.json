@@ -18,7 +18,16 @@
   },
   {
     "section": "home",
-    "title": "Hola, Soy Elmer Ginez Desarrollador de Aplicaciones Web's"
+    "greeting": [
+      "¡Hola!",
+      "Soy",
+      "Elmer Ginez"
+    ],
+    "role": [
+      "Desarrollador web",
+      "Desarrollador móvil"
+    ],
+    "title": ""
   },
   {
     "section": "about",
@@ -71,7 +80,10 @@
     "title": "Contacto",
     "sub_title": "¡No dudes en contactarme!",
     "text": "Estoy aquí para ayudarte. Si tienes algún proyecto en mente, una idea creativa que quieras discutir o simplemente quieres charlar, ¡no dudes en ponerte en contacto conmigo!",
-    "sub_text": ["Puedes enviarme un correo electrónico a:", "También puedes encontrarme en las redes sociales:"]
+    "sub_text": [
+      "Puedes enviarme un correo electrónico a:",
+      "También puedes encontrarme en las redes sociales:"
+    ]
   },
   {
     "section": "footer",
