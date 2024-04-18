@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function navHtml(lang) {
         htmlNav = `<ul class="nav-list">
-            <li class="nav-item"><a href="index.html" class="nav-link active">${lang.links_name[0]}</a></li>
+            <li class="nav-item"><a href="#" class="nav-link active">${lang.links_name[0]}</a></li>
             <li class="nav-item"><a href="#about" class="nav-link">${lang.links_name[1]}</a></li>
             <li class="nav-item"><a href="#portfolio" class="nav-link">${lang.links_name[2]}</a></li>
             <li class="nav-item"><a href="#services" class="nav-link">${lang.links_name[3]}</a></li>
@@ -434,3 +434,4 @@ scrollReveal.reveal('.services', {});
 
 /* SCROLL CONTACT */
 scrollReveal.reveal('.contact', {});
+
