@@ -1,18 +1,8 @@
-/* Author --> @oxh.zxh */
-
 :root {
-  /* Colors */
-  /* Palette light theme */
   --color-background: #eeeeee;
   --first-color: #010124;
   --second-color: #3228c9;
   --third-color: #000000;
-
-  /* Palette night theme */
-  --color-background2: #010124;
-  --first-color2: #eeeeee;
-
-  --color-button: linear-gradient(270deg, #17c0e9, #c96ddd, #f45162);
 
   --bg-color: #1f242d;
   --second-bg-color: #323946;
@@ -20,26 +10,6 @@
   --main-color: #0ef;
 }
 
-/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-$   Table Of Content                                                                              $
-$                                                                                                 $
-$   01 --> Basic styles                                                                           $
-$   02 --> Extra styles                                                                           $
-$   03 --> Navigation styles                                                                      $
-$   04 --> Home content styles                                                                    $
-$   05 --> About content styles                                                                   $
-$   06 --> Portafolio content styles                                                              $
-$   07 --> Services content styles                                                                $
-$   08 --> Contact content styles                                                                 $
-$   09 --> Footer content styles                                                                  $
-$   10 --> Media query styles                                                                     $
-$                                                                                                 $
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
-
-
-/****************************
-*   01 start basic styles   *
-*****************************/
 *,
 ::before,
 ::after {
