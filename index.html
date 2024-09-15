@@ -1,252 +1,1683 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sitio web de Elmer Ginez (Miwi Code)">
-    <meta name="keywords" content="Elmer Ginez, miwi, miwi code">
+    <meta name="description" content="Sitio web de Elmer Ginez (MiwiE Code)">
+    <meta name="keywords" content="Elmer Ginez, miwie, miwie code">
     <meta name="author" content="Elmer Ginez">
     <link rel="canonical" href="https://elmerginez.github.io/">
     <script type="application/ld+json">
             {
                 "@context": "http://schema.org",
                 "@type": "Organization",
-                "name": "Elmer Ginez - Miwi",
+                "name": "Elmer Ginez - MiwiE",
                 "url": "https://elmerginez.github.io",
                 "logo": "https://www.ejemplo.com/favicon.ico"
             }
     </script>
-    <title>Elmer Ginez | Miwi</title>
+    <title>Elmer Ginez - MiwiE</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/plugins.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/dark.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/modalboxes.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
 </head>
 
-<body>
-    <div id="loader">
-        <div class="loader-inner"></div>
+<body >
+
+    <div id="preloader">
+        <div class="loader_line"></div>
     </div>
-    <nav class="nav" id="nav">
-        <div>
-            <img src="img/code-code.svg" alt="logo elmer ginez miwi" style="width: 18px;">
-            <a href="#" class="nav-logo">miwi<span class="blink">_</span></a>
-        </div>
 
-        <div class="nav-menu" id="nav-menu">
-            <ul class="nav-list">
-                <li class="nav-item"><a href="#home" class="nav-link active">INICIO</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">ACERCA DE</a></li>
-                <li class="nav-item"><a href="#portfolio" class="nav-link">PORTAFOLIO</a></li>
-                <li class="nav-item"><a href="#services" class="nav-link">SERVICIOS</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">CONTACTO</a></li>
-                <select name="" id="lang-selector" onchange="changeLanguage(this.value)">
-                    <option value="es">Espanol</option>
-                    <option value="en">Ingles</option>
-                    <option value="ru">Ruso</option>
-                    <option value="jp">Japones</option>
-                </select>
-                <button id="theme-selector" >
-                    <img src="img/light.svg" alt=""  height="18px">
-                </button>
-            </ul>
-        </div>
+    <div class="miwie_tm_all_wrap w-full float-left clear-both h-auto relative" data-magic-cursor="show">
 
-        <input type="checkbox" id="checkbox">
-        <div class="nav-btn" id="nav-toggle">
-            <label for="checkbox" class="toggle">
-                <div class="bars" id="bar1"></div>
-                <div class="bars" id="bar2"></div>
-                <div class="bars" id="bar3"></div>
-            </label>
-        </div>
-    </nav>
-    <main>
-        <section class="home" id="home">
-            <div class="home-container">
-                <div class="home-left" id="home-left">
-                    <h1 class="home-title headline push">
-                        Hola,
-                        <br>
-                        Soy
-                        <span class="home-title-color">
-                            Elmer
-                            Ginez
-                        </span>
-                        <br>
-                        Desarrollador de
-                        <br>
-                        <span class="words-wrapper">
-                            <b class="is-visible">Aplicaciones</b>
-                            <b>Web's</b>
-                        </span>
-                    </h1>
-                </div>
-
-                <div class="home-right">
-                    <img class="hoodie-guy" src="img/home-removebg-preview.png" alt="elmer ginez miwi code">
-                    <!-- <div class="circle">
-                        <span style="--i:1;"><img src="img/flutter-svgrepo-com.svg" height="50px"></span>
-                        <span style="--i:2;"><img src="img/python-svgrepo-com.svg" height="50px"></span>
-                        <span style="--i:3;"><img src="img/bash-icon-svgrepo-com.svg" height="50px"></span>
-                        <span style="--i:4;"><img src="img/nodejs-icon-svgrepo-com.svg" height="50px"></span>
-                        <span style="--i:5;"><img src="img/html-5-svgrepo-com.svg" height="50px"></span>
-                        <span style="--i:6;"><img src="img/mysql-svgrepo-com.svg" height="50px"></span>
-                        <span style="--i:7;"><img src="img/css-3-svgrepo-com.svg" height="50px"></span>
-                        <span style="--i:8;"><img src="img/javascript-svgrepo-com.svg" height="50px"></span>
-                    </div> -->
-                </div>
-            </div>
-            <div class="home-social">
-                <a href="https://tiktok.com/@elmerginez55" class="home-social-icon" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="1em"
-                        viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path style="fill: #000000;"
-                            d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
-                    </svg>
-                </a>
-                <a href="https://instagram.com/elmerginez55" class="home-social-icon" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="1em"
-                        viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path style="fill: #000000;"
-                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-                    </svg>
-                </a>
-                <a href="https://github.com/elmerginez" class="home-social-icon" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="1em"
-                        viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path style="fill: #000000;"
-                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
-                    </svg>
-                </a>
-                <a href="https://facebook.com/elmerginez55" class="home-social-icon" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="1em"
-                        viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                        <path
-                            d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
-                    </svg>
-                </a>
-            </div>
-        </section>
-        <!--================= ABOUT ==================-->
-        <section class="about section" id="about">
-            <h2>Acerca de mi</h2>
-            <div class="about-container">
-                <div class="about-left">
-                    <img src="img/elmerginez (1).webp" alt="elmer ginez miwi">
-                </div>
-                <div class="about-right">
-                    <h2>Soy Elmer Ginez</h2>
-                    <p>
-                        Soy un apasionado desarrollador web y móvil con experiencia en la creación de aplicaciones
-                        innovadoras y sitios web de alto rendimiento. Mi objetivo es ofrecer soluciones creativas y
-                        efectivas que satisfagan las necesidades de mis clientes y mejoren su presencia en línea.
-                    </p>
-                    <div>
-                        <a href="#" class="button">Descargar CV</a>
+        <div class="miwie_tm_mobile_menu w-full h-auto fixed top-0 left-0 hidden z-[10] middle:block">
+            <div class="mobile_menu_inner w-full h-auto float-left clear-both bg-white py-[10px] px-[20px]">
+                <div class="mobile_in w-full h-auto clear-both float-left flex items-center justify-between">
+                    <div class="logo">
+                        <a href="#"><img class="max-w-[90px] max-h-[70px]" src="assets/img/logo/light.svg" alt /></a>
+                    </div>
+                    <div class="trigger leading-[0]">
+                        <div class="hamburger hamburger--slider">
+                            <div class="hamburger-box">
+                                <div class="hamburger-inner"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!--============ PORTFOLIO =============-->
-        <section class="portfolio" id="portfolio">
-            <h2 class="heading">Proyectos</h2>
-            <p>Aún estoy trabajando en nuevos proyectos emocionantes. ¡Vuelve pronto para ver mis últimos
-                trabajos!<br><br></p>
-
-            <div class="portfolio-container" id="portfolio-container">
-                <!-- Los tres primeros proyectos -->
-            </div>
-            <div class="portfolio-all">
-                <a href="portfolio.html" class="button">Ver todos los proyectos</a>
-            </div>
-
-        </section>
-        <!--============ SERVICES =============-->
-        <section class="services" id="services">
-            <h2 class="heading">Mis servicios</h2>
-            <div class="services-container">
-                <div class="services-box">
-                    <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <path
-                                d="M6 7.9502H6.01M9 7.9502H9.01M12 7.9502H12.01M6.2 19H17.8C18.9201 19 19.4802 19 19.908 18.782C20.2843 18.5903 20.5903 18.2843 20.782 17.908C21 17.4802 21 16.9201 21 15.8V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.07989 19 6.2 19Z"
-                                stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-                            </path>
-                        </g>
-                    </svg>
-                    <h3>Desarrollo web</h3>
-                    <p>
-                        Desarrollo de sitios web atractivos y funcionales utilizando las últimas tecnologías como HTML,
-                        CSS y JavaScript.
-                    </p>
-                    <a href="#" class="button">Leer mas</a>
-                </div>
-
-                <div class="services-box">
-                    <svg width="64px" height="64px" viewBox="0 0 24.00 24.00" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <path
-                                d="M12 18H12.01M11 6H13M9.2 21H14.8C15.9201 21 16.4802 21 16.908 20.782C17.2843 20.5903 17.5903 20.2843 17.782 19.908C18 19.4802 18 18.9201 18 17.8V6.2C18 5.0799 18 4.51984 17.782 4.09202C17.5903 3.71569 17.2843 3.40973 16.908 3.21799C16.4802 3 15.9201 3 14.8 3H9.2C8.0799 3 7.51984 3 7.09202 3.21799C6.71569 3.40973 6.40973 3.71569 6.21799 4.09202C6 4.51984 6 5.07989 6 6.2V17.8C6 18.9201 6 19.4802 6.21799 19.908C6.40973 20.2843 6.71569 20.5903 7.09202 20.782C7.51984 21 8.07989 21 9.2 21Z"
-                                stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-                            </path>
-                        </g>
-                    </svg>
-                    <h3>Desarrollo de apps</h3>
-                    <p>
-                        Creación de aplicaciones móviles atractivas y eficientes utilizando Flutter y Dart para ofrecer
-                        la mejor experiencia al usuario.
-                    </p>
-                    <a href="#" class="button">Leer mas</a>
+            <div class="dropdown w-full h-auto clear-both float-left bg-white hidden">
+                <div class="dropdown_inner w-full h-auto clear-both float-left py-[25px] px-[20px]">
+                    <ul class="anchor_nav">
+                        <li class="current float-left w-full"><a class="text-black inline-block p-0 font-medium"
+                                href="#home">Home</a></li>
+                        <li class="float-left w-full"><a class="text-black inline-block p-0 font-medium"
+                                href="#about">About</a></li>
+                        <li class="float-left w-full"><a class="text-black inline-block p-0 font-medium"
+                                href="#service">Service</a></li>
+                        <li class="float-left w-full"><a class="text-black inline-block p-0 font-medium"
+                                href="#portfolio">Portfolio</a></li>
+                        <li class="float-left w-full"><a class="text-black inline-block p-0 font-medium"
+                                href="#blog">Blog</a></li>
+                        <li class="float-left w-full"><a class="text-black inline-block p-0 font-medium"
+                                href="#contact">Contact</a></li>
+                    </ul>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!--============= CONTACT ===============-->
-        <section class="contact" id="contact">
-            <h2 class="section-title">Contacto</h2>
-            <div class="contact-container">
-                <div class="contact-left">
-                    <div class="contact-info">
-                        <h3>¡No dudes en contactarme!</h3>
-                        <p>
-                            Estoy aquí para ayudarte. Si tienes algún proyecto en mente, una idea creativa
-                            que quieras discutir o simplemente quieres charlar, ¡no dudes en ponerte en contacto
-                            conmigo!
-                        </p>
-                        <p>Puedes enviarme un correo electrónico a:</p>
-                        <a href="mailto:freddgineztm@gmail.com">freddgineztm@gmail.com</a>
+        <div
+            class="miwie_tm_header fixed top-0 left-0 right-0 z-[10] py-[25px] px-[150px] transition-all duration-300 middle:hidden">
+            <div class="header_in w-full flex items-center justify-between">
+                <div class="logo">
+                    <a href="#"><img class="max-w-[170px] max-h-[90px] theme-update" src="assets/img/logo/light.svg" alt /></a>
+                </div>
+                <div class="menu relative">
+                    <ul class="anchor_nav flex items-center">
+                        <li class="current mr-[50px]"><a class="text-[#5A5A5A]" href="#home">Home</a></li>
+                        <li class="mr-[50px]"><a class="text-[#5A5A5A]" href="#about">About</a></li>
+                        <li class="mr-[50px]"><a class="text-[#5A5A5A]" href="#service">Service</a></li>
+                        <li class="mr-[50px]"><a class="text-[#5A5A5A]" href="#portfolio">Portfolio</a></li>
+                        <li class="mr-[50px]"><a class="text-[#5A5A5A]" href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <span class="ccc"></span>
+                </div>
+
+                <!-- Botón con dropdown -->
+                <div class="button" style="position: relative;">
+                    <div onclick="toggleTheme()">
+                        <a
+                            class="text-main-color font-bold font-dm inline-block rounded-[18px] px-[40px] pt-[17px] pb-[18px] transition-all duration-300 lang-theme">
+                            <img class="svge" src="assets/img/svg/sun-1-svgrepo-com.svg">
+                        </a>
                     </div>
-                    <div class="contact-social">
-                        <p>También puedes encontrarme en:</p>
-                        <ul>
-                            <li><a href="https://wa.link/v1jz3e" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="miwie_tm_hero w-full min-h-[100vh] relative float-left" id="home">
+            <div class="container min-h-[100vh]">
+                <div class="content min-h-[100vh] relative flex items-center justify-between">
+                    <div class="details w-1/2 pr-[50px]">
+                        <div class="short mb-[32px]">
+                            <h3 class="text-[80px] font-medium tracking-[-4px] mb-[11px]">Elmer Ginez <img
+                                    class="svg w-[45px] h-[45px] relative left-[-7px]" src="assets/img/svg/hi.svg"
+                                    alt /></h3>
+                            <span class="job inline-block relative text-[24px] pl-[97px]">Full-Stack Developer</span>
+                        </div>
+                        <div class="text mb-[70px]">
+                            <p class="text-[16px] text-[#5A5A5A] leading-[26px] max-w-[400px]">I'm
+                                ful-stack dev
+                                based in Peru, and I'm very passionate
+                                and dedicated to my work.</p>
+                        </div>
+                        <div class="buttons flex items-center">
+                            <div class="miwie_tm_boxed_button">
+                                <a class="anchor" href="#contact">Say Hello
+                                    <img class="svg" src="assets/img/svg/send.svg" alt /></a>
+                            </div>
+                            <div class="miwie_tm_simple_button">
+                                <a class="line_effect anchor" href="#portfolio">My Works <img class="svg"
+                                        src="assets/img/svg/top-arrow.svg" alt /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="miwie_tm_follow absolute bottom-[120px] flex items-center">
+                    <span class="text-[16px] font-medium">Follow me:</span>
+                    <ul class="flex items-center relative top-[5px] ml-[20px]">
+                        <li class="mr-[20px]"><a
+                                class="inline-block relative w-[56px] h-[56px] bg-[#F6F6F6] rounded-full transition-all duration-300"
+                                href="#"><img
+                                    class="svg absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] transition-all duration-300"
+                                    src="assets/img/svg/social/be.svg" alt /></a></li>
+                        <li class="mr-[20px]"><a
+                                class="inline-block relative w-[56px] h-[56px] bg-[#F6F6F6] rounded-full transition-all duration-300"
+                                href="#"><img
+                                    class="svg absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] transition-all duration-300"
+                                    src="assets/img/svg/social/dribbble.svg" alt /></a></li>
+                        <li><a class="inline-block relative w-[56px] h-[56px] bg-[#F6F6F6] rounded-full transition-all duration-300"
+                                href="#"><img
+                                    class="svg absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] transition-all duration-300"
+                                    src="assets/img/svg/social/instagarm.svg" alt /></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="miwie_tm_down absolute left-[150px] bottom-[45px]">
+                <a class="anchor" href="#about"><img class="svg" src="assets/img/svg/down_button.svg" alt /></a>
+            </div>
+            <div class="avatar absolute w-1/2 right-0 bottom-[-8px]">
+                <div class="img relative inline-block">
+                    <img class="max-w-[700px] max-h-[760px]" src="assets/img/hero/1.jpg" alt />
+                    <div class="video_button">
+                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=kt1Edu0dbvY"><img
+                                class="anim_circle" src="assets/img/hero/welcome1.png" alt /><img class="svg"
+                                src="assets/img/svg/play.svg" alt /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="miwie_tm_section w-full h-auto clear-both float-left" id="about">
+            <div
+                class="miwie_tm_about w-full h-auto clear-both float-left bg-[#6244C5] px-0 pt-[180px] pb-[120px] mb-[120px]">
+                <div class="about_in w-full h-auto max-w-[1070px] mx-auto my-0 flex items-center">
+                    <div class="left w-1/2 pr-[50px]">
+                        <div class="box bg-[#FFC448] inline-block overflow-hidden pb-[85px] relative">
+                            <h3
+                                class="year font-oswald tracking-[-4px] font-extrabold text-[395px] relative mr-[-30px] mt-[-95px] text-[#6244C5] leading-[1]">
+                                -  1</h3>
+                            <span class="experience text-[24px] pl-[50px] mt-[6px] inline-block">Years
+                                of
+                                Experience</span>
+                            <h3
+                                class="name text-[80px] text-[#6244C5] font-bold tracking-[-4px] leading-[1] uppercase absolute bottom-[-30px] left-[-20px] w-[300%]">
+                                Elmer Ginez</h3>
+                        </div>
+                    </div>
+                    <div class="right w-1/2 relative">
+                        <span class="element absolute top-0 right-full mr-[15px] mt-[-20px]"><img
+                                class="svg w-[80px] h-[80px] text-transparent" src="assets/img/svg/element.svg"
+                                alt /></span>
+                        <div class="miwie_tm_main_title w-full float-left mb-[30px]">
+                            <h3 class="text-white tracking-[-2px] text-[56px] font-bold"><span class="relative">About
+                                    Me</span></h3>
+                        </div>
+                        <div class="text w-full float-left mb-[50px]">
+                            <p class="text-[rgba(255,255,255,.7)] font-light leading-[32px]">With
+                                1 years experience as
+                                a professional Web developer, I have
+                                acquired the skills and knowledge necessary
+                                to make
+                                your project a success. I enjoy every step
+                                of the design process, from discussion and
+                                collaboration.</p>
+                        </div>
+                        <div class="short w-full float-left flex items-center">
+                            <div class="miwie_tm_boxed_button">
+                                <a href="assets/img/cv/1p.jpg" download>Download CV <img class="svg"
+                                        src="assets/img/svg/paper.svg" alt /></a>
+                            </div>
+                            <img class="max-w-[200px] max-h-[200px] ml-[50px]" src="assets/img/signature1.png" alt />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="miwie_tm_section w-full h-auto clear-both float-left">
+            <div class="miwie_tm_informations w-full h-auto clear-both float-left mb-[125px]">
+                <div class="container">
+                    <div class="informations_inner w-full h-auto flex">
+                        <div class="left w-1/2 pr-[100px]">
+                            <div class="miwie_tm_main_title w-full float-left">
+                                <h3 class="tracking-[-2px] text-[56px] font-bold"><span class="relative">My
+                                        expert<br />areas</span></h3>
+                            </div>
+                            <div class="text w-full float-left mt-[30px] mb-[40px]">
+                                <p class="mb-[35px]">You can express
+                                    yourself however you want and whenever
+                                    you want,
+                                    for free. You can customize a template
+                                    or make your own from scratch, with an
+                                    immersive library at your disposal. You
+                                    can express yourself however you want
+                                    and
+                                    whenever you free.</p>
+                                <p>You can customize a template or make your
+                                    own from scratch, with an immersive
+                                    library
+                                    at your disposal.</p>
+                            </div>
+                            <div class="miwie_tm_boxed_button">
+                                <a href="#">My Resume <img class="svg" src="assets/img/svg/paper.svg" alt /></a>
+                            </div>
+                        </div>
+                        <div class="right w-1/2 top-[33px] relative">
+                            <div class="filter w-full float-left relative">
+                                <ul>
+                                    <li class="mr-[70px] inline-block"><a
+                                            class="current text-main-color font-dm font-bold inline-block relative"
+                                            href="#" data-tab="tab_1"><span class="relative inline-block">Skills</span>
+                                            <img class="svg w-[24px] h-[24px] relative ml-[6px]"
+                                                src="assets/img/svg/top-arrow.svg" alt /></a></li>
+                                    <li class="mr-[70px] inline-block"><a
+                                            class="text-main-color font-dm font-bold inline-block relative" href="#"
+                                            data-tab="tab_2"><span class="relative inline-block">Experience</span>
+                                            <img class="svg w-[24px] h-[24px] relative ml-[6px]"
+                                                src="assets/img/svg/top-arrow.svg" alt /></a></li>
+                                    <li class="inline-block"><a
+                                            class="text-main-color font-dm font-bold inline-block relative" href="#"
+                                            data-tab="tab_3"><span>Education</span class="relative inline-block">
+                                            <img class="svg w-[24px] h-[24px] relative ml-[6px]"
+                                                src="assets/img/svg/top-arrow.svg" alt /></a></li>
+                                </ul>
+                                <span class="ccc"></span>
+                            </div>
+                            <div class="content w-full float-left">
+                                <div id="tab_1" class="wrapper current w-full h-auto clear-both float-left">
+                                    <div class="skillbox w-full float-left mt-[110px]">
+                                        <ul class="ml-[-20px]">
+                                            <li class="mb-[45px] w-1/3 float-left pl-[20px]">
+                                                <div class="list_inner w-full h-auto clear-both float-left relative">
+                                                    <span
+                                                        class="icon w-[40px] h-[40px] rounded-full bg-main-color inline-block relative mb-[3px]"><span
+                                                            class="in w-[25px] h-[25px] inline-block absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] bg-white rounded-[6px]"><img
+                                                                class="svg absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] z-[1] w-[16px] h-[16px]"
+                                                                src="assets/img/svg/figma1.svg" alt /></span></span>
+                                                    <p class="name font-dm text-black">JavaScript
+                                                        <span class="font-bold">(0%)</span>
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="mb-[45px] w-1/3 float-left pl-[20px]">
+                                                <div class="list_inner w-full h-auto clear-both float-left relative">
+                                                    <span
+                                                        class="icon w-[40px] h-[40px] rounded-full bg-main-color inline-block relative mb-[3px]"><span
+                                                            class="in w-[25px] h-[25px] inline-block absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] bg-white rounded-[6px]"><img
+                                                                class="svg absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] z-[1] w-[16px] h-[16px]"
+                                                                src="assets/img/svg/Ae1.svg" alt /></span></span>
+                                                    <p class="name font-dm text-black">Python <span class="font-bold">(0%)</span></p>
+                                                </div>
+                                            </li>
+                                            <li class="mb-[45px] w-1/3 float-left pl-[20px]">
+                                                <div class="list_inner w-full h-auto clear-both float-left relative">
+                                                    <span
+                                                        class="icon w-[40px] h-[40px] rounded-full bg-main-color inline-block relative mb-[3px]"><span
+                                                            class="in w-[25px] h-[25px] inline-block absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] bg-white rounded-[6px]"><img
+                                                                class="svg absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] z-[1] w-[16px] h-[16px]"
+                                                                src="assets/img/svg/photoshop1.svg" alt /></span></span>
+                                                    <p class="name font-dm text-black">MySQL
+                                                        <span class="font-bold">(5%)</span>
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="mb-[45px] w-1/3 float-left pl-[20px]">
+                                                <div class="list_inner w-full h-auto clear-both float-left relative">
+                                                    <span
+                                                        class="icon w-[40px] h-[40px] rounded-full bg-main-color inline-block relative mb-[3px]"><span
+                                                            class="in w-[25px] h-[25px] inline-block absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] bg-white rounded-[6px]"><img
+                                                                class="svg absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] z-[1] w-[16px] h-[16px]"
+                                                                src="assets/img/svg/Xd1.svg" alt /></span></span>
+                                                    <p class="name font-dm text-black">MariaDB
+                                                        <span class="font-bold">(5%)</span>
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="mb-[45px] w-1/3 float-left pl-[20px]">
+                                                <div class="list_inner w-full h-auto clear-both float-left relative">
+                                                    <span
+                                                        class="icon w-[40px] h-[40px] rounded-full bg-main-color inline-block relative mb-[3px]"><span
+                                                            class="in w-[25px] h-[25px] inline-block absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] bg-white rounded-[6px]"><img
+                                                                class="svg absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] z-[1] w-[16px] h-[16px]"
+                                                                src="assets/img/svg/illustrator1.svg"
+                                                                alt /></span></span>
+                                                    <p class="name font-dm text-black">Kotlin
+                                                        <span class="font-bold">(0%)</span>
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="mb-[45px] w-1/3 float-left pl-[20px]">
+                                                <div class="list_inner w-full h-auto clear-both float-left relative">
+                                                    <span
+                                                        class="icon w-[40px] h-[40px] rounded-full bg-main-color inline-block relative mb-[3px]"><span
+                                                            class="in w-[25px] h-[25px] inline-block absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] bg-white rounded-[6px]"><img
+                                                                class="svg absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] z-[1] w-[16px] h-[16px]"
+                                                                src="assets/img/svg/Id1.svg" alt /></span></span>
+                                                    <p class="name font-dm text-black">NodeJS
+                                                        <span class="font-bold">(5%)</span>
+                                                    </p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="tab_2" class="wrapper w-full h-auto clear-both float-left">
+                                    <div class="timelinebox w-full float-left mt-[100px]">
+                                        <ul class="ml-[-20px]">
+                                            <li class="mb-[37px] w-1/2 float-left pl-[20px]">
+                                                <div class="list_inner w-full h-auto clear-both float-left relative">
+                                                    <div class="time w-full float-left mb-[25px]">
+                                                        <span class="year text-[#6244C5] block mb-[2px]">2021
+                                                            -
+                                                            Present</span>
+                                                        <span class="company">Bauen
+                                                            Software
+                                                            Inc.</span>
+                                                    </div>
+                                                    <div class="job w-full float-left">
+                                                        <h3 class="text-[21px]"><span
+                                                                class="inline-block relative">Web Developer</span>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="mb-[37px] w-1/2 float-left pl-[20px]">
+                                                <div class="list_inner w-full h-auto clear-both float-left relative">
+                                                    <div class="time w-full float-left mb-[25px]">
+                                                        <span class="year text-[#6244C5] block mb-[2px]">2020
+                                                            -
+                                                            2021</span>
+                                                        <span class="company">Bauen
+                                                            Software
+                                                            Inc.</span>
+                                                    </div>
+                                                    <div class="job w-full float-left">
+                                                        <h3 class="text-[21px]"><span class="inline-block relative">Web Developer</span></h3>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="mb-[37px] w-1/2 float-left pl-[20px]">
+                                                <div class="list_inner w-full h-auto clear-both float-left relative">
+                                                    <div class="time w-full float-left mb-[25px]">
+                                                        <span class="year text-[#6244C5] block mb-[2px]">2018
+                                                            -
+                                                            2020</span>
+                                                        <span class="company">Bauen
+                                                            Software
+                                                            Inc.</span>
+                                                    </div>
+                                                    <div class="job w-full float-left">
+                                                        <h3 class="text-[21px]"><span class="inline-block relative">Web Developer</span></h3>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="mb-[37px] w-1/2 float-left pl-[20px]">
+                                                <div class="list_inner w-full h-auto clear-both float-left relative">
+                                                    <div class="time w-full float-left mb-[25px]">
+                                                        <span class="year text-[#6244C5] block mb-[2px]">2016
+                                                            -
+                                                            2018</span>
+                                                        <span class="company">Bauen
+                                                            Software
+                                                            Inc.</span>
+                                                    </div>
+                                                    <div class="job w-full float-left">
+                                                        <h3 class="text-[21px]"><span class="inline-block relative">Web Developer</span></h3>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="tab_3" class="wrapper w-full h-auto clear-both float-left">
+                                    <div class="timelinebox w-full float-left mt-[100px]">
+                                        <ul class="ml-[-20px]">
+                                            <li class="mb-[37px] w-1/2 float-left pl-[20px]">
+                                                <div class="list_inner w-full h-auto clear-both float-left relative">
+                                                    <div class="time w-full float-left mb-[25px]">
+                                                        <span class="year text-[#6244C5] block mb-[2px]">2021
+                                                            -
+                                                            Present</span>
+                                                        <span class="company">Stanford
+                                                            Univercity</span>
+                                                    </div>
+                                                    <div class="job w-full float-left">
+                                                        <h3 class="text-[21px]"><span class="inline-block relative">Web Development</span></h3>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="mb-[37px] w-1/2 float-left pl-[20px]">
+                                                <div class="list_inner w-full h-auto clear-both float-left relative">
+                                                    <div class="time w-full float-left mb-[25px]">
+                                                        <span class="year text-[#6244C5] block mb-[2px]">2020
+                                                            -
+                                                            2021</span>
+                                                        <span class="company">Stanford Univercity</span>
+                                                    </div>
+                                                    <div class="job w-full float-left">
+                                                        <h3 class="text-[21px]"><span class="inline-block relative">Web Development</span></h3>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="mb-[37px] w-1/2 float-left pl-[20px]">
+                                                <div class="list_inner w-full h-auto clear-both float-left relative">
+                                                    <div class="time w-full float-left mb-[25px]">
+                                                        <span class="year text-[#6244C5] block mb-[2px]">2018
+                                                            -
+                                                            2020</span>
+                                                        <span class="company">Stanford Univercity</span>
+                                                    </div>
+                                                    <div class="job w-full float-left">
+                                                        <h3 class="text-[21px]"><span class="inline-block relative">Web Development</span></h3>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="mb-[37px] w-1/2 float-left pl-[20px]">
+                                                <div class="list_inner w-full h-auto clear-both float-left relative">
+                                                    <div class="time w-full float-left mb-[25px]">
+                                                        <span class="year text-[#6244C5] block mb-[2px]">2017
+                                                            -
+                                                            2018</span>
+                                                        <span class="company">Stanford Univercity</span>
+                                                    </div>
+                                                    <div class="job w-full float-left">
+                                                        <h3 class="text-[21px]"><span class="inline-block relative">Web Development</span></h3>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="miwie_tm_section w-full h-auto clear-both float-left">
+            <div class="miwie_tm_counter w-full h-auto clear-both float-left mb-[92px]">
+                <div class="container">
+                    <div class="counter_list w-full h-auto clear-both float-left">
+                        <ul class="ml-[-30px]">
+                            <li class="mb-[30px] float-left pl-[30px] w-1/4 text-center">
+                                <div class="list_inner w-full h-auto clear-both float-left relative">
+                                    <h3 class="font-normal text-[64px] font-kaushan mb-[10px] relative z-[2]"><span
+                                            class="counter_item" data-from="0" data-to="19" data-speed="2000">0</span>
+                                    </h3>
+                                    <span class="title relative z-[2]">Trainings</span>
+                                </div>
                             </li>
-                            <li><a href="https://t.me/miwicode" target="_blank" rel="noopener noreferrer">Telegram</a>
+                            <li class="mb-[30px] float-left pl-[30px] w-1/4 text-center">
+                                <div class="list_inner w-full h-auto clear-both float-left relative">
+                                    <h3 class="font-normal text-[64px] font-kaushan mb-[10px] relative z-[2]"><span
+                                            class="counter_item" data-from="0" data-to="4" data-speed="2000">0</span>
+                                    </h3>
+                                    <span class="title relative z-[2]">Written
+                                        Book</span>
+                                </div>
+                            </li>
+                            <li class="mb-[30px] float-left pl-[30px] w-1/4 text-center">
+                                <div class="list_inner w-full h-auto clear-both float-left relative">
+                                    <h3 class="font-normal text-[64px] font-kaushan mb-[10px] relative z-[2]"><span
+                                            class="counter_item" data-from="0" data-to="27" data-speed="2000">0</span>
+                                    </h3>
+                                    <span class="title relative z-[2]">Listeners</span>
+                                </div>
+                            </li>
+                            <li class="mb-[30px] float-left pl-[30px] w-1/4 text-center">
+                                <div class="list_inner w-full h-auto clear-both float-left relative">
+                                    <h3 class="font-normal text-[64px] font-kaushan mb-[10px] relative z-[2]"><span
+                                            class="counter_item" data-from="0" data-to="1" data-speed="2000">0</span>
+                                    </h3>
+                                    <span class="title relative z-[2]">Own
+                                        Projects</span>
+                                </div>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </section>
-        <footer class="footer" id="footer">
-            <p>&copy; Todos los derechos reservados Elmer Ginez | Miwi 2024</p>
-        </footer>
-    </main>
-    <div class="modal" id="projectModal">
-        <div class="modal-content">
-            <span class="close-button" id="closeModal">&times;</span>
-            <div id="projectDetails"></div>
         </div>
+
+        <div class="miwie_tm_section w-full h-auto clear-both float-left" id="service">
+            <div class="miwie_tm_service w-full h-auto clear-both float-left px-0 py-[120px] bg-[#fafafb]">
+                <div class="container">
+                    <div class="miwie_tm_main_title w-full float-left">
+                        <h3 class="tracking-[-2px] text-[56px] font-bold"><span class="relative">Services<br />I
+                                Provide</span></h3>
+                    </div>
+                    <div class="service_list w-full h-auto clear-both float-left mt-[100px] relative">
+                        <ul class="relative z-[2]">
+                            <li class="current relative">
+                                <div
+                                    class="list_inner w-full flex items-center justify-between relative pt-[27px] pb-[26px] pl-[25px] pr-[35px]">
+                                    <div class="left w-[40%] flex">
+                                        <span
+                                            class="number inline-block text-[#6244C5] text-[24px] font-dm transition-all duration-300">01</span>
+                                        <h3 class="title text-[30px] font-medium pl-[30px] transition-all duration-300">
+                                            UI/UX Design</h3>
+                                    </div>
+                                    <div class="right w-[60%] flex items-center justify-between">
+                                        <div class="text pr-[150px]">
+                                            <p class="transition-all duration-300">You
+                                                can customize a template
+                                                or make
+                                                your own from scratch,
+                                                with an immersive
+                                                library at your
+                                                disposal...</p>
+                                        </div>
+                                        <div class="arrow leading-[1]">
+                                            <img class="svg w-[25px] h-[25px] transition-all duration-300"
+                                                src="assets/img/svg/top-arrow.svg" alt />
+                                        </div>
+                                    </div>
+                                    <a class="miwie_tm_full_link absolute inset-0 z-[5]" href="#"></a>
+
+                                    <img class="popup_service_image" src="assets/img/service/1.jpg" alt />
+                                    <div class="service_hidden_details">
+                                        <div class="service_popup_informations">
+                                            <div class="descriptions">
+                                                <p>miwie is a leading
+                                                    web design agency
+                                                    with an
+                                                    award-winning design
+                                                    team that creates
+                                                    innovative,
+                                                    effective websites
+                                                    that capture your
+                                                    brand, improve your
+                                                    conversion rates,
+                                                    and maximize your
+                                                    revenue to
+                                                    help grow your
+                                                    business and achieve
+                                                    your goals.</p>
+                                                <p>In today’s digital
+                                                    world, your website
+                                                    is the first
+                                                    interaction
+                                                    consumers have with
+                                                    your business.
+                                                    That's why almost 95
+                                                    percent of a
+                                                    user’s first
+                                                    impression relates
+                                                    to web design. It’s
+                                                    also why web
+                                                    design services can
+                                                    have an immense
+                                                    impact on your
+                                                    company’s bottom
+                                                    line.</p>
+                                                <p>That’s why more
+                                                    companies are not
+                                                    only reevaluating
+                                                    their website’s
+                                                    design but also
+                                                    partnering with
+                                                    miwie, the web
+                                                    design agency that’s
+                                                    driven more than
+                                                    $2.4 billion in
+                                                    revenue for its
+                                                    clients. With over
+                                                    50 web design awards
+                                                    under our belt,
+                                                    we're confident we
+                                                    can design a
+                                                    custom website that
+                                                    drives sales for
+                                                    your unique
+                                                    business.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li class="relative">
+                                <div
+                                    class="list_inner w-full flex items-center justify-between relative pt-[27px] pb-[26px] pl-[25px] pr-[35px]">
+                                    <div class="left w-[40%] flex">
+                                        <span
+                                            class="number inline-block text-[#6244C5] text-[24px] font-dm transition-all duration-300">02</span>
+                                        <h3 class="title text-[30px] font-medium pl-[30px] transition-all duration-300">
+                                            User Research</h3>
+                                    </div>
+                                    <div class="right w-[60%] flex items-center justify-between">
+                                        <div class="text pr-[150px]">
+                                            <p class="transition-all duration-300">You
+                                                can customize a template
+                                                or make
+                                                your own from scratch,
+                                                with an immersive
+                                                library at your
+                                                disposal...</p>
+                                        </div>
+                                        <div class="arrow leading-[1]">
+                                            <img class="svg w-[25px] h-[25px] transition-all duration-300"
+                                                src="assets/img/svg/top-arrow.svg" alt />
+                                        </div>
+                                    </div>
+                                    <a class="miwie_tm_full_link absolute inset-0 z-[5]" href="#"></a>
+
+                                    <img class="popup_service_image" src="assets/img/service/2.jpg" alt />
+                                    <div class="service_hidden_details">
+                                        <div class="service_popup_informations">
+                                            <div class="descriptions">
+                                                <p>miwie is a leading
+                                                    web design agency
+                                                    with an
+                                                    award-winning design
+                                                    team that creates
+                                                    innovative,
+                                                    effective websites
+                                                    that capture your
+                                                    brand, improve your
+                                                    conversion rates,
+                                                    and maximize your
+                                                    revenue to
+                                                    help grow your
+                                                    business and achieve
+                                                    your goals.</p>
+                                                <p>In today’s digital
+                                                    world, your website
+                                                    is the first
+                                                    interaction
+                                                    consumers have with
+                                                    your business.
+                                                    That's why almost 95
+                                                    percent of a
+                                                    user’s first
+                                                    impression relates
+                                                    to web design. It’s
+                                                    also why web
+                                                    design services can
+                                                    have an immense
+                                                    impact on your
+                                                    company’s bottom
+                                                    line.</p>
+                                                <p>That’s why more
+                                                    companies are not
+                                                    only reevaluating
+                                                    their website’s
+                                                    design but also
+                                                    partnering with
+                                                    miwie, the web
+                                                    design agency that’s
+                                                    driven more than
+                                                    $2.4 billion in
+                                                    revenue for its
+                                                    clients. With over
+                                                    50 web design awards
+                                                    under our belt,
+                                                    we're confident we
+                                                    can design a
+                                                    custom website that
+                                                    drives sales for
+                                                    your unique
+                                                    business.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li class="relative">
+                                <div
+                                    class="list_inner w-full flex items-center justify-between relative pt-[27px] pb-[26px] pl-[25px] pr-[35px]">
+                                    <div class="left w-[40%] flex">
+                                        <span
+                                            class="number inline-block text-[#6244C5] text-[24px] font-dm transition-all duration-300">03</span>
+                                        <h3 class="title text-[30px] font-medium pl-[30px] transition-all duration-300">
+                                            UI Animation</h3>
+                                    </div>
+                                    <div class="right w-[60%] flex items-center justify-between">
+                                        <div class="text pr-[150px]">
+                                            <p class="transition-all duration-300">You
+                                                can customize a template
+                                                or make
+                                                your own from scratch,
+                                                with an immersive
+                                                library at your
+                                                disposal...</p>
+                                        </div>
+                                        <div class="arrow leading-[1]">
+                                            <img class="svg w-[25px] h-[25px] transition-all duration-300"
+                                                src="assets/img/svg/top-arrow.svg" alt />
+                                        </div>
+                                    </div>
+                                    <a class="miwie_tm_full_link absolute inset-0 z-[5]" href="#"></a>
+
+                                    <img class="popup_service_image" src="assets/img/service/3.jpg" alt />
+                                    <div class="service_hidden_details">
+                                        <div class="service_popup_informations">
+                                            <div class="descriptions">
+                                                <p>miwie is a leading
+                                                    web design agency
+                                                    with an
+                                                    award-winning design
+                                                    team that creates
+                                                    innovative,
+                                                    effective websites
+                                                    that capture your
+                                                    brand, improve your
+                                                    conversion rates,
+                                                    and maximize your
+                                                    revenue to
+                                                    help grow your
+                                                    business and achieve
+                                                    your goals.</p>
+                                                <p>In today’s digital
+                                                    world, your website
+                                                    is the first
+                                                    interaction
+                                                    consumers have with
+                                                    your business.
+                                                    That's why almost 95
+                                                    percent of a
+                                                    user’s first
+                                                    impression relates
+                                                    to web design. It’s
+                                                    also why web
+                                                    design services can
+                                                    have an immense
+                                                    impact on your
+                                                    company’s bottom
+                                                    line.</p>
+                                                <p>That’s why more
+                                                    companies are not
+                                                    only reevaluating
+                                                    their website’s
+                                                    design but also
+                                                    partnering with
+                                                    miwie, the web
+                                                    design agency that’s
+                                                    driven more than
+                                                    $2.4 billion in
+                                                    revenue for its
+                                                    clients. With over
+                                                    50 web design awards
+                                                    under our belt,
+                                                    we're confident we
+                                                    can design a
+                                                    custom website that
+                                                    drives sales for
+                                                    your unique
+                                                    business.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li class="relative">
+                                <div
+                                    class="list_inner w-full flex items-center justify-between relative pt-[27px] pb-[26px] pl-[25px] pr-[35px]">
+                                    <div class="left w-[40%] flex">
+                                        <span
+                                            class="number inline-block text-[#6244C5] text-[24px] font-dm transition-all duration-300">04</span>
+                                        <h3 class="title text-[30px] font-medium pl-[30px] transition-all duration-300">
+                                            Product Design</h3>
+                                    </div>
+                                    <div class="right w-[60%] flex items-center justify-between">
+                                        <div class="text pr-[150px]">
+                                            <p class="transition-all duration-300">You
+                                                can customize a template
+                                                or make
+                                                your own from scratch,
+                                                with an immersive
+                                                library at your
+                                                disposal...</p>
+                                        </div>
+                                        <div class="arrow leading-[1]">
+                                            <img class="svg w-[25px] h-[25px] transition-all duration-300"
+                                                src="assets/img/svg/top-arrow.svg" alt />
+                                        </div>
+                                    </div>
+                                    <a class="miwie_tm_full_link absolute inset-0 z-[5]" href="#"></a>
+
+                                    <img class="popup_service_image" src="assets/img/service/4.jpg" alt />
+                                    <div class="service_hidden_details">
+                                        <div class="service_popup_informations">
+                                            <div class="descriptions">
+                                                <p>miwie is a leading
+                                                    web design agency
+                                                    with an
+                                                    award-winning design
+                                                    team that creates
+                                                    innovative,
+                                                    effective websites
+                                                    that capture your
+                                                    brand, improve your
+                                                    conversion rates,
+                                                    and maximize your
+                                                    revenue to
+                                                    help grow your
+                                                    business and achieve
+                                                    your goals.</p>
+                                                <p>In today’s digital
+                                                    world, your website
+                                                    is the first
+                                                    interaction
+                                                    consumers have with
+                                                    your business.
+                                                    That's why almost 95
+                                                    percent of a
+                                                    user’s first
+                                                    impression relates
+                                                    to web design. It’s
+                                                    also why web
+                                                    design services can
+                                                    have an immense
+                                                    impact on your
+                                                    company’s bottom
+                                                    line.</p>
+                                                <p>That’s why more
+                                                    companies are not
+                                                    only reevaluating
+                                                    their website’s
+                                                    design but also
+                                                    partnering with
+                                                    miwie, the web
+                                                    design agency that’s
+                                                    driven more than
+                                                    $2.4 billion in
+                                                    revenue for its
+                                                    clients. With over
+                                                    50 web design awards
+                                                    under our belt,
+                                                    we're confident we
+                                                    can design a
+                                                    custom website that
+                                                    drives sales for
+                                                    your unique
+                                                    business.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+                        </ul>
+                        <span class="ccc"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="miwie_tm_section w-full h-auto clear-both float-left" id="portfolio">
+            <div class="miwie_tm_portfolio w-full h-auto clear-both float-left bg-[#FFC448] px-0 pt-[120px] pb-[110px]">
+                <div class="container">
+                    <div class="miwie_tm_main_title w-full float-left">
+                        <h3 class="tracking-[-2px] text-[56px] font-bold"><span class="relative">Look at my<br />recent
+                                projects</span></h3>
+                    </div>
+                    <div class="portfolio_list w-full h-auto clear-both float-left mt-[65px] relative">
+                        <ul class="owl-carousel gallery_zoom relative">
+                            <li>
+                                <div class="list_inner">
+                                    <div class="image relative overflow-hidden">
+                                        <img class="opacity-0 relative min-w-full" src="assets/img/thumbs/37-40.jpg"
+                                            alt />
+                                        <div class="main absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-300"
+                                            data-img-url="assets/img/portfolio/1.jpg"></div>
+                                    </div>
+                                    <div class="details w-full float-left mt-[30px]">
+                                        <span class="category text-[20px] inline-block mb-[13px]">Youtube</span>
+                                        <h3 class="title text-[32px] tracking-[-1px] font-medium"><span
+                                                class="inline-block relative">Car
+                                                Export</span></h3>
+                                    </div>
+                                    <a class="miwie_tm_full_link absolute inset-0 z-[5] popup-youtube"
+                                        href="https://www.youtube.com/watch?v=7e90gBu4pas"></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list_inner">
+                                    <div class="image relative overflow-hidden">
+                                        <img class="opacity-0 relative min-w-full" src="assets/img/thumbs/37-40.jpg"
+                                            alt />
+                                        <div class="main absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-300"
+                                            data-img-url="assets/img/portfolio/2.jpg"></div>
+                                    </div>
+                                    <div class="details w-full float-left mt-[30px]">
+                                        <span class="category text-[20px] inline-block mb-[13px]">Vimeo</span>
+                                        <h3 class="title text-[32px] tracking-[-1px] font-medium"><span
+                                                class="inline-block relative">Food
+                                                delivery</span></h3>
+                                    </div>
+                                    <a class="miwie_tm_full_link absolute inset-0 z-[5] popup-vimeo"
+                                        href="https://vimeo.com/337293658"></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list_inner">
+                                    <div class="image relative overflow-hidden">
+                                        <img class="opacity-0 relative min-w-full" src="assets/img/thumbs/37-40.jpg"
+                                            alt />
+                                        <div class="main absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-300"
+                                            data-img-url="assets/img/portfolio/3.jpg"></div>
+                                    </div>
+                                    <div class="details w-full float-left mt-[30px]">
+                                        <span class="category text-[20px] inline-block mb-[13px]">Soundcloud</span>
+                                        <h3 class="title text-[32px] tracking-[-1px] font-medium"><span
+                                                class="inline-block relative">Ecommerce
+                                                Website</span></h3>
+                                    </div>
+                                    <a class="miwie_tm_full_link absolute inset-0 z-[5] soundcloude_link mfp-iframe audio"
+                                        href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/471954807&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list_inner">
+                                    <div class="image relative overflow-hidden">
+                                        <img class="opacity-0 relative min-w-full" src="assets/img/thumbs/37-40.jpg"
+                                            alt />
+                                        <div class="main absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-300"
+                                            data-img-url="assets/img/portfolio/4.jpg"></div>
+                                    </div>
+                                    <div class="details w-full float-left mt-[30px]">
+                                        <span class="category text-[20px] inline-block mb-[13px]">Details</span>
+                                        <h3 class="title text-[32px] tracking-[-1px] font-medium"><span
+                                                class="inline-block relative">Mockup
+                                                Phone</span></h3>
+                                    </div>
+                                    <a class="miwie_tm_full_link absolute inset-0 z-[5] details_link" href="#"></a>
+
+                                    <div class="hidden_content">
+                                        <div class="popup_details">
+                                            <div class="main_details">
+                                                <div class="textbox">
+                                                    <p>We live in a
+                                                        world where we
+                                                        need to move
+                                                        quickly and
+                                                        iterate on
+                                                        our ideas as
+                                                        flexibly as
+                                                        possible.</p>
+                                                    <p>Mockups are
+                                                        useful both for
+                                                        the creative
+                                                        phase of the
+                                                        project -
+                                                        for instance
+                                                        when you're
+                                                        trying to figure
+                                                        out your user
+                                                        flows or
+                                                        the proper
+                                                        visual hierarchy
+                                                        - and the
+                                                        production phase
+                                                        when they
+                                                        phase when they
+                                                        will represent
+                                                        the target
+                                                        product.
+                                                        Building
+                                                        mockups strikes
+                                                        the ideal
+                                                        balance ease of
+                                                        modification.</p>
+                                                </div>
+                                                <div class="detailbox">
+                                                    <ul>
+                                                        <li>
+                                                            <span class="first">Client</span>
+                                                            <span>Alvaro
+                                                                Morata</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="first">Category</span>
+                                                            <span><a href="#">Detail</a></span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="first">Date</span>
+                                                            <span>April
+                                                                22,
+                                                                2022</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="additional_images">
+                                                <ul>
+                                                    <li>
+                                                        <div class="list_inner">
+                                                            <div class="my_image">
+                                                                <img src="assets/img/thumbs/4-2.jpg" alt />
+                                                                <div class="main"
+                                                                    data-img-url="assets/img/service/1.jpg"></div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="list_inner">
+                                                            <div class="my_image">
+                                                                <img src="assets/img/thumbs/4-2.jpg" alt />
+                                                                <div class="main"
+                                                                    data-img-url="assets/img/service/2.jpg"></div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="list_inner">
+                                                            <div class="my_image">
+                                                                <img src="assets/img/thumbs/4-2.jpg" alt />
+                                                                <div class="main"
+                                                                    data-img-url="assets/img/service/3.jpg"></div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list_inner">
+                                    <div class="image relative overflow-hidden">
+                                        <img class="opacity-0 relative min-w-full" src="assets/img/thumbs/37-40.jpg"
+                                            alt />
+                                        <div class="main absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-300"
+                                            data-img-url="assets/img/portfolio/5.jpg"></div>
+                                    </div>
+                                    <div class="details w-full float-left mt-[30px]">
+                                        <span class="category text-[20px] inline-block mb-[13px]">Popup</span>
+                                        <h3 class="title text-[32px] tracking-[-1px] font-medium"><span
+                                                class="inline-block relative">Felix
+                                                Photo</span></h3>
+                                    </div>
+                                    <a class="miwie_tm_full_link absolute inset-0 z-[5] zoom"
+                                        href="assets/img/portfolio/5.jpg"></a>
+                                </div>
+                            </li>
+                        </ul>
+                        <a class="prev_button" href="#"><img
+                                class="svg absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] w-[30px] h-[30px] transition-all duration-300 ml-[-1px]"
+                                src="assets/img/svg/prev.svg" alt /></a>
+                        <a class="next_button" href="#"><img
+                                class="svg absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] w-[30px] h-[30px] transition-all duration-300 ml-[1px]"
+                                src="assets/img/svg/next.svg" alt /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="miwie_tm_section w-full h-auto clear-both float-left">
+            <div class="miwie_tm_testimonials w-full h-auto clear-both float-left bg-[#fafafb] px-0 py-[120px]">
+                <div class="container">
+                    <div class="miwie_tm_main_title w-full float-left">
+                        <h3 class="tracking-[-2px] text-[56px] font-bold"><span class="relative">Valuable
+                                feedback<br />from my client</span></h3>
+                    </div>
+                    <div class="testimonials_in w-full h-auto clear-both flex items-center pt-[75px]">
+                        <img class="max-h-[400px] max-w-[350px]" src="assets/img/testimonials/1.jpg" alt />
+                        <div class="info pl-[70px]">
+                            <div class="text w-full float-left mb-[40px]">
+                                <p class="text-[24px] font-medium leading-[36px] font-dm">“Awesome
+                                    website! Easy to use
+                                    and edit, it has a lot of options to
+                                    design whatever you need, it is
+                                    professional
+                                    and fun. I was very successful
+                                    creating my profile using designer
+                                    which gave me
+                                    unbelievable reach &amp;
+                                    appreciation.”</p>
+                            </div>
+                            <div class="details w-full float-left pl-[41px]">
+                                <h3 class="name text-[24px] font-bold mb-[7px]"><span
+                                        class="relative inline-block">Albert
+                                        Walkers</span></h3>
+                                <span class="job text-[19px] text-[#707070]">Vivaco
+                                    Group</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="miwie_tm_section w-full h-auto clear-both float-left" id="blog">
+            <div class="miwie_tm_news w-full h-auto clear-both float-left pt-[120px]">
+                <div class="container">
+                    <div class="miwie_tm_main_title w-full float-left">
+                        <h3 class="tracking-[-2px] text-[56px] font-bold"><span class="relative">From my<br />blog
+                                post</span></h3>
+                    </div>
+                    <div class="news_list w-full h-auto clear-both float-left mt-[100px]">
+                        <ul class="ml-[-30px]">
+                            <li class="mb-[30px] float-left pl-[30px] w-1/2">
+                                <div
+                                    class="list_inner w-full h-auto clear-both float-left relative flex items-center bg-[rgba(255,246,217,.4)] py-[20px] pr-[20px] pl-[30px]">
+                                    <div class="left w-1/2 relative z-[1] pr-[10px]">
+                                        <div class="metabox w-full float-left mb-[10px]">
+                                            <ul>
+                                                <li class="mr-[15px] inline-block">
+                                                    <span class="text-[16px] relative pl-[10px]"><a
+                                                            class="text-main-color transition-all duration-300"
+                                                            href="#">Elmer Ginez</a></span>
+                                                </li>
+                                                <li class="inline-block">
+                                                    <span class="text-[16px] relative pl-[10px]">02
+                                                        June,
+                                                        2022</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="title w-full float-left mb-[43px]">
+                                            <h3 class="leading-[.9]"><a href="#">Diversification
+                                                    of digital marketing
+                                                    stategies</a></h3>
+                                        </div>
+                                        <div class="miwie_tm_simple_button">
+                                            <a class="line_effect" href="#">Read More <img class="svg"
+                                                    src="assets/img/svg/top-arrow.svg" alt /></a>
+                                        </div>
+                                    </div>
+                                    <div class="right w-1/2 relative z-[1] overflow-hidden">
+                                        <img class="relative opacity-0 min-w-full" src="assets/img/thumbs/24-20.jpg"
+                                            alt />
+                                        <div class="main absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-300"
+                                            data-img-url="assets/img/news/1.jpg"></div>
+                                        <a class="miwie_tm_full_link absolute inset-0 z-[5]" href="#"></a>
+                                    </div>
+                                    <span class="shape absolute top-0 right-0 bottom-0"><img class="svg w-full h-full"
+                                            src="assets/img/svg/Intersect.svg" alt /></span>
+
+                                    <div class="news_hidden_details">
+                                        <div class="news_popup_informations">
+                                            <div class="text">
+                                                <p>miwie is a leading
+                                                    web design agency
+                                                    with an
+                                                    award-winning design
+                                                    team that creates
+                                                    innovative,
+                                                    effective websites
+                                                    that capture your
+                                                    brand, improve your
+                                                    conversion rates,
+                                                    and maximize your
+                                                    revenue to
+                                                    help grow your
+                                                    business and achieve
+                                                    your goals.</p>
+                                                <p>In today’s digital
+                                                    world, your website
+                                                    is the first
+                                                    interaction
+                                                    consumers have with
+                                                    your business.
+                                                    That's why almost 95
+                                                    percent of a
+                                                    user’s first
+                                                    impression relates
+                                                    to web design. It’s
+                                                    also why web
+                                                    design services can
+                                                    have an immense
+                                                    impact on your
+                                                    company’s bottom
+                                                    line.</p>
+                                                <p>That’s why more
+                                                    companies are not
+                                                    only reevaluating
+                                                    their website’s
+                                                    design but also
+                                                    partnering with
+                                                    miwie, the web
+                                                    design agency that’s
+                                                    driven more than
+                                                    $2.4 billion in
+                                                    revenue for its
+                                                    clients. With over
+                                                    50 web design awards
+                                                    under our belt,
+                                                    we're confident we
+                                                    can design a
+                                                    custom website that
+                                                    drives sales for
+                                                    your unique
+                                                    business.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li class="mb-[30px] float-left pl-[30px] w-1/2">
+                                <div
+                                    class="list_inner w-full h-auto clear-both float-left relative flex items-center bg-[rgba(255,246,217,.4)] py-[20px] pr-[20px] pl-[30px]">
+                                    <div class="left w-1/2 relative z-[1] pr-[10px]">
+                                        <div class="metabox w-full float-left mb-[10px]">
+                                            <ul>
+                                                <li class="mr-[15px] inline-block">
+                                                    <span class="text-[16px] relative pl-[10px]"><a
+                                                            class="text-main-color transition-all duration-300"
+                                                            href="#">Elmer Ginez</a></span>
+                                                </li>
+                                                <li class="inline-block">
+                                                    <span class="text-[16px] relative pl-[10px]">02
+                                                        June,
+                                                        2022</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="title w-full float-left mb-[43px]">
+                                            <h3 class="leading-[.9]"><a href="#">Diversification
+                                                    of digital marketing
+                                                    stategies</a></h3>
+                                        </div>
+                                        <div class="miwie_tm_simple_button">
+                                            <a class="line_effect" href="#">Read More <img class="svg"
+                                                    src="assets/img/svg/top-arrow.svg" alt /></a>
+                                        </div>
+                                    </div>
+                                    <div class="right w-1/2 relative z-[1] overflow-hidden">
+                                        <img class="relative opacity-0 min-w-full" src="assets/img/thumbs/24-20.jpg"
+                                            alt />
+                                        <div class="main absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-300"
+                                            data-img-url="assets/img/news/2.jpg"></div>
+                                        <a class="miwie_tm_full_link absolute inset-0 z-[5]" href="#"></a>
+                                    </div>
+                                    <span class="shape absolute top-0 right-0 bottom-0"><img class="svg w-full h-full"
+                                            src="assets/img/svg/Intersect.svg" alt /></span>
+
+                                    <div class="news_hidden_details">
+                                        <div class="news_popup_informations">
+                                            <div class="text">
+                                                <p>miwie is a leading
+                                                    web design agency
+                                                    with an
+                                                    award-winning design
+                                                    team that creates
+                                                    innovative,
+                                                    effective websites
+                                                    that capture your
+                                                    brand, improve your
+                                                    conversion rates,
+                                                    and maximize your
+                                                    revenue to
+                                                    help grow your
+                                                    business and achieve
+                                                    your goals.</p>
+                                                <p>In today’s digital
+                                                    world, your website
+                                                    is the first
+                                                    interaction
+                                                    consumers have with
+                                                    your business.
+                                                    That's why almost 95
+                                                    percent of a
+                                                    user’s first
+                                                    impression relates
+                                                    to web design. It’s
+                                                    also why web
+                                                    design services can
+                                                    have an immense
+                                                    impact on your
+                                                    company’s bottom
+                                                    line.</p>
+                                                <p>That’s why more
+                                                    companies are not
+                                                    only reevaluating
+                                                    their website’s
+                                                    design but also
+                                                    partnering with
+                                                    miwie, the web
+                                                    design agency that’s
+                                                    driven more than
+                                                    $2.4 billion in
+                                                    revenue for its
+                                                    clients. With over
+                                                    50 web design awards
+                                                    under our belt,
+                                                    we're confident we
+                                                    can design a
+                                                    custom website that
+                                                    drives sales for
+                                                    your unique
+                                                    business.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li class="mb-[30px] float-left pl-[30px] w-1/2">
+                                <div
+                                    class="list_inner w-full h-auto clear-both float-left relative flex items-center bg-[rgba(255,246,217,.4)] py-[20px] pr-[20px] pl-[30px]">
+                                    <div class="left w-1/2 relative z-[1] pr-[10px]">
+                                        <div class="metabox w-full float-left mb-[10px]">
+                                            <ul>
+                                                <li class="mr-[15px] inline-block">
+                                                    <span class="text-[16px] relative pl-[10px]"><a
+                                                            class="text-main-color transition-all duration-300"
+                                                            href="#">Elmer Ginez</a></span>
+                                                </li>
+                                                <li class="inline-block">
+                                                    <span class="text-[16px] relative pl-[10px]">02
+                                                        June,
+                                                        2022</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="title w-full float-left mb-[43px]">
+                                            <h3 class="leading-[.9]"><a href="#">Diversification
+                                                    of digital marketing
+                                                    stategies</a></h3>
+                                        </div>
+                                        <div class="miwie_tm_simple_button">
+                                            <a class="line_effect" href="#">Read More <img class="svg"
+                                                    src="assets/img/svg/top-arrow.svg" alt /></a>
+                                        </div>
+                                    </div>
+                                    <div class="right w-1/2 relative z-[1] overflow-hidden">
+                                        <img class="relative opacity-0 min-w-full" src="assets/img/thumbs/24-20.jpg"
+                                            alt />
+                                        <div class="main absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-300"
+                                            data-img-url="assets/img/news/3.jpg"></div>
+                                        <a class="miwie_tm_full_link absolute inset-0 z-[5]" href="#"></a>
+                                    </div>
+                                    <span class="shape absolute top-0 right-0 bottom-0"><img class="svg w-full h-full"
+                                            src="assets/img/svg/Intersect.svg" alt /></span>
+
+                                    <div class="news_hidden_details">
+                                        <div class="news_popup_informations">
+                                            <div class="text">
+                                                <p>miwie is a leading
+                                                    web design agency
+                                                    with an
+                                                    award-winning design
+                                                    team that creates
+                                                    innovative,
+                                                    effective websites
+                                                    that capture your
+                                                    brand, improve your
+                                                    conversion rates,
+                                                    and maximize your
+                                                    revenue to
+                                                    help grow your
+                                                    business and achieve
+                                                    your goals.</p>
+                                                <p>In today’s digital
+                                                    world, your website
+                                                    is the first
+                                                    interaction
+                                                    consumers have with
+                                                    your business.
+                                                    That's why almost 95
+                                                    percent of a
+                                                    user’s first
+                                                    impression relates
+                                                    to web design. It’s
+                                                    also why web
+                                                    design services can
+                                                    have an immense
+                                                    impact on your
+                                                    company’s bottom
+                                                    line.</p>
+                                                <p>That’s why more
+                                                    companies are not
+                                                    only reevaluating
+                                                    their website’s
+                                                    design but also
+                                                    partnering with
+                                                    miwie, the web
+                                                    design agency that’s
+                                                    driven more than
+                                                    $2.4 billion in
+                                                    revenue for its
+                                                    clients. With over
+                                                    50 web design awards
+                                                    under our belt,
+                                                    we're confident we
+                                                    can design a
+                                                    custom website that
+                                                    drives sales for
+                                                    your unique
+                                                    business.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li class="mb-[30px] float-left pl-[30px] w-1/2">
+                                <div
+                                    class="list_inner w-full h-auto clear-both float-left relative flex items-center bg-[rgba(255,246,217,.4)] py-[20px] pr-[20px] pl-[30px]">
+                                    <div class="left w-1/2 relative z-[1] pr-[10px]">
+                                        <div class="metabox w-full float-left mb-[10px]">
+                                            <ul>
+                                                <li class="mr-[15px] inline-block">
+                                                    <span class="text-[16px] relative pl-[10px]"><a
+                                                            class="text-main-color transition-all duration-300"
+                                                            href="#">Elmer Ginez</a></span>
+                                                </li>
+                                                <li class="inline-block">
+                                                    <span class="text-[16px] relative pl-[10px]">02
+                                                        June,
+                                                        2022</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="title w-full float-left mb-[43px]">
+                                            <h3 class="leading-[.9]"><a href="#">Diversification
+                                                    of digital marketing
+                                                    stategies</a></h3>
+                                        </div>
+                                        <div class="miwie_tm_simple_button">
+                                            <a class="line_effect" href="#">Read More <img class="svg"
+                                                    src="assets/img/svg/top-arrow.svg" alt /></a>
+                                        </div>
+                                    </div>
+                                    <div class="right w-1/2 relative z-[1] overflow-hidden">
+                                        <img class="relative opacity-0 min-w-full" src="assets/img/thumbs/24-20.jpg"
+                                            alt />
+                                        <div class="main absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-300"
+                                            data-img-url="assets/img/news/4.jpg"></div>
+                                        <a class="miwie_tm_full_link absolute inset-0 z-[5]" href="#"></a>
+                                    </div>
+                                    <span class="shape absolute top-0 right-0 bottom-0"><img class="svg w-full h-full"
+                                            src="assets/img/svg/Intersect.svg" alt /></span>
+
+                                    <div class="news_hidden_details">
+                                        <div class="news_popup_informations">
+                                            <div class="text">
+                                                <p>miwie is a leading
+                                                    web design agency
+                                                    with an
+                                                    award-winning design
+                                                    team that creates
+                                                    innovative,
+                                                    effective websites
+                                                    that capture your
+                                                    brand, improve your
+                                                    conversion rates,
+                                                    and maximize your
+                                                    revenue to
+                                                    help grow your
+                                                    business and achieve
+                                                    your goals.</p>
+                                                <p>In today’s digital
+                                                    world, your website
+                                                    is the first
+                                                    interaction
+                                                    consumers have with
+                                                    your business.
+                                                    That's why almost 95
+                                                    percent of a
+                                                    user’s first
+                                                    impression relates
+                                                    to web design. It’s
+                                                    also why web
+                                                    design services can
+                                                    have an immense
+                                                    impact on your
+                                                    company’s bottom
+                                                    line.</p>
+                                                <p>That’s why more
+                                                    companies are not
+                                                    only reevaluating
+                                                    their website’s
+                                                    design but also
+                                                    partnering with
+                                                    miwie, the web
+                                                    design agency that’s
+                                                    driven more than
+                                                    $2.4 billion in
+                                                    revenue for its
+                                                    clients. With over
+                                                    50 web design awards
+                                                    under our belt,
+                                                    we're confident we
+                                                    can design a
+                                                    custom website that
+                                                    drives sales for
+                                                    your unique
+                                                    business.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="miwie_tm_section w-full h-auto clear-both float-left">
+            <div class="miwie_tm_partners w-full h-auto clear-both float-left px-0 pt-[40px] pb-[110px]">
+                <div class="container">
+                    <div class="partners_list w-full h-auto clear-both float-left mt-[35px] relative">
+                        <ul class="owl-carousel">
+                            <li class="item"><a href="#"><img class="opacity-[.5] transition-all duration-300"
+                                        src="assets/img/partners/1.png" alt /></a></li>
+                            <li class="item"><a href="#"><img class="opacity-[.5] transition-all duration-300"
+                                        src="assets/img/partners/2.png" alt /></a></li>
+                            <li class="item"><a href="#"><img class="opacity-[.5] transition-all duration-300"
+                                        src="assets/img/partners/3.png" alt /></a></li>
+                            <li class="item"><a href="#"><img class="opacity-[.5] transition-all duration-300"
+                                        src="assets/img/partners/4.png" alt /></a></li>
+                            <li class="item"><a href="#"><img class="opacity-[.5] transition-all duration-300"
+                                        src="assets/img/partners/5.png" alt /></a></li>
+                            <li class="item"><a href="#"><img class="opacity-[.5] transition-all duration-300"
+                                        src="assets/img/partners/6.png" alt /></a></li>
+                            <li class="item"><a href="#"><img class="opacity-[.5] transition-all duration-300"
+                                        src="assets/img/partners/7.png" alt /></a></li>
+                            <li class="item"><a href="#"><img class="opacity-[.5] transition-all duration-300"
+                                        src="assets/img/partners/8.png" alt /></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="miwie_tm_section w-full h-auto clear-both float-left" id="contact">
+            <div
+                class="miwie_tm_contact w-full h-auto clear-both float-left bg-main-color px-0 pt-[135px] pb-[120px] relative">
+                <div class="container">
+                    <div class="infobox w-full float-left flex items-center justify-between mb-[116px]">
+                        <div class="video_button">
+                            <a class="popup-youtube" href="https://www.youtube.com/watch?v=kt1Edu0dbvY"><img
+                                    class="anim_circle" src="assets/img/contact/video1.png" alt /><img class="svg"
+                                    src="assets/img/svg/play.svg" alt /></a>
+                        </div>
+                        <div class="text py-0 px-[115px]">
+                            <h3 class="font-bold text-[56px] tracking-[-2px] text-white mb-[25px]">Let's
+                                work together
+                            </h3>
+                            <p class="font-light leading-[32px] text-[rgba(255,255,255,.7)]">You
+                                can express yourself
+                                however you want and whenever you want,
+                                for free. You can customize a template
+                                or make
+                                your own.</p>
+                        </div>
+                        <div class="miwie_tm_boxed_button">
+                            <a href="#">Say Hello <img class="svg" src="assets/img/svg/send.svg" alt /></a>
+                        </div>
+                    </div>
+                    <div class="connect w-full flex items-center justify-between">
+                        <div class="left">
+                            <ul>
+                                <li class="mr-[50px] inline-block">
+                                    <span
+                                        class="name block text-[rgba(255,255,255,.5)] text-[16px] mb-[10px]">Call:</span>
+                                    <p class="block text-white text-[36px] font-dm font-medium"><a
+                                            class="line_effect text-white" href="#">+51 921 026 466</a></p>
+                                </li>
+                                <li class="inline-block">
+                                    <span
+                                        class="name block text-[rgba(255,255,255,.5)] text-[16px] mb-[10px]">Email:</span>
+                                    <p class="block text-white text-[36px] font-dm font-medium"><a
+                                            class="line_effect text-white" href="#"><span class="__cf_email__"
+                                                data-cfemail="d">freddginez5@gmail.com</span></a>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right">
+                            <div class="miwie_tm_follow flex items-center">
+                                <span>Follow me:</span>
+                                <ul class="flex items-center relative top-[5px] ml-[20px]">
+                                    <li class="mr-[20px]"><a
+                                            class="inline-block relative w-[56px] h-[56px] bg-[#f6f6f6] rounded-full transition-all duration-300"
+                                            href="#"><img
+                                                class="svg absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] transition-all duration-300"
+                                                src="assets/img/svg/social/be.svg" alt /></a></li>
+                                    <li class="mr-[20px]"><a
+                                            class="inline-block relative w-[56px] h-[56px] bg-[#f6f6f6] rounded-full transition-all duration-300"
+                                            href="#"><img
+                                                class="svg absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] transition-all duration-300"
+                                                src="assets/img/svg/social/dribbble.svg" alt /></a></li>
+                                    <li><a class="inline-block relative w-[56px] h-[56px] bg-[#f6f6f6] rounded-full transition-all duration-300"
+                                            href="#"><img
+                                                class="svg absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] transition-all duration-300"
+                                                src="assets/img/svg/social/instagarm.svg" alt /></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="element absolute bottom-[-60px] left-0"><img class="svg w-full h-full text-transparent"
+                        src="assets/img/svg/elements.svg" alt /></span>
+                <span class="element2 absolute right-[200px] top-[150px]"><img
+                        class="svg w-full h-full text-transparent" src="assets/img/svg/element-2.svg" alt /></span>
+            </div>
+        </div>
+
+        <div class="miwie_tm_section w-full h-auto clear-both float-left">
+            <div class="miwie_tm_copyright w-full h-auto clear-both float-left bg-[#FFC448] py-[25px] px-0">
+                <div class="container">
+                    <div class="copyright_inner w-full h-auto clear-both flex items-center justify-between">
+                        <div class="logo">
+                            <img class="max-w-[170px] max-h-[80px]" src="assets/img/logo/logo.png" alt />
+                        </div>
+                        <div class="copy">
+                            <p class="text-main-color text-[16px] font-medium">&copy;
+                                2024 by <a class="text-main-color" href="https://github.com/elmerginez"
+                                    target="_blank">MiwiE.</a> All
+                                Rights Reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mouse-cursor cursor-outer"></div>
+        <div class="mouse-cursor cursor-inner"></div>
+
+        <div class="progressbar">
+            <a href="#"><span class="text">To Top</span></a>
+            <span class="line"></span>
+        </div>
+
     </div>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="js/script.js"></script>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/init.js"></script>
+    <script src="assets/js/script.js"></script>
+
 </body>
+
 </html>
