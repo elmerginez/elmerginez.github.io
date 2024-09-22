@@ -1,13 +1,13 @@
 [
   {
     "section": "navigation",
-    "links_name": [
+    "sections": [
       "Home",
       "About",
+      "Service",
       "Portfolio",
-      "Services",
-      "Contact",
-      "Start Chat"
+      "Blog",
+      "Contact"
     ],
     "languages": [
       "Spanish",
@@ -18,23 +18,91 @@
   },
   {
     "section": "home",
-    "greeting": [
-      "Hello!",
-      "I'm",
-      "Elmer Ginez"
-    ],
-    "role": [
-      "Web Developer",
-      "Mobile Developer"
-    ],
-    "title": ""
+    "name": "Elmer Ginez",
+    "role": "Full-Stack Developer",
+    "title": "",
+    "text": "I'm ful-stack dev based in Peru, and I'm very passionate and dedicated to my work.",
+    "button": [
+      "Say hello",
+      "My Works",
+      "Follow me"
+    ]
   },
   {
     "section": "about",
     "title": "About Me",
-    "sub_title": "I'm Elmer Ginez",
+    "sub_title": "Years of expierence",
     "text": "I am a passionate web and mobile developer with experience in creating innovative applications and high-performance websites. My goal is to deliver creative and effective solutions that meet my clients' needs and enhance their online presence.",
-    "button": "Download CV"
+    "button": "Download CV",
+    "areas": {
+      "title": "My expert areas",
+      "text": [
+        "You can express yourself however you want and whenever you want, for free. You can customize a template or make your own from scratch, with an immersive library at your disposal. You can express yourself however you want and whenever you free.",
+        "You can customize a template or make your own from scratch, with an immersive library at your disposal."
+      ],
+      "button": "My Resume",
+      "skills": {
+        "title": "Skills",
+        "languages": [
+          "JavaScript",
+          "Python",
+          "MySQL",
+          "MariaDB",
+          "Kotlin",
+          "NodeJS"
+        ]
+      },
+      "expierence": {
+        "title": "Experience",
+        "item": [
+          {
+            "period": "2021 - Present",
+            "company": "Bauen Software Inc.",
+            "role": "Web Developer"
+          },
+          {
+            "period": "2020 - 2021",
+            "company": "Bauen Software Inc.",
+            "role": "Web Developer"
+          },
+          {
+            "period": "2018 - 2020",
+            "company": "Bauen Software Inc.",
+            "role": "Web Developer"
+          },
+          {
+            "period": "2016 - 2018",
+            "company": "Bauen Software Inc.",
+            "role": "Web Developer"
+          }
+        ]
+      },
+      "education": {
+        "title": "Education",
+        "item": [
+          {
+            "period": "2021 - Present",
+            "institution": "Stanford University",
+            "field": "Web Development"
+          },
+          {
+            "period": "2020 - 2021",
+            "institution": "Stanford University",
+            "field": "Web Development"
+          },
+          {
+            "period": "2018 - 2020",
+            "institution": "Stanford University",
+            "field": "Web Development"
+          },
+          {
+            "period": "2017 - 2018",
+            "institution": "Stanford University",
+            "field": "Web Development"
+          }
+        ]
+      }
+    }
   },
   {
     "section": "portfolio",
@@ -45,7 +113,7 @@
   },
   {
     "section": "services",
-    "title": "My Services",
+    "title": "Services I Provide",
     "sub_title": "",
     "text": "Here you can see the services I offer. If you need a web or mobile developer, feel free to contact me.",
     "button": "",
