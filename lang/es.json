@@ -1,13 +1,13 @@
 [
   {
     "section": "navigation",
-    "links_name": [
+    "sections": [
       "Inicio",
       "Acerca de",
+      "Servicio",
       "Portafolio",
-      "Servicios",
-      "Contacto",
-      "Empezar chat"
+      "Blog",
+      "Contacto"
     ],
     "languages": [
       "Español",
@@ -18,60 +18,180 @@
   },
   {
     "section": "home",
-    "greeting": [
-      "¡Hola!",
-      "Soy",
-      "Elmer Ginez"
-    ],
-    "role": [
-      "Desarrollador web",
-      "Desarrollador móvil"
-    ],
-    "title": ""
+    "name": "Elmer Ginez",
+    "role": "Desarrollador Full-Stack",
+    "title": "",
+    "text": "Soy un desarrollador full-stack con sede en Perú, y estoy muy apasionado y dedicado a mi trabajo.",
+    "button": [
+      "Saludar",
+      "Mis Trabajos",
+      "Sígueme:"
+    ]
   },
   {
     "section": "about",
-    "title": "Acerca de mi",
-    "sub_title": "Soy Elmer Ginez",
-    "text": "Soy un apasionado desarrollador web y móvil con experiencia en la creación de aplicaciones innovadoras y sitios web de alto rendimiento. Mi objetivo es ofrecer soluciones creativas y efectivas que satisfagan las necesidades de mis clientes y mejoren su presencia en línea.",
-    "button": "Descargar CV"
+    "title": "Sobre Mí",
+    "sub_title": "Años de experiencia",
+    "text": "Soy un desarrollador web y móvil apasionado con experiencia en la creación de aplicaciones innovadoras y sitios web de alto rendimiento. Mi objetivo es ofrecer soluciones creativas y efectivas que satisfagan las necesidades de mis clientes y mejoren su presencia en línea.",
+    "button": "Descargar CV",
+    "extra": [
+      "Capacitaciones",
+      "Libro Escrito",
+      "Oyentes",
+      "Proyectos Propios"
+    ],
+    "areas": {
+      "title": "Mis áreas de especialización",
+      "text": [
+        "Puedes expresarte como quieras y cuando quieras, de forma gratuita. Puedes personalizar una plantilla o crear la tuya desde cero, con una biblioteca inmersiva a tu disposición.",
+        "Puedes personalizar una plantilla o crear la tuya desde cero, con una biblioteca inmersiva a tu disposición."
+      ],
+      "button": "Mi Currículum",
+      "skills": {
+        "title": "Habilidades",
+        "languages": [
+          "JavaScript",
+          "Python",
+          "MySQL",
+          "MariaDB",
+          "Kotlin",
+          "NodeJS"
+        ]
+      },
+      "experience": {
+        "title": "Experiencia",
+        "item": [
+          {
+            "period": "2021 - Presente",
+            "company": "Bauen Software Inc.",
+            "role": "Desarrollador Web"
+          },
+          {
+            "period": "2020 - 2021",
+            "company": "Bauen Software Inc.",
+            "role": "Desarrollador Web"
+          },
+          {
+            "period": "2018 - 2020",
+            "company": "Bauen Software Inc.",
+            "role": "Desarrollador Web"
+          },
+          {
+            "period": "2016 - 2018",
+            "company": "Bauen Software Inc.",
+            "role": "Desarrollador Web"
+          }
+        ]
+      },
+      "education": {
+        "title": "Educación",
+        "item": [
+          {
+            "period": "2021 - Presente",
+            "institution": "Universidad de Stanford",
+            "field": "Desarrollo Web"
+          },
+          {
+            "period": "2020 - 2021",
+            "institution": "Universidad de Stanford",
+            "field": "Desarrollo Web"
+          },
+          {
+            "period": "2018 - 2020",
+            "institution": "Universidad de Stanford",
+            "field": "Desarrollo Web"
+          },
+          {
+            "period": "2017 - 2018",
+            "institution": "Universidad de Stanford",
+            "field": "Desarrollo Web"
+          }
+        ]
+      }
+    }
   },
   {
     "section": "portfolio",
-    "title": "Proyectos",
+    "title": "Mira mis proyectos recientes",
     "sub_title": "",
-    "text": "Aquí puedes ver algunos de mis proyectos realizados. Si te interesa contactarme para desarrollar tu propio proyecto, no dudes en hacerlo.",
-    "button": "Ver más proyectos"
+    "text": "",
+    "button": "Ver más proyectos",
+    "projects": [
+      {
+        "title": "Exportación de Autos",
+        "sub_title": "Youtube",
+        "text": ""
+      },
+      {
+        "title": "Entrega de Comida",
+        "sub_title": "Youtube",
+        "text": ""
+      },
+      {
+        "title": "Sitio Web de Ecommerce",
+        "sub_title": "Soundcloud",
+        "text": ""
+      },
+      {
+        "title": "Maqueta de Teléfono",
+        "sub_title": "Detalles",
+        "text": "Las maquetas son útiles tanto para la fase creativa del proyecto, por ejemplo, cuando intentas definir los flujos de usuario o la jerarquía visual adecuada, como para la fase de producción, donde representarán el producto objetivo. Construir maquetas logra el equilibrio ideal en facilidad de modificación."
+      },
+      {
+        "title": "Foto de Felix",
+        "sub_title": "Popup",
+        "text": ""
+      }
+    ]
   },
   {
     "section": "services",
-    "title": "Mis servicios",
+    "title": "Servicios que Ofrezco",
     "sub_title": "",
-    "text": "Aquí puedes ver los servicios que ofrezco. Si necesitas un desarrollador web o móvil, no dudes en contactarme.",
+    "text": "",
     "button": "",
     "services": [
       {
-        "title": "Desarrollo web",
+        "title": "Desarrollo Web",
         "short_text": "Creación de aplicaciones web modernas y atractivas, optimizadas para mejorar la experiencia del usuario.",
-        "detailed_text": "Creación de aplicaciones web modernas y atractivas, optimizadas para mejorar la experiencia del usuario. Incluye tanto el diseño como el desarrollo de la aplicación, así como la implementación en el servidor y la configuración de la base de datos.",
+        "detailed_text": "Creación de aplicaciones web modernas y atractivas, optimizadas para mejorar la experiencia del usuario. Incluye tanto el diseño como el desarrollo de la aplicación, así como la implementación del servidor y la configuración de la base de datos.",
         "languages": [
           "HTML",
           "CSS",
           "JavaScript",
           "PHP",
           "MySQL"
-        ],
-        "button": "Ver más"
+        ]
       },
       {
-        "title": "Desarrollo móvil",
-        "short_text": "Creación de aplicaciones móviles nativas y cross-platform, optimizadas para mejorar la experiencia del usuario.",
-        "detailed_text": "Creación de aplicaciones móviles nativas y cross-platform, optimizadas para mejorar la experiencia del usuario. Incluye tanto el diseño como el desarrollo de la aplicación, así como la implementación en el sistema operativo y la configuración de la base de datos.",
+        "title": "Desarrollo Móvil",
+        "short_text": "Creación de aplicaciones móviles nativas y multiplataforma, optimizadas para mejorar la experiencia del usuario.",
+        "detailed_text": "Creación de aplicaciones móviles nativas y multiplataforma, optimizadas para mejorar la experiencia del usuario. Incluye tanto el diseño como el desarrollo de la aplicación, así como la implementación en el sistema operativo y la configuración de la base de datos.",
         "languages": [
           "React Native",
           "Flutter"
-        ],
-        "button": "Ver más"
+        ]
+      },
+      {
+        "title": "Desarrollo Web",
+        "short_text": "Creación de aplicaciones web modernas y atractivas, optimizadas para mejorar la experiencia del usuario.",
+        "detailed_text": "Creación de aplicaciones web modernas y atractivas, optimizadas para mejorar la experiencia del usuario. Incluye tanto el diseño como el desarrollo de la aplicación, así como la implementación del servidor y la configuración de la base de datos.",
+        "languages": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "PHP",
+          "MySQL"
+        ]
+      },
+      {
+        "title": "Desarrollo Móvil",
+        "short_text": "Creación de aplicaciones móviles nativas y multiplataforma, optimizadas para mejorar la experiencia del usuario.",
+        "detailed_text": "Creación de aplicaciones móviles nativas y multiplataforma, optimizadas para mejorar la experiencia del usuario. Incluye tanto el diseño como el desarrollo de la aplicación, así como la implementación en el sistema operativo y la configuración de la base de datos.",
+        "languages": [
+          "React Native",
+          "Flutter"
+        ]
       }
     ]
   },

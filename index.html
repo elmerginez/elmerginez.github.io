@@ -92,26 +92,35 @@
                 </div>
                 <div class="menu relative">
                     <ul class="anchor_nav flex items-center">
-                        <li class="current mr-[50px]"><a class="text-[#5A5A5A]" href="#home">Home</a></li>
-                        <li class="mr-[50px]"><a class="text-[#5A5A5A]" href="#about">About</a></li>
-                        <li class="mr-[50px]"><a class="text-[#5A5A5A]" href="#service">Service</a></li>
-                        <li class="mr-[50px]"><a class="text-[#5A5A5A]" href="#portfolio">Portfolio</a></li>
-                        <li class="mr-[50px]"><a class="text-[#5A5A5A]" href="#blog">Blog</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li class="current mr-[50px]"><a class="text-[#5A5A5A] navixd" href="#home">Home</a></li>
+                        <li class="mr-[50px]"><a class="text-[#5A5A5A] navixd" href="#about">About</a></li>
+                        <li class="mr-[50px]"><a class="text-[#5A5A5A] navixd" href="#service">Service</a></li>
+                        <li class="mr-[50px]"><a class="text-[#5A5A5A] navixd" href="#portfolio">Portfolio</a></li>
+                        <li class="mr-[50px]"><a class="text-[#5A5A5A] navixd" href="#blog">Blog</a></li>
+                        <li><a class="navixd" href="#contact">Contact</a></li>
                     </ul>
                     <span class="ccc"></span>
                 </div>
 
-                <!-- Botón con dropdown -->
-                <div class="button" style="position: relative;">
+                <div class="button" style="position: relative; display: inline-flex;gap: 5px;">
                     <div id="themechanger">
                         <a
                             class="text-main-color font-bold font-dm inline-block rounded-[18px] px-[40px] pt-[17px] pb-[18px] transition-all duration-300 lang-theme">
                             <img class="svge" src="assets/img/svg/sun-1-svgrepo-com.svg">
                         </a>
                     </div>
+                    <div class="language-dropdown">
+                        <div id="languageButton" class="dropdown-button-x">
+                          <img class="svge" src="assets/img/svg/translate-svgrepo-com.svg" alt="">
+                        </div>
+                        <div id="languageOptions" class="dropdown-options hidden">
+                            <div class="language-option" data-lang="es">Spanish</div>
+                          <div class="language-option" data-lang="en">English</div>
+                          <div class="language-option" data-lang="ru">Russian</div>
+                          <div class="language-option" data-lang="jp">Japanese</div>
+                        </div>
+                      </div>
                 </div>
-
             </div>
         </div>
 
@@ -120,31 +129,31 @@
                 <div class="content min-h-[100vh] relative flex items-center justify-between">
                     <div class="details w-1/2 pr-[50px]">
                         <div class="short mb-[32px]">
-                            <h3 class="text-[80px] font-medium tracking-[-4px] mb-[11px]">Elmer Ginez <img
+                            <h3 class="text-[80px] font-medium tracking-[-4px] mb-[11px] homixd">Elmer Ginez <img
                                     class="svg w-[45px] h-[45px] relative left-[-7px]" src="assets/img/svg/hi.svg"
                                     alt /></h3>
-                            <span class="job inline-block relative text-[24px] pl-[97px]">Full-Stack Developer</span>
+                            <span class="job inline-block relative text-[24px] pl-[97px] homixd">Full-Stack Developer</span>
                         </div>
                         <div class="text mb-[70px]">
-                            <p class="text-[16px] text-[#5A5A5A] leading-[26px] max-w-[400px]">I'm
+                            <p class="text-[16px] text-[#5A5A5A] leading-[26px] max-w-[400px] homixd">I'm
                                 ful-stack dev
                                 based in Peru, and I'm very passionate
                                 and dedicated to my work.</p>
                         </div>
                         <div class="buttons flex items-center">
                             <div class="miwie_tm_boxed_button">
-                                <a class="anchor" href="#contact">Say Hello
+                                <a class="anchor homixd" href="#contact">Say Hello
                                     <img class="svg" src="assets/img/svg/send.svg" alt /></a>
                             </div>
                             <div class="miwie_tm_simple_button">
-                                <a class="line_effect anchor" href="#portfolio">My Works <img class="svg"
+                                <a class="line_effect anchor homixd" href="#portfolio">My Works <img class="svg"
                                         src="assets/img/svg/top-arrow.svg" alt /></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="miwie_tm_follow absolute bottom-[120px] flex items-center">
-                    <span class="text-[16px] font-medium">Follow me:</span>
+                    <span class="text-[16px] font-medium homixd">Follow me:</span>
                     <ul class="flex items-center relative top-[5px] ml-[20px]">
                         <li class="mr-[20px]"><a
                                 class="inline-block relative w-[56px] h-[56px] bg-[#F6F6F6] rounded-full transition-all duration-300"
@@ -1677,16 +1686,12 @@
             <a href="#"><span class="text">To Top</span></a>
             <span class="line"></span>
         </div>
-
     </div>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="assets/js/script.js"></script>
     <script src="assets/js/jquery.js"></script>
-    <!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/init.js"></script>
-    <script src="assets/js/script.js"></script>
-
 </body>
 
 </html>

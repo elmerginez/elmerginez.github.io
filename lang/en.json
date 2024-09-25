@@ -25,7 +25,7 @@
     "button": [
       "Say hello",
       "My Works",
-      "Follow me"
+      "Follow me:"
     ]
   },
   {
@@ -34,6 +34,12 @@
     "sub_title": "Years of expierence",
     "text": "I am a passionate web and mobile developer with experience in creating innovative applications and high-performance websites. My goal is to deliver creative and effective solutions that meet my clients' needs and enhance their online presence.",
     "button": "Download CV",
+    "extra": [
+      "Trainings",
+      "Written Book",
+      "Listeners",
+      "Own Projects"
+    ],
     "areas": {
       "title": "My expert areas",
       "text": [
@@ -106,16 +112,43 @@
   },
   {
     "section": "portfolio",
-    "title": "Projects",
+    "title": "Look  at my recent projects",
     "sub_title": "",
-    "text": "Here you can see some of my completed projects. If you are interested in contacting me to develop your own project, feel free to do so.",
-    "button": "See more projects"
+    "text": "",
+    "button": "See more projects",
+    "projects": [
+      {
+        "title": "Car Export",
+        "sub_title": "Youtube",
+        "text": ""
+      },
+      {
+        "title": "Food Delivery",
+        "sub_title": "Youtube",
+        "text": ""
+      },
+      {
+        "title": "Ecommerce Website",
+        "sub_title": "Soundcloud",
+        "text": ""
+      },
+      {
+        "title": "Mockup Phone",
+        "sub_title": "Details",
+        "text": "Mockups are useful both for the creative phase of the project - for instance when you're trying to figure out your user flows or the proper visual hierarchy - and the production phase when they phase when they will represent the target product. Building mockups strikes the ideal balance ease of modification."
+      },
+      {
+        "title": "Felix Photo",
+        "sub_title": "Popup",
+        "text": ""
+      }
+    ]
   },
   {
     "section": "services",
     "title": "Services I Provide",
     "sub_title": "",
-    "text": "Here you can see the services I offer. If you need a web or mobile developer, feel free to contact me.",
+    "text": "",
     "button": "",
     "services": [
       {
@@ -128,8 +161,7 @@
           "JavaScript",
           "PHP",
           "MySQL"
-        ],
-        "button": "See more"
+        ]
       },
       {
         "title": "Mobile Development",
@@ -138,23 +170,90 @@
         "languages": [
           "React Native",
           "Flutter"
-        ],
-        "button": "See more"
+        ]
+      },
+      {
+        "title": "Web Development",
+        "short_text": "Creation of modern and attractive web applications, optimized to enhance user experience.",
+        "detailed_text": "Creation of modern and attractive web applications, optimized to enhance user experience. Includes both application design and development, as well as server implementation and database setup.",
+        "languages": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "PHP",
+          "MySQL"
+        ]
+      },
+      {
+        "title": "Mobile Development",
+        "short_text": "Creation of native and cross-platform mobile applications, optimized to enhance user experience.",
+        "detailed_text": "Creation of native and cross-platform mobile applications, optimized to enhance user experience. Includes both application design and development, as well as implementation on the operating system and database setup.",
+        "languages": [
+          "React Native",
+          "Flutter"
+        ]
+      }
+    ]
+  },
+  {
+    "section": "blog",
+    "headline": "From my <br/> blog post",
+    "blogPosts": [
+      {
+        "author": "Elmer Ginez",
+        "date": "02 June, 2022",
+        "title": "Diversification of digital marketing strategies",
+        "text": "miwie is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals. In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line. That’s why more companies are not only reevaluating their website’s design but also partnering with miwie, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business.",
+        "linkText": "Read More"
+      },
+      {
+        "author": "Elmer Ginez",
+        "date": "02 June, 2022",
+        "title": "Diversification of digital marketing strategies",
+        "text": "miwie is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals. In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line. That’s why more companies are not only reevaluating their website’s design but also partnering with miwie, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business.",
+        "linkText": "Read More"
+      },
+      {
+        "author": "Elmer Ginez",
+        "date": "02 June, 2022",
+        "title": "Diversification of digital marketing strategies",
+        "text": "miwie is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals. In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line. That’s why more companies are not only reevaluating their website’s design but also partnering with miwie, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business.",
+        "linkText": "Read More"
+      },
+      {
+        "author": "Elmer Ginez",
+        "date": "02 June, 2022",
+        "title": "Diversification of digital marketing strategies",
+        "text": "miwie is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals. In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line. That’s why more companies are not only reevaluating their website’s design but also partnering with miwie, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business.",
+        "linkText": "Read More"
       }
     ]
   },
   {
     "section": "contact",
-    "title": "Contact",
-    "sub_title": "Don't hesitate to contact me!",
-    "text": "I'm here to help. If you have a project in mind, a creative idea you want to discuss, or just want to chat, feel free to get in touch with me!",
-    "sub_text": [
-      "You can send me an email at:",
-      "You can also find me on social media:"
+    "headline": "Let's work together",
+    "description": "You can express yourself however you want and whenever you want, for free. You can customize a template or make your own.",
+    "contact": {
+      "phone": "+51 921 026 466",
+      "email": "freddginez5@gmail.com"
+    },
+    "socialMedia": "Follow me:"
+  },
+  {
+    "section": "feedback",
+    "title": "Valuable feedback <br/>from my client",
+    "sub_title": "",
+    "text": "",
+    "review": [
+      {
+        "content": "Awesome website! Easy to use and edit, it has a lot of options to design whatever you need, it is professional and fun. I was very successful creating my profile using designer which gave me unbelievable reach & appreciation.",
+        "author": "Albert Walkers",
+        "company": "Vivaco Group"
+      }
     ]
   },
   {
     "section": "footer",
-    "text": "All rights reserved Elmer Ginez | Miwi 2024"
+    "text": "2024 by ELmer Ginez. All Rights Reserved MiwiE"
   }
 ]
