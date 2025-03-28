@@ -78,6 +78,9 @@ function changeLanguage(language) {
                 if (element.section === "home") {
                     home(element)
                 }
+                if (element.section === "about") {
+                    about(element)
+                }
             })
         })
         .catch(error => console.error("Error al cargar el JSON de idiomas:", error));
@@ -104,6 +107,15 @@ function home(lang) {
     homeElements[4].innerHTML = lang.button[1] + ' <img class="svg" src="assets/img/svg/top-arrow.svg">';
     homeElements[5].textContent = lang.button[2]
     console.log(homeElements)
+}
+
+function about(lang) {
+    let aboutElements = document.querySelectorAll('.aboutixd')
+    console.log(aboutElements)
+    aboutElements[0].textContent = lang.sub_title
+    aboutElements[1].textContent = lang.title
+    aboutElements[2].textContent = lang.text
+    aboutElements[3].innerHTML = lang.button + ' <img class="svg" src="assets/img/svg/paper.svg">'
 }
 
 
