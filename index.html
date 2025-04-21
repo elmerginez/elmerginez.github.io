@@ -2,18 +2,18 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Sitio web de Elmer Ginez (MiwiE Code)" />
-    <meta name="keywords" content="Elmer Ginez, miwie, miwie code" />
-    <meta name="author" content="Elmer Ginez" />
-    <meta property="og:title" content="Elmer Ginez" />
-    <meta property="og:description" content="Este es mi portafolio web. ¡Visítalo ahora!" />
-    <meta property="og:image" content="https://elmerginez.github.io/assets/img/logo/logo.svg" />
-    <meta property="og:url" content="https://elmerginez.github.io" />
-    <link rel="canonical" href="https://elmerginez.github.io/" />
-    <script type="application/ld+json">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sitio web de Elmer Ginez (MiwiE Code)" />
+  <meta name="keywords" content="Elmer Ginez, miwie, miwie code" />
+  <meta name="author" content="Elmer Ginez" />
+  <meta property="og:title" content="Elmer Ginez" />
+  <meta property="og:description" content="Este es mi portafolio web. ¡Visítalo ahora!" />
+  <meta property="og:image" content="https://elmerginez.github.io/assets/img/logo/logo.svg" />
+  <meta property="og:url" content="https://elmerginez.github.io" />
+  <link rel="canonical" href="https://elmerginez.github.io/" />
+  <script type="application/ld+json">
       {
         "@context": "http://schema.org",
         "@type": "Organization",
@@ -22,1095 +22,964 @@
         "logo": "https://www.ejemplo.com/favicon.ico"
       }
     </script>
-    <title>Elmer Ginez - MiwiE</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <title>Elmer Ginez - MiwiE</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="assets/css/plugins.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/dark.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/modalboxes.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+  <title>Lilua - Personal Portfolio Html Template</title>
+  <meta name="author" content="" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <link rel="icon" href="include/images/favicon.png" sizes="32x32" />
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+    rel="stylesheet" />
+  <!-- Bootstrap Css -->
+  <link rel="stylesheet" href="include/css/bootstrap.min.css" type="text/css" />
+  <!-- Swiper Css -->
+  <link rel="stylesheet" href="include/css/swiper-bundle.min.css" type="text/css" />
+  <!-- Write your Css here -->
+  <link href="include/css/style.css" rel="stylesheet" type="text/css" />
+  <!-- Script for Font Awesome icons-->
+  <script src="https://kit.fontawesome.com/7a2873b897.js" crossorigin="anonymous" defer></script>
 </head>
 
 <body>
-    <div id="preloader">
+
+      <div id="preloader">
         <div class="loader_line"></div>
     </div>
 
-    <div class="miwie_tm_all_wrap w-full float-left clear-both h-auto relative" data-magic-cursor="show">
-        <div class="miwie_tm_mobile_menu w-full h-auto fixed top-0 left-0 hidden z-[10] middle:block">
-            <div class="mobile_menu_inner w-full h-auto float-left clear-both bg-white py-[10px] px-[20px]">
-                <div class="mobile_in w-full h-auto clear-both float-left flex items-center justify-between">
-                    <div class="logo">
-                        <a href="#"><img class="max-w-[90px] max-h-[70px]" src="assets/img/logo/light.svg" alt /></a>
-                    </div>
-                    <div class="trigger leading-[0]">
-                        <div class="hamburger hamburger--slider">
-                            <div class="hamburger-box">
-                                <div class="hamburger-inner"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <!-- ============================ HEADER START ============================== -->
+  <header id="header">
+    <nav class="navbar navbar-expand-xl">
+      <div class="container">
+        <div class="nav-inside d-flex align-items-center justify-content-between">
+          <a class="navbar-brand" href="index.html"><img src="include/images/logo.svg" alt="" /></a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+            aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="mainNav">
+            <div class="navbar-inside">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown active">
+                  <a class="nav-link" href="index.html">Home</a>
+                  <!-- <em class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" role="button"></em>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item active" href="index-v1.html">Home v1</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="index-v2.html">Home v2</a>
+                    </li>
+                  </ul> -->
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                  <a class="nav-link" href="styleguide.html">Components</a>
+                  <em class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" role="button"></em>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="styleguide.html">Styleguide</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="portfolio-single.html">Porfolio Single</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="blog-single.html">Blog Single</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="error.html">Error 404 Page</a>
+                    </li>
+                  </ul>
+                </li> -->
+              </ul>
+              <div class="navbar-bottom mt-auto d-md-none">
+                <a href="contact.html" class="btn btn-primary btn-block">Contact <em class="btn-arrow"></em></a>
+              </div>
             </div>
-            <div class="dropdown w-full h-auto clear-both float-left bg-white hidden">
-                <div class="dropdown_inner w-full h-auto clear-both float-left py-[25px] px-[20px]">
-                    <ul class="anchor_nav">
-                        <li class="current float-left w-full">
-                            <a class="text-black inline-block p-0 font-medium" href="#home">Home</a>
-                        </li>
-                        <li class="float-left w-full">
-                            <a class="text-black inline-block p-0 font-medium" href="#about">About</a>
-                        </li>
-                        <li class="float-left w-full">
-                            <a class="text-black inline-block p-0 font-medium" href="#service">Service</a>
-                        </li>
-                        <li class="float-left w-full">
-                            <a class="text-black inline-block p-0 font-medium" href="#portfolio">Portfolio</a>
-                        </li>
-                        <li class="float-left w-full">
-                            <a class="text-black inline-block p-0 font-medium" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+          </div>
+          <div class="header-right d-flex align-items-center">
+            <div class="theme-switcher">
+              <button class="theme-toggler">
+                <span class="dark-icon"><i class="fa-solid fa-moon"></i></span>
+                <span class="light-icon"><i class="fa-solid fa-sun"></i></span>
+              </button>
             </div>
+            <div class="header-cta d-none d-md-flex">
+              <a href="contact.html" class="btn btn-primary">Contact <em class="btn-arrow"></em></a>
+            </div>
+          </div>
         </div>
-
-        <div
-            class="miwie_tm_header fixed top-0 left-0 right-0 z-[10] py-[25px] px-[150px] transition-all duration-300 middle:hidden">
-            <div class="header_in w-full flex items-center justify-between">
-                <div class="logo">
-                    <a href="#"><img class="max-w-[170px] max-h-[90px] theme-update" src="assets/img/logo/light.svg"
-                            alt /></a>
+      </div>
+    </nav>
+  </header>
+  <!-- ============================ HEADER END ============================== -->
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <!-- ============================ Hero Start ============================ -->
+      <div class="hero-container d-flex align-items-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 d-flex align-items-center">
+              <div class="hero-text animate-child" data-speed="1.2">
+                <h6 class="mb-0">
+                  <span>Hey! <span>✌️</span> I'm</span>
+                </h6>
+                <h1 class="mb-0">
+                  <span class="gradient-text">Fredd Ginez</span>
+                </h1>
+                <h2 class="mb-2">
+                  <span>Full-stack Developer from Peru</span>
+                </h2>
+                <p class="col-lg-8">
+                  <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit
+                    deserunt, animi laboriosam.</span>
+                </p>
+                <div class="hero-cta">
+                  <a href="#" class="btn btn-primary down-arrow" id="btn-hero">Featured work <em
+                      class="btn-arrow"></em></a>
                 </div>
-                <div class="menu relative">
-                    <ul class="anchor_nav flex items-center">
-                        <li class="current mr-[50px]">
-                            <a class="text-[#5A5A5A] navixd" href="#home">Home</a>
-                        </li>
-                        <li class="mr-[50px]">
-                            <a class="text-[#5A5A5A] navixd" href="#about">About</a>
-                        </li>
-                        <li class="mr-[50px]">
-                            <a class="text-[#5A5A5A] navixd" href="#service">Service</a>
-                        </li>
-                        <li class="mr-[50px]">
-                            <a class="text-[#5A5A5A] navixd" href="#portfolio">Portfolio</a>
-                        </li>
-
-                        <li><a class="navixd" href="#contact">Contact</a></li>
-                    </ul>
-                    <span class="ccc"></span>
-                </div>
-
-                <div class="button" style="position: relative; display: inline-flex; gap: 5px">
-                    <div id="themechanger">
-                        <a
-                            class="text-main-color font-bold font-dm inline-block rounded-[18px] px-[40px] pt-[17px] pb-[18px] transition-all duration-300 lang-theme">
-                            <img class="svge" src="assets/img/svg/sun-1-svgrepo-com.svg" />
-                        </a>
+                <ul class="hero-info-list d-flex align-items-start">
+                  <li class="hero-info-item">
+                    <div class="hero-info-box d-flex align-items-center">
+                      <h3><span class="gradient-text">1</span></h3>
+                      <h6>Years <br />of Experience</h6>
                     </div>
-                    <div class="language-dropdown">
-                        <div id="languageButton" class="dropdown-button-x">
-                            <img class="svge" src="assets/img/svg/translate-svgrepo-com.svg" alt="" />
-                        </div>
-                        <div id="languageOptions" class="dropdown-options hidden">
-                            <div class="language-option" data-lang="es">Spanish</div>
-                            <div class="language-option" data-lang="en">English</div>
-                            <div class="language-option" data-lang="ru">Russian</div>
-                            <div class="language-option" data-lang="jp">Japanese</div>
-                        </div>
+                  </li>
+                  <li class="hero-info-item">
+                    <div class="hero-info-box d-flex align-items-center">
+                      <h3><span class="gradient-text">10</span></h3>
+                      <h6>Projects <br />Completed</h6>
                     </div>
-                </div>
+                  </li>
+                </ul>
+              </div>
             </div>
+            <div class="col-lg-6 animate-child">
+              <div class="hero-outer-wrapper delay4">
+                <div class="hero-outer position-relative" data-tilt data-tilt-axis="x" data-tilt-max="5"
+                  data-tilt-reverse="true">
+                  <div class="hero-box" data-speed="1.1">
+                    <div class="hero-image">
+                      <img src="include/images/hero.png" alt="hero image" />
+                    </div>
+                  </div>
+                  <div class="hero-availability fa-spin" data-speed="1.2">
+                    <img src="include/images/available-circle.svg" alt="Avaialble" />
+                  </div>
+                  <div class="bg-shape fa-spin fa-spin-reverse" data-speed="1.15">
+                    <svg id="sw-js-blob-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                      <defs>
+                        <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+                          <stop id="stop1" stop-color="rgba(0, 0, 0, 1)" offset="0%"></stop>
+                          <stop id="stop2" stop-color="rgba(0, 0, 0, 1)" offset="100%"></stop>
+                        </linearGradient>
+                      </defs>
+                      <path fill="inherit"
+                        d="M22.7,-27.7C29.3,-21.6,34.2,-14.3,37,-5.5C39.7,3.2,40.3,13.4,36.1,21.1C31.9,28.8,23.1,34,14,36.3C5,38.6,-4.3,38,-13.2,35.2C-22,32.4,-30.4,27.4,-35.1,20C-39.7,12.5,-40.5,2.6,-39,-7.1C-37.5,-16.7,-33.7,-26.1,-26.8,-32.2C-19.9,-38.2,-9.9,-40.9,-0.9,-39.8C8.1,-38.7,16.2,-33.8,22.7,-27.7Z"
+                        transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s ease 0s"
+                        stroke="url(#sw-gradient)"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div class="miwie_tm_hero w-full min-h-[100vh] relative float-left" id="home">
-            <div class="container min-h-[100vh]">
-                <div class="content min-h-[100vh] relative flex items-center justify-between">
-                    <div class="details w-1/2 pr-[50px]">
-                        <div class="short mb-[32px]">
-                            <h3 class="text-[80px] font-medium tracking-[-4px] mb-[11px] homixd">
-                                Elmer Ginez
-                                <img class="svg w-[45px] h-[45px] relative left-[-7px]" src="assets/img/svg/hi.svg"
-                                    alt />
-                            </h3>
-                            <span class="job inline-block relative text-[24px] pl-[97px] homixd">Full-Stack
-                                Developer</span>
-                        </div>
-                        <div class="text mb-[70px]">
-                            <p class="text-[16px] text-[#5A5A5A] leading-[26px] max-w-[400px] homixd">
-                                I'm ful-stack dev based in Peru, and I'm very passionate and
-                                dedicated to my work.
-                            </p>
-                        </div>
-                        <div class="buttons flex items-center">
-                            <div class="miwie_tm_boxed_button">
-                                <a class="anchor homixd" href="#contact">Say Hello
-                                    <img class="svg" src="assets/img/svg/send.svg" alt /></a>
-                            </div>
-                            <div class="miwie_tm_simple_button">
-                                <a class="line_effect anchor homixd" href="#portfolio">My Works
-                                    <img class="svg" src="assets/img/svg/top-arrow.svg" alt /></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="miwie_tm_follow absolute bottom-[120px] flex items-center">
-                    <span class="text-[16px] font-medium homixd">Follow me:</span>
-                    <ul class="flex items-center relative top-[5px] ml-[20px]">
-                        <li class="mr-[20px]">
-                            <a class="inline-block relative w-[56px] h-[56px] bg-[#F6F6F6] rounded-full transition-all duration-300"
-                                href="https://www.tiktok.com/@elmerginez55" target="_blank">
-                                <img class="svg absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] transition-all duration-300"
-                                    src="assets/img/svg/social/tiktok.svg" alt />
-                            </a>
-                        </li>
-                        <li class="mr-[20px]">
-                            <a class="inline-block relative w-[56px] h-[56px] bg-[#F6F6F6] rounded-full transition-all duration-300"
-                                href="https://www.facebook.com/elmerginez55/" target="_blank"><img
-                                    class="svg absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] transition-all duration-300"
-                                    src="assets/img/svg/social/facebook.svg" alt /></a>
-                        </li>
-                        <li>
-                            <a class="inline-block relative w-[56px] h-[56px] bg-[#F6F6F6] rounded-full transition-all duration-300"
-                                href="https://www.instagram.com/elmerginez55" target="_blank"><img
-                                    class="svg absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] transition-all duration-300"
-                                    src="assets/img/svg/social/instagram.svg" alt /></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="miwie_tm_down absolute left-[150px] bottom-[45px]">
-                <a class="anchor" href="#about"><img class="svg" src="assets/img/svg/down_button.svg" alt /></a>
-            </div>
-            <div class="avatar absolute w-1/2 right-0 bottom-[-8px]">
-                <div class="img relative inline-block">
-                    <img class="max-w-[700px] max-h-[760px]" src="assets/img/hero/error-pls-add.jpg" alt />
-                    <div class="video_button">
-                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=kt1Edu0dbvY"><img
-                                class="anim_circle" src="assets/img/hero/welcome1.png" alt /><img class="svg"
-                                src="assets/img/svg/play.svg" alt /></a>
-                    </div>
-                </div>
-            </div>
+        <div class="hero-bg">
+          <lottie-player src="include/animation/gradient-background.json" background="transparent" speed="1" loop
+            autoplay preserveAspectRatio="xMidYMid slice"></lottie-player>
         </div>
-
-        <div class="miwie_tm_section w-full h-auto clear-both float-left" id="about">
-            <div
-                class="miwie_tm_about w-full h-auto clear-both float-left bg-[#6244C5] px-0 pt-[180px] pb-[120px] mb-[120px]">
-                <div class="about_in w-full h-auto max-w-[1070px] mx-auto my-0 flex items-center">
-                    <div class="left w-1/2 pr-[50px]">
-                        <div class="box bg-[#FFC448] inline-block overflow-hidden pb-[85px] relative">
-                            <h3
-                                class="year font-oswald tracking-[-4px] font-extrabold text-[395px] relative mr-[-30px] mt-[-95px] text-[#6244C5] leading-[1]">
-                                - 1
-                            </h3>
-                            <span class="experience text-[24px] pl-[50px] mt-[6px] inline-block aboutixd">Years of
-                                Experience</span>
-                            <h3
-                                class="name text-[80px] text-[#6244C5] font-bold tracking-[-4px] leading-[1] uppercase absolute bottom-[-30px] left-[-20px] w-[300%]">
-                                Elmer Ginez
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="right w-1/2 relative">
-                        <span class="element absolute top-0 right-full mr-[15px] mt-[-20px]"><img
-                                class="svg w-[80px] h-[80px] text-transparent" src="assets/img/svg/element.svg"
-                                alt /></span>
-                        <div class="miwie_tm_main_title w-full float-left mb-[30px]">
-                            <h3 class="text-white tracking-[-2px] text-[56px] font-bold">
-                                <span class="relative aboutixd">About Me</span>
-                            </h3>
-                        </div>
-                        <div class="text w-full float-left mb-[50px]">
-                            <p class="text-[rgba(255,255,255,.7)] font-light leading-[32px] aboutixd">
-                                I am a passionate web and mobile developer with experience in
-                                creating innovative applications and high-performance
-                                websites. My goal is to deliver creative and effective
-                                solutions that meet my clients' needs and enhance their online
-                                presence.
-                            </p>
-                        </div>
-                        <div class="short w-full float-left flex items-center">
-                            <div class="miwie_tm_boxed_button">
-                                <a href="assets/img/cv/1p.jpg" class="aboutixd" download>Download CV
-                                    <img class="svg" src="assets/img/svg/paper.svg" alt /></a>
-                            </div>
-                            <img class="max-w-[200px] max-h-[200px] ml-[50px]" src="assets/img/signature1.png" alt />
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="text-marquee animate-child bottom" data-speed="1.1">
+          <div class="text-marquee-wrapper">
+            <span class="text marquee-text outline">full stack developer</span>
+            <span class="text marquee-text outline">full stack developer</span>
+            <span class="text marquee-text outline">full stack developer</span>
+            <span class="text marquee-text outline">full stack developer</span>
+            <span class="text marquee-text outline">full stack developer</span>
+            <span class="text marquee-text outline">full stack developer</span>
+          </div>
         </div>
-
-        <div class="miwie_tm_section w-full h-auto clear-both float-left">
-            <div class="miwie_tm_informations w-full h-auto clear-both float-left mb-[125px]">
-                <div class="container">
-                    <div class="informations_inner w-full h-auto flex">
-                        <div class="left w-1/2 pr-[100px]">
-                            <div class="miwie_tm_main_title w-full float-left">
-                                <h3 class="tracking-[-2px] text-[56px] font-bold">
-                                    <span class="relative">My expert<br />areas</span>
-                                </h3>
-                            </div>
-                            <div class="text w-full float-left mt-[30px] mb-[40px]">
-                                <p class="mb-[35px]">
-                                    You can express yourself however you want and whenever you
-                                    want, for free. You can customize a template or make your
-                                    own from scratch, with an immersive library at your
-                                    disposal. You can express yourself however you want and
-                                    whenever you free.
-                                </p>
-                                <p>
-                                    You can customize a template or make your own from scratch,
-                                    with an immersive library at your disposal.
-                                </p>
-                            </div>
-            
-                        </div>
-                        <div class="right w-1/2 top-[33px] relative">
-                            <div class="filter w-full float-left relative">
-                                <ul>
-                                    <li class="mr-[70px] inline-block">
-                                        <a class="current text-main-color font-dm font-bold inline-block relative"
-                                            href="#" data-tab="tab_1"><span class="relative inline-block">Skills</span>
-                                            <img class="svg w-[24px] h-[24px] relative ml-[6px]"
-                                                src="assets/img/svg/top-arrow.svg" alt /></a>
-                                    </li>
-                                    <li class="mr-[70px] inline-block">
-                                        <a class="text-main-color font-dm font-bold inline-block relative" href="#"
-                                            data-tab="tab_2"><span class="relative inline-block">Experience</span>
-                                            <img class="svg w-[24px] h-[24px] relative ml-[6px]"
-                                                src="assets/img/svg/top-arrow.svg" alt /></a>
-                                    </li>
-                                    <li class="inline-block">
-                                        <a class="text-main-color font-dm font-bold inline-block relative" href="#"
-                                            data-tab="tab_3"><span class="relative inline-block">Education</span>
-                                            <img class="svg w-[24px] h-[24px] relative ml-[6px]"
-                                                src="assets/img/svg/top-arrow.svg" alt /></a>
-                                    </li>
-                                </ul>
-                                <span class="ccc"></span>
-                            </div>
-                            <div class="content w-full float-left">
-                                <div id="tab_1" class="wrapper current w-full h-auto clear-both float-left">
-                                    <div class="skillbox w-full float-left mt-[110px]">
-                                        <ul class="ml-[-20px]">
-                                            <li class="mb-[45px] w-1/3 float-left pl-[20px]">
-                                                <div class="list_inner w-full h-auto clear-both float-left relative">
-                                                    <span
-                                                        class="icon w-[40px] h-[40px] rounded-full bg-main-color inline-block relative mb-[3px]"><span
-                                                            class="in w-[25px] h-[25px] inline-block absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] bg-white rounded-[6px]"><img
-                                                                class="svg absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] z-[1] w-[16px] h-[16px]"
-                                                                src="assets/img/svg/javascript.svg" alt /></span></span>
-                                                    <p class="name font-dm text-black">
-                                                        JavaScript
-                                                        <span class="font-bold">(0%)</span>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li class="mb-[45px] w-1/3 float-left pl-[20px]">
-                                                <div class="list_inner w-full h-auto clear-both float-left relative">
-                                                    <span
-                                                        class="icon w-[40px] h-[40px] rounded-full bg-main-color inline-block relative mb-[3px]"><span
-                                                            class="in w-[25px] h-[25px] inline-block absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] bg-white rounded-[6px]"><img
-                                                                class="svg absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] z-[1] w-[16px] h-[16px]"
-                                                                src="assets/img/svg/python.svg" alt /></span></span>
-                                                    <p class="name font-dm text-black">
-                                                        Python <span class="font-bold">(0%)</span>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li class="mb-[45px] w-1/3 float-left pl-[20px]">
-                                                <div class="list_inner w-full h-auto clear-both float-left relative">
-                                                    <span
-                                                        class="icon w-[40px] h-[40px] rounded-full bg-main-color inline-block relative mb-[3px]"><span
-                                                            class="in w-[25px] h-[25px] inline-block absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] bg-white rounded-[6px]"><img
-                                                                class="svg absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] z-[1] w-[16px] h-[16px]"
-                                                                src="assets/img/svg/mysql.svg" alt /></span></span>
-                                                    <p class="name font-dm text-black">
-                                                        MySQL
-                                                        <span class="font-bold">(5%)</span>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li class="mb-[45px] w-1/3 float-left pl-[20px]">
-                                                <div class="list_inner w-full h-auto clear-both float-left relative">
-                                                    <span
-                                                        class="icon w-[40px] h-[40px] rounded-full bg-main-color inline-block relative mb-[3px]"><span
-                                                            class="in w-[25px] h-[25px] inline-block absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] bg-white rounded-[6px]"><img
-                                                                class="svg absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] z-[1] w-[16px] h-[16px]"
-                                                                src="assets/img/svg/mariadb.svg" alt /></span></span>
-                                                    <p class="name font-dm text-black">
-                                                        MariaDB
-                                                        <span class="font-bold">(5%)</span>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li class="mb-[45px] w-1/3 float-left pl-[20px]">
-                                                <div class="list_inner w-full h-auto clear-both float-left relative">
-                                                    <span
-                                                        class="icon w-[40px] h-[40px] rounded-full bg-main-color inline-block relative mb-[3px]"><span
-                                                            class="in w-[25px] h-[25px] inline-block absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] bg-white rounded-[6px]"><img
-                                                                class="svg absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] z-[1] w-[16px] h-[16px]"
-                                                                src="assets/img/svg/kotlin.svg" alt /></span></span>
-                                                    <p class="name font-dm text-black">
-                                                        Kotlin
-                                                        <span class="font-bold">(0%)</span>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li class="mb-[45px] w-1/3 float-left pl-[20px]">
-                                                <div class="list_inner w-full h-auto clear-both float-left relative">
-                                                    <span
-                                                        class="icon w-[40px] h-[40px] rounded-full bg-main-color inline-block relative mb-[3px]"><span
-                                                            class="in w-[25px] h-[25px] inline-block absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] bg-white rounded-[6px]"><img
-                                                                class="svg absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] z-[1] w-[16px] h-[16px]"
-                                                                src="assets/img/svg/nodejs.svg" alt /></span></span>
-                                                    <p class="name font-dm text-black">
-                                                        NodeJS
-                                                        <span class="font-bold">(5%)</span>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div id="tab_2" class="wrapper w-full h-auto clear-both float-left">
-                                    <div class="timelinebox w-full float-left mt-[100px]">
-                                        <ul class="ml-[-20px]">
-                                            <li class="mb-[37px] w-1/2 float-left pl-[20px]">
-                                                <div class="list_inner w-full h-auto clear-both float-left relative">
-                                                    <div class="time w-full float-left mb-[25px]">
-                                                        <span class="year text-[#6244C5] block mb-[2px]">2021 -
-                                                            Present</span>
-                                                        <span class="company">Bauen Software Inc.</span>
-                                                    </div>
-                                                    <div class="job w-full float-left">
-                                                        <h3 class="text-[21px]">
-                                                            <span class="inline-block relative">Web Developer</span>
-                                                        </h3>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="mb-[37px] w-1/2 float-left pl-[20px]">
-                                                <div class="list_inner w-full h-auto clear-both float-left relative">
-                                                    <div class="time w-full float-left mb-[25px]">
-                                                        <span class="year text-[#6244C5] block mb-[2px]">2020 -
-                                                            2021</span>
-                                                        <span class="company">Bauen Software Inc.</span>
-                                                    </div>
-                                                    <div class="job w-full float-left">
-                                                        <h3 class="text-[21px]">
-                                                            <span class="inline-block relative">Web Developer</span>
-                                                        </h3>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="mb-[37px] w-1/2 float-left pl-[20px]">
-                                                <div class="list_inner w-full h-auto clear-both float-left relative">
-                                                    <div class="time w-full float-left mb-[25px]">
-                                                        <span class="year text-[#6244C5] block mb-[2px]">2018 -
-                                                            2020</span>
-                                                        <span class="company">Bauen Software Inc.</span>
-                                                    </div>
-                                                    <div class="job w-full float-left">
-                                                        <h3 class="text-[21px]">
-                                                            <span class="inline-block relative">Web Developer</span>
-                                                        </h3>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="mb-[37px] w-1/2 float-left pl-[20px]">
-                                                <div class="list_inner w-full h-auto clear-both float-left relative">
-                                                    <div class="time w-full float-left mb-[25px]">
-                                                        <span class="year text-[#6244C5] block mb-[2px]">2016 -
-                                                            2018</span>
-                                                        <span class="company">Bauen Software Inc.</span>
-                                                    </div>
-                                                    <div class="job w-full float-left">
-                                                        <h3 class="text-[21px]">
-                                                            <span class="inline-block relative">Web Developer</span>
-                                                        </h3>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div id="tab_3" class="wrapper w-full h-auto clear-both float-left">
-                                    <div class="timelinebox w-full float-left mt-[100px]">
-                                        <ul class="ml-[-20px]">
-                                            <li class="mb-[37px] w-1/2 float-left pl-[20px]">
-                                                <div class="list_inner w-full h-auto clear-both float-left relative">
-                                                    <div class="time w-full float-left mb-[25px]">
-                                                        <span class="year text-[#6244C5] block mb-[2px]">2021 -
-                                                            Present</span>
-                                                        <span class="company">Stanford Univercity</span>
-                                                    </div>
-                                                    <div class="job w-full float-left">
-                                                        <h3 class="text-[21px]">
-                                                            <span class="inline-block relative">Web Development</span>
-                                                        </h3>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="mb-[37px] w-1/2 float-left pl-[20px]">
-                                                <div class="list_inner w-full h-auto clear-both float-left relative">
-                                                    <div class="time w-full float-left mb-[25px]">
-                                                        <span class="year text-[#6244C5] block mb-[2px]">2020 -
-                                                            2021</span>
-                                                        <span class="company">Stanford Univercity</span>
-                                                    </div>
-                                                    <div class="job w-full float-left">
-                                                        <h3 class="text-[21px]">
-                                                            <span class="inline-block relative">Web Development</span>
-                                                        </h3>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="mb-[37px] w-1/2 float-left pl-[20px]">
-                                                <div class="list_inner w-full h-auto clear-both float-left relative">
-                                                    <div class="time w-full float-left mb-[25px]">
-                                                        <span class="year text-[#6244C5] block mb-[2px]">2018 -
-                                                            2020</span>
-                                                        <span class="company">Stanford Univercity</span>
-                                                    </div>
-                                                    <div class="job w-full float-left">
-                                                        <h3 class="text-[21px]">
-                                                            <span class="inline-block relative">Web Development</span>
-                                                        </h3>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="mb-[37px] w-1/2 float-left pl-[20px]">
-                                                <div class="list_inner w-full h-auto clear-both float-left relative">
-                                                    <div class="time w-full float-left mb-[25px]">
-                                                        <span class="year text-[#6244C5] block mb-[2px]">2017 -
-                                                            2018</span>
-                                                        <span class="company">Stanford Univercity</span>
-                                                    </div>
-                                                    <div class="job w-full float-left">
-                                                        <h3 class="text-[21px]">
-                                                            <span class="inline-block relative">Web Development</span>
-                                                        </h3>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      </div>
+      <!-- ============================ Hero End ============================ -->
+      <!-- ============================ Portfolio Start ============================ -->
+      <div class="content-container home-portfolio position-relative" id="featured-work">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="heading text-center animate-child">
+                <div class="heading-large">
+                  <h2 data-speed="1.1"><span>Featured Work</span></h2>
                 </div>
+                <h3>Featured Work</h3>
+                <p>Explore some of my latest work.</p>
+              </div>
             </div>
-        </div>
-
-        <div class="miwie_tm_section w-full h-auto clear-both float-left" id="service">
-            <div class="miwie_tm_service w-full h-auto clear-both float-left px-0 py-[120px] bg-[#fafafb]">
-                <div class="container">
-                    <div class="miwie_tm_main_title w-full float-left">
-                        <h3 class="tracking-[-2px] text-[56px] font-bold">
-                            <span class="relative">Services<br />I Provide</span>
-                        </h3>
-                    </div>
-                    <div class="service_list w-full h-auto clear-both float-left mt-[100px] relative">
-                        <ul class="relative z-[2]">
-                            <li class="current relative">
-                                <div
-                                    class="list_inner w-full flex items-center justify-between relative pt-[27px] pb-[26px] pl-[25px] pr-[35px]">
-                                    <div class="left w-[40%] flex">
-                                        <span
-                                            class="number inline-block text-[#6244C5] text-[24px] font-dm transition-all duration-300">01</span>
-                                        <h3 class="title text-[30px] font-medium pl-[30px] transition-all duration-300">
-                                            UI/UX Design
-                                        </h3>
-                                    </div>
-                                    <div class="right w-[60%] flex items-center justify-between">
-                                        <div class="text pr-[150px]">
-                                            <p class="transition-all duration-300">
-                                                You can customize a template or make your own from
-                                                scratch, with an immersive library at your disposal...
-                                            </p>
-                                        </div>
-                                        <div class="arrow leading-[1]">
-                                            <img class="svg w-[25px] h-[25px] transition-all duration-300"
-                                                src="assets/img/svg/top-arrow.svg" alt />
-                                        </div>
-                                    </div>
-                                    <a class="miwie_tm_full_link absolute inset-0 z-[5]" href="#"></a>
-
-                                    <img class="popup_service_image" src="assets/img/service/1.jpg" alt />
-                                    <div class="service_hidden_details">
-                                        <div class="service_popup_informations">
-                                            <div class="descriptions">
-                                                <p>
-                                                    miwie is a leading web design agency with an
-                                                    award-winning design team that creates innovative,
-                                                    effective websites that capture your brand, improve
-                                                    your conversion rates, and maximize your revenue to
-                                                    help grow your business and achieve your goals.
-                                                </p>
-                                                <p>
-                                                    In today’s digital world, your website is the first
-                                                    interaction consumers have with your business.
-                                                    That's why almost 95 percent of a user’s first
-                                                    impression relates to web design. It’s also why web
-                                                    design services can have an immense impact on your
-                                                    company’s bottom line.
-                                                </p>
-                                                <p>
-                                                    That’s why more companies are not only reevaluating
-                                                    their website’s design but also partnering with
-                                                    miwie, the web design agency that’s driven more than
-                                                    $2.4 billion in revenue for its clients. With over
-                                                    50 web design awards under our belt, we're confident
-                                                    we can design a custom website that drives sales for
-                                                    your unique business.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="relative">
-                                <div
-                                    class="list_inner w-full flex items-center justify-between relative pt-[27px] pb-[26px] pl-[25px] pr-[35px]">
-                                    <div class="left w-[40%] flex">
-                                        <span
-                                            class="number inline-block text-[#6244C5] text-[24px] font-dm transition-all duration-300">02</span>
-                                        <h3 class="title text-[30px] font-medium pl-[30px] transition-all duration-300">
-                                            User Research
-                                        </h3>
-                                    </div>
-                                    <div class="right w-[60%] flex items-center justify-between">
-                                        <div class="text pr-[150px]">
-                                            <p class="transition-all duration-300">
-                                                You can customize a template or make your own from
-                                                scratch, with an immersive library at your disposal...
-                                            </p>
-                                        </div>
-                                        <div class="arrow leading-[1]">
-                                            <img class="svg w-[25px] h-[25px] transition-all duration-300"
-                                                src="assets/img/svg/top-arrow.svg" alt />
-                                        </div>
-                                    </div>
-                                    <a class="miwie_tm_full_link absolute inset-0 z-[5]" href="#"></a>
-
-                                    <img class="popup_service_image" src="assets/img/service/2.jpg" alt />
-                                    <div class="service_hidden_details">
-                                        <div class="service_popup_informations">
-                                            <div class="descriptions">
-                                                <p>
-                                                    miwie is a leading web design agency with an
-                                                    award-winning design team that creates innovative,
-                                                    effective websites that capture your brand, improve
-                                                    your conversion rates, and maximize your revenue to
-                                                    help grow your business and achieve your goals.
-                                                </p>
-                                                <p>
-                                                    In today’s digital world, your website is the first
-                                                    interaction consumers have with your business.
-                                                    That's why almost 95 percent of a user’s first
-                                                    impression relates to web design. It’s also why web
-                                                    design services can have an immense impact on your
-                                                    company’s bottom line.
-                                                </p>
-                                                <p>
-                                                    That’s why more companies are not only reevaluating
-                                                    their website’s design but also partnering with
-                                                    miwie, the web design agency that’s driven more than
-                                                    $2.4 billion in revenue for its clients. With over
-                                                    50 web design awards under our belt, we're confident
-                                                    we can design a custom website that drives sales for
-                                                    your unique business.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="relative">
-                                <div
-                                    class="list_inner w-full flex items-center justify-between relative pt-[27px] pb-[26px] pl-[25px] pr-[35px]">
-                                    <div class="left w-[40%] flex">
-                                        <span
-                                            class="number inline-block text-[#6244C5] text-[24px] font-dm transition-all duration-300">03</span>
-                                        <h3 class="title text-[30px] font-medium pl-[30px] transition-all duration-300">
-                                            UI Animation
-                                        </h3>
-                                    </div>
-                                    <div class="right w-[60%] flex items-center justify-between">
-                                        <div class="text pr-[150px]">
-                                            <p class="transition-all duration-300">
-                                                You can customize a template or make your own from
-                                                scratch, with an immersive library at your disposal...
-                                            </p>
-                                        </div>
-                                        <div class="arrow leading-[1]">
-                                            <img class="svg w-[25px] h-[25px] transition-all duration-300"
-                                                src="assets/img/svg/top-arrow.svg" alt />
-                                        </div>
-                                    </div>
-                                    <a class="miwie_tm_full_link absolute inset-0 z-[5]" href="#"></a>
-
-                                    <img class="popup_service_image" src="assets/img/service/3.jpg" alt />
-                                    <div class="service_hidden_details">
-                                        <div class="service_popup_informations">
-                                            <div class="descriptions">
-                                                <p>
-                                                    miwie is a leading web design agency with an
-                                                    award-winning design team that creates innovative,
-                                                    effective websites that capture your brand, improve
-                                                    your conversion rates, and maximize your revenue to
-                                                    help grow your business and achieve your goals.
-                                                </p>
-                                                <p>
-                                                    In today’s digital world, your website is the first
-                                                    interaction consumers have with your business.
-                                                    That's why almost 95 percent of a user’s first
-                                                    impression relates to web design. It’s also why web
-                                                    design services can have an immense impact on your
-                                                    company’s bottom line.
-                                                </p>
-                                                <p>
-                                                    That’s why more companies are not only reevaluating
-                                                    their website’s design but also partnering with
-                                                    miwie, the web design agency that’s driven more than
-                                                    $2.4 billion in revenue for its clients. With over
-                                                    50 web design awards under our belt, we're confident
-                                                    we can design a custom website that drives sales for
-                                                    your unique business.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="relative">
-                                <div
-                                    class="list_inner w-full flex items-center justify-between relative pt-[27px] pb-[26px] pl-[25px] pr-[35px]">
-                                    <div class="left w-[40%] flex">
-                                        <span
-                                            class="number inline-block text-[#6244C5] text-[24px] font-dm transition-all duration-300">04</span>
-                                        <h3 class="title text-[30px] font-medium pl-[30px] transition-all duration-300">
-                                            Product Design
-                                        </h3>
-                                    </div>
-                                    <div class="right w-[60%] flex items-center justify-between">
-                                        <div class="text pr-[150px]">
-                                            <p class="transition-all duration-300">
-                                                You can customize a template or make your own from
-                                                scratch, with an immersive library at your disposal...
-                                            </p>
-                                        </div>
-                                        <div class="arrow leading-[1]">
-                                            <img class="svg w-[25px] h-[25px] transition-all duration-300"
-                                                src="assets/img/svg/top-arrow.svg" alt />
-                                        </div>
-                                    </div>
-                                    <a class="miwie_tm_full_link absolute inset-0 z-[5]" href="#"></a>
-
-                                    <img class="popup_service_image" src="assets/img/service/4.jpg" alt />
-                                    <div class="service_hidden_details">
-                                        <div class="service_popup_informations">
-                                            <div class="descriptions">
-                                                <p>
-                                                    miwie is a leading web design agency with an
-                                                    award-winning design team that creates innovative,
-                                                    effective websites that capture your brand, improve
-                                                    your conversion rates, and maximize your revenue to
-                                                    help grow your business and achieve your goals.
-                                                </p>
-                                                <p>
-                                                    In today’s digital world, your website is the first
-                                                    interaction consumers have with your business.
-                                                    That's why almost 95 percent of a user’s first
-                                                    impression relates to web design. It’s also why web
-                                                    design services can have an immense impact on your
-                                                    company’s bottom line.
-                                                </p>
-                                                <p>
-                                                    That’s why more companies are not only reevaluating
-                                                    their website’s design but also partnering with
-                                                    miwie, the web design agency that’s driven more than
-                                                    $2.4 billion in revenue for its clients. With over
-                                                    50 web design awards under our belt, we're confident
-                                                    we can design a custom website that drives sales for
-                                                    your unique business.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
+          </div>
+          <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+              <ul class="project-list d-flex flex-wrap">
+                <li class="project-list-item d-flex flex-column animate-child">
+                  <div class="project-box d-flex flex-wrap align-items-end">
+                    <div class="project-box-left">
+                      <div class="project-img parallax-img">
+                        <img src="include/images/project1.jpg" alt="" data-speed="auto" />
+                        <div class="project-title" data-speed="1.15">
+                          <h4>Shop App</h4>
+                        </div>
+                      </div>
+                      <div class="project-title" data-speed="1.15">
+                        <h4>Shop App</h4>
+                      </div>
+                      <div class="project-details" data-speed="1.2">
+                        <ul class="project-details-list d-flex flex-column">
+                          <li class="project-details-item d-flex flex-wrap">
+                            <div class="project-details-left">
+                              Client Name -
+                            </div>
+                            <div class="project-details-right">
+                              Lorem Inc.
+                            </div>
+                          </li>
+                          <li class="project-details-item d-flex flex-wrap">
+                            <div class="project-details-left">
+                              Project Type -
+                            </div>
+                            <div class="project-details-right">
+                              Mobile App
+                            </div>
+                          </li>
+                          <li class="project-details-item d-flex flex-wrap">
+                            <div class="project-details-left">
+                              Technology -
+                            </div>
+                            <div class="project-details-right">
+                              React Native
+                            </div>
+                          </li>
+                          <li class="project-details-item d-flex flex-wrap">
+                            <div class="project-details-left">
+                              Turnaround -
+                            </div>
+                            <div class="project-details-right">2 Months</div>
+                          </li>
                         </ul>
-                        <span class="ccc"></span>
+                      </div>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="miwie_tm_section w-full h-auto clear-both float-left" id="portfolio">
-            <div class="miwie_tm_portfolio w-full h-auto clear-both float-left bg-[#FFC448] px-0 pt-[120px] pb-[110px]">
-                <div class="container">
-                    <div class="miwie_tm_main_title w-full float-left">
-                        <h3 class="tracking-[-2px] text-[56px] font-bold">
-                            <span class="relative">Look at my<br />recent projects</span>
-                        </h3>
+                    <div class="project-box-right">
+                      <div class="project-body">
+                        <p>
+                          <strong>Consequatur quam rerum deserunt omnis
+                            reprehenderit doloribus aperiam
+                          </strong>
+                        </p>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Eum eveniet, fuga delectus iusto ipsam
+                          officiis, voluptate tempore facere maxime
+                          exercitationem.
+                        </p>
+                        <div class="project-cta">
+                          <a href="portfolio-single.html" class="link">Know more <em class="link-arrow"></em></a>
+                        </div>
+                      </div>
                     </div>
-                    <div class="portfolio_list w-full h-auto clear-both float-left mt-[65px] relative">
-                        <ul class="owl-carousel gallery_zoom relative">
-                            <li>
-                                <div class="list_inner">
-                                    <div class="image relative overflow-hidden">
-                                        <img class="opacity-0 relative min-w-full" src="assets/img/thumbs/37-40.jpg"
-                                            alt />
-                                        <div class="main absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-300"
-                                            data-img-url="assets/img/portfolio/1.jpg"></div>
-                                    </div>
-                                    <div class="details w-full float-left mt-[30px]">
-                                        <span class="category text-[20px] inline-block mb-[13px]">Youtube</span>
-                                        <h3 class="title text-[32px] tracking-[-1px] font-medium">
-                                            <span class="inline-block relative">Car Export</span>
-                                        </h3>
-                                    </div>
-                                    <a class="miwie_tm_full_link absolute inset-0 z-[5] popup-youtube"
-                                        href="https://www.youtube.com/watch?v=7e90gBu4pas"></a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="list_inner">
-                                    <div class="image relative overflow-hidden">
-                                        <img class="opacity-0 relative min-w-full" src="assets/img/thumbs/37-40.jpg"
-                                            alt />
-                                        <div class="main absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-300"
-                                            data-img-url="assets/img/portfolio/2.jpg"></div>
-                                    </div>
-                                    <div class="details w-full float-left mt-[30px]">
-                                        <span class="category text-[20px] inline-block mb-[13px]">Vimeo</span>
-                                        <h3 class="title text-[32px] tracking-[-1px] font-medium">
-                                            <span class="inline-block relative">Food delivery</span>
-                                        </h3>
-                                    </div>
-                                    <a class="miwie_tm_full_link absolute inset-0 z-[5] popup-vimeo"
-                                        href="https://vimeo.com/337293658"></a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="list_inner">
-                                    <div class="image relative overflow-hidden">
-                                        <img class="opacity-0 relative min-w-full" src="assets/img/thumbs/37-40.jpg"
-                                            alt />
-                                        <div class="main absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-300"
-                                            data-img-url="assets/img/portfolio/3.jpg"></div>
-                                    </div>
-                                    <div class="details w-full float-left mt-[30px]">
-                                        <span class="category text-[20px] inline-block mb-[13px]">Soundcloud</span>
-                                        <h3 class="title text-[32px] tracking-[-1px] font-medium">
-                                            <span class="inline-block relative">Ecommerce Website</span>
-                                        </h3>
-                                    </div>
-                                    <a class="miwie_tm_full_link absolute inset-0 z-[5] soundcloude_link mfp-iframe audio"
-                                        href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/471954807&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="list_inner">
-                                    <div class="image relative overflow-hidden">
-                                        <img class="opacity-0 relative min-w-full" src="assets/img/thumbs/37-40.jpg"
-                                            alt />
-                                        <div class="main absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-300"
-                                            data-img-url="assets/img/portfolio/4.jpg"></div>
-                                    </div>
-                                    <div class="details w-full float-left mt-[30px]">
-                                        <span class="category text-[20px] inline-block mb-[13px]">Details</span>
-                                        <h3 class="title text-[32px] tracking-[-1px] font-medium">
-                                            <span class="inline-block relative">Mockup Phone</span>
-                                        </h3>
-                                    </div>
-                                    <a class="miwie_tm_full_link absolute inset-0 z-[5] details_link" href="#"></a>
-
-                                    <div class="hidden_content">
-                                        <div class="popup_details">
-                                            <div class="main_details">
-                                                <div class="textbox">
-                                                    <p>
-                                                        We live in a world where we need to move quickly
-                                                        and iterate on our ideas as flexibly as possible.
-                                                    </p>
-                                                    <p>
-                                                        Mockups are useful both for the creative phase of
-                                                        the project - for instance when you're trying to
-                                                        figure out your user flows or the proper visual
-                                                        hierarchy - and the production phase when they
-                                                        phase when they will represent the target product.
-                                                        Building mockups strikes the ideal balance ease of
-                                                        modification.
-                                                    </p>
-                                                </div>
-                                                <div class="detailbox">
-                                                    <ul>
-                                                        <li>
-                                                            <span class="first">Client</span>
-                                                            <span>Alvaro Morata</span>
-                                                        </li>
-                                                        <li>
-                                                            <span class="first">Category</span>
-                                                            <span><a href="#">Detail</a></span>
-                                                        </li>
-                                                        <li>
-                                                            <span class="first">Date</span>
-                                                            <span>April 22, 2022</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="additional_images">
-                                                <ul>
-                                                    <li>
-                                                        <div class="list_inner">
-                                                            <div class="my_image">
-                                                                <img src="assets/img/thumbs/4-2.jpg" alt />
-                                                                <div class="main"
-                                                                    data-img-url="assets/img/service/1.jpg"></div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="list_inner">
-                                                            <div class="my_image">
-                                                                <img src="assets/img/thumbs/4-2.jpg" alt />
-                                                                <div class="main"
-                                                                    data-img-url="assets/img/service/2.jpg"></div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="list_inner">
-                                                            <div class="my_image">
-                                                                <img src="assets/img/thumbs/4-2.jpg" alt />
-                                                                <div class="main"
-                                                                    data-img-url="assets/img/service/3.jpg"></div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="list_inner">
-                                    <div class="image relative overflow-hidden">
-                                        <img class="opacity-0 relative min-w-full" src="assets/img/thumbs/37-40.jpg"
-                                            alt />
-                                        <div class="main absolute inset-0 bg-no-repeat bg-cover bg-center transition-all duration-300"
-                                            data-img-url="assets/img/portfolio/5.jpg"></div>
-                                    </div>
-                                    <div class="details w-full float-left mt-[30px]">
-                                        <span class="category text-[20px] inline-block mb-[13px]">Popup</span>
-                                        <h3 class="title text-[32px] tracking-[-1px] font-medium">
-                                            <span class="inline-block relative">Felix Photo</span>
-                                        </h3>
-                                    </div>
-                                    <a class="miwie_tm_full_link absolute inset-0 z-[5] zoom"
-                                        href="assets/img/portfolio/5.jpg"></a>
-                                </div>
-                            </li>
+                  </div>
+                </li>
+                <li class="project-list-item d-flex flex-column animate-child">
+                  <div class="project-box d-flex flex-wrap align-items-end">
+                    <div class="project-box-left">
+                      <div class="project-img parallax-img">
+                        <img src="include/images/project2.jpg" alt="" data-speed="auto" />
+                        <div class="project-title" data-speed="1.15">
+                          <h4>Brand Design</h4>
+                        </div>
+                      </div>
+                      <div class="project-title" data-speed="1.15">
+                        <h4>Brand Design</h4>
+                      </div>
+                      <div class="project-details" data-speed="1.2">
+                        <ul class="project-details-list d-flex flex-column">
+                          <li class="project-details-item d-flex flex-wrap">
+                            <div class="project-details-left">
+                              Client Name -
+                            </div>
+                            <div class="project-details-right">
+                              Lorem Inc.
+                            </div>
+                          </li>
+                          <li class="project-details-item d-flex flex-wrap">
+                            <div class="project-details-left">
+                              Project Type -
+                            </div>
+                            <div class="project-details-right">Branding</div>
+                          </li>
+                          <li class="project-details-item d-flex flex-wrap">
+                            <div class="project-details-left">
+                              Technology -
+                            </div>
+                            <div class="project-details-right">Photoshop</div>
+                          </li>
+                          <li class="project-details-item d-flex flex-wrap">
+                            <div class="project-details-left">
+                              Turnaround -
+                            </div>
+                            <div class="project-details-right">20 Days</div>
+                          </li>
                         </ul>
-                        <a class="prev_button" href="#"><img
-                                class="svg absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] w-[30px] h-[30px] transition-all duration-300 ml-[-1px]"
-                                src="assets/img/svg/prev.svg" alt /></a>
-                        <a class="next_button" href="#"><img
-                                class="svg absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] w-[30px] h-[30px] transition-all duration-300 ml-[1px]"
-                                src="assets/img/svg/next.svg" alt /></a>
+                      </div>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="miwie_tm_section w-full h-auto clear-both float-left">
-            <div class="miwie_tm_testimonials w-full h-auto clear-both float-left bg-[#fafafb] px-0 py-[120px]">
-                <div class="container">
-                    <div class="miwie_tm_main_title w-full float-left">
-                        <h3 class="tracking-[-2px] text-[56px] font-bold">
-                            <span class="relative">Valuable feedback<br />from my client</span>
-                        </h3>
-                    </div>
-                    <div class="testimonials_in w-full h-auto clear-both flex items-center pt-[75px]">
-                        <img class="max-h-[400px] max-w-[350px]" src="assets/img/testimonials/error-pls-add.jpg" alt />
-                        <div class="info pl-[70px]">
-                            <div class="text w-full float-left mb-[40px]">
-                                <p class="text-[24px] font-medium leading-[36px] font-dm">
-                                    “Awesome website! Easy to use and edit, it has a lot of
-                                    options to design whatever you need, it is professional and
-                                    fun. I was very successful creating my profile using
-                                    designer which gave me unbelievable reach &amp;
-                                    appreciation.”
-                                </p>
-                            </div>
-                            <div class="details w-full float-left pl-[41px]">
-                                <h3 class="name text-[24px] font-bold mb-[7px]">
-                                    <span class="relative inline-block">Albert Walkers</span>
-                                </h3>
-                                <span class="job text-[19px] text-[#707070]">Vivaco Group</span>
-                            </div>
+                    <div class="project-box-right">
+                      <div class="project-body">
+                        <p>
+                          <strong>Consequatur quam rerum deserunt omnis
+                            reprehenderit doloribus aperiam
+                          </strong>
+                        </p>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Eum eveniet, fuga delectus iusto ipsam
+                          officiis, voluptate tempore facere maxime
+                          exercitationem.
+                        </p>
+                        <div class="project-cta">
+                          <a href="portfolio-single.html" class="link">Know more <em class="link-arrow"></em></a>
                         </div>
+                      </div>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- <div class="miwie_tm_section w-full h-auto clear-both float-left">
-            <div class="miwie_tm_partners w-full h-auto clear-both float-left px-0 pt-[40px] pb-[110px]">
-                <div class="container">
-                    <div class="partners_list w-full h-auto clear-both float-left mt-[35px] relative">
-                        <ul class="owl-carousel">
-                            <li class="item"><a href="#"><img class="opacity-[.5] transition-all duration-300"
-                                        src="assets/img/partners/1.png" alt /></a></li>
-                            <li class="item"><a href="#"><img class="opacity-[.5] transition-all duration-300"
-                                        src="assets/img/partners/2.png" alt /></a></li>
-                            <li class="item"><a href="#"><img class="opacity-[.5] transition-all duration-300"
-                                        src="assets/img/partners/3.png" alt /></a></li>
-                            <li class="item"><a href="#"><img class="opacity-[.5] transition-all duration-300"
-                                        src="assets/img/partners/4.png" alt /></a></li>
-                            <li class="item"><a href="#"><img class="opacity-[.5] transition-all duration-300"
-                                        src="assets/img/partners/5.png" alt /></a></li>
-                            <li class="item"><a href="#"><img class="opacity-[.5] transition-all duration-300"
-                                        src="assets/img/partners/6.png" alt /></a></li>
-                            <li class="item"><a href="#"><img class="opacity-[.5] transition-all duration-300"
-                                        src="assets/img/partners/7.png" alt /></a></li>
-                            <li class="item"><a href="#"><img class="opacity-[.5] transition-all duration-300"
-                                        src="assets/img/partners/8.png" alt /></a></li>
+                  </div>
+                </li>
+                <li class="project-list-item d-flex flex-column animate-child">
+                  <div class="project-box d-flex flex-wrap align-items-end">
+                    <div class="project-box-left">
+                      <div class="project-img parallax-img">
+                        <img src="include/images/project3.jpg" alt="" data-speed="auto" />
+                        <div class="project-title" data-speed="1.15">
+                          <h4>Landing Page</h4>
+                        </div>
+                      </div>
+                      <div class="project-title" data-speed="1.15">
+                        <h4>Landing Page</h4>
+                      </div>
+                      <div class="project-details" data-speed="1.2">
+                        <ul class="project-details-list d-flex flex-column">
+                          <li class="project-details-item d-flex flex-wrap">
+                            <div class="project-details-left">
+                              Client Name -
+                            </div>
+                            <div class="project-details-right">
+                              Lorem Inc.
+                            </div>
+                          </li>
+                          <li class="project-details-item d-flex flex-wrap">
+                            <div class="project-details-left">
+                              Project Type -
+                            </div>
+                            <div class="project-details-right">
+                              Figma to WordPress Conversion
+                            </div>
+                          </li>
+                          <li class="project-details-item d-flex flex-wrap">
+                            <div class="project-details-left">
+                              Technology -
+                            </div>
+                            <div class="project-details-right">WordPress</div>
+                          </li>
+                          <li class="project-details-item d-flex flex-wrap">
+                            <div class="project-details-left">
+                              Turnaround -
+                            </div>
+                            <div class="project-details-right">20 Days</div>
+                          </li>
                         </ul>
+                      </div>
                     </div>
-                </div>
+                    <div class="project-box-right">
+                      <div class="project-body">
+                        <p>
+                          <strong>Consequatur quam rerum deserunt omnis
+                            reprehenderit doloribus aperiam
+                          </strong>
+                        </p>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Eum eveniet, fuga delectus iusto ipsam
+                          officiis, voluptate tempore facere maxime
+                          exercitationem.
+                        </p>
+                        <div class="project-cta">
+                          <a href="portfolio-single.html" class="link">Know more <em class="link-arrow"></em></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
-        </div> -->
-
-        <div class="miwie_tm_section w-full h-auto clear-both float-left" id="contact">
-            <div
-                class="miwie_tm_contact w-full h-auto clear-both float-left bg-main-color px-0 pt-[135px] pb-[120px] relative">
-                <div class="container">
-                    <div class="infobox w-full float-left flex items-center justify-between mb-[116px]">
-                        <div class="video_button">
-                            <a class="popup-youtube" href="https://www.youtube.com/watch?v=kt1Edu0dbvY"><img
-                                    class="anim_circle" src="assets/img/contact/video1.png" alt /><img class="svg"
-                                    src="assets/img/svg/play.svg" alt /></a>
-                        </div>
-                        <div class="text py-0 px-[115px]">
-                            <h3 class="font-bold text-[56px] tracking-[-2px] text-white mb-[25px]">
-                                Let's work together
-                            </h3>
-                            <p class="font-light leading-[32px] text-[rgba(255,255,255,.7)]">
-                                You can express yourself however you want and whenever you
-                                want, for free. You can customize a template or make your own.
-                            </p>
-                        </div>
-                        <div class="miwie_tm_boxed_button">
-                            <a href="#">Say Hello <img class="svg" src="assets/img/svg/send.svg" alt /></a>
-                        </div>
-                    </div>
-                    <div class="connect w-full flex items-center justify-between">
-                        <div class="left">
-                            <ul>
-                                <!-- <li class="mr-[50px] inline-block">
-                                    <span
-                                        class="name block text-[rgba(255,255,255,.5)] text-[16px] mb-[10px]">Call:</span>
-                                    <p class="block text-white text-[36px] font-dm font-medium">
-                                        <a class="line_effect text-white" href="#">+51 921 026 466</a>
-                                    </p>
-                                </li> -->
-                                <li class="inline-block">
-                                    <span
-                                        class="name block text-[rgba(255,255,255,.5)] text-[16px] mb-[10px]">Email:</span>
-                                    <p class="block text-white text-[36px] font-dm font-medium">
-                                        <a class="line_effect text-white" href="mailto:freddginez5@gmail.com">
-                                            <span class="__cf_email__" data-cfemail="d">freddginez5@gmail.com</span>
-                                        </a>
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="right">
-                            <div class="miwie_tm_follow flex items-center">
-                                <span>Follow me:</span>
-                                <ul class="flex items-center relative top-[5px] ml-[20px]">
-                                    <li class="mr-[20px]">
-                                        <a class="inline-block relative w-[56px] h-[56px] bg-[#f6f6f6] rounded-full transition-all duration-300"
-                                            href="https://www.tiktok.com/@elmerginez55" target="_blank"><img
-                                                class="svg absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] transition-all duration-300"
-                                                src="assets/img/svg/social/tiktok.svg" alt /></a>
-                                    </li>
-                                    <li class="mr-[20px]">
-                                        <a class="inline-block relative w-[56px] h-[56px] bg-[#f6f6f6] rounded-full transition-all duration-300"
-                                            href="https://www.facebook.com/elmerginez55" target="_blank"><img
-                                                class="svg absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] transition-all duration-300"
-                                                src="assets/img/svg/social/facebook.svg" alt /></a>
-                                    </li>
-                                    <li>
-                                        <a class="inline-block relative w-[56px] h-[56px] bg-[#f6f6f6] rounded-full transition-all duration-300"
-                                            href="https://www.instagram.com/elmerginez55" target="_blank"><img
-                                                class="svg absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] transition-all duration-300"
-                                                src="assets/img/svg/social/instagram.svg" alt /></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <span class="element absolute bottom-[-60px] left-0"><img class="svg w-full h-full text-transparent"
-                        src="assets/img/svg/elements.svg" alt /></span>
-                <span class="element2 absolute right-[200px] top-[150px]"><img
-                        class="svg w-full h-full text-transparent" src="assets/img/svg/element-2.svg" alt /></span>
+          </div>
+          <div class="row">
+            <div class="col-lg-10 offset-lg-1 animate-child">
+              <div class="view-all-cta text-center">
+                <a href="portfolio.html" class="btn btn-primary">View All Projects <em class="btn-arrow"></em></a>
+              </div>
             </div>
+          </div>
         </div>
-
-        <div class="miwie_tm_section w-full h-auto clear-both float-left">
-            <div class="miwie_tm_copyright w-full h-auto clear-both float-left bg-[#FFC448] py-[20px] px-0">
-                <div class="container">
-                    <div class="copyright_inner w-full h-auto clear-both flex items-center justify-between">
-                        <div class="logo">
-                            <img class="max-w-[170px] max-h-[80px]" src="assets/img/logo/logo.svg" alt />
-                        </div>
-                        <div class="copy">
-                            <p class="text-main-color text-[16px] font-medium">
-                                &copy; 2024 by
-                                <a class="text-main-color" href="https://github.com/elmerginez"
-                                    target="_blank" style="text-decoration: underline;">MiwiE.</a>
-                                All Rights Reserved
-                            </p>
-                        </div>
-                    </div>
+      </div>
+      <!-- ============================ Portfolio End ============================ -->
+      <!-- ============================ CTA Start ============================ -->
+      <div class="content-container cta-container mob-pb-0 pt-0">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 animate-child">
+              <div class="cta-content d-flex justify-content-between align-items-center gradient-bg">
+                <h3 class="mb-0">Ready to start next project?</h3>
+                <div class="cta-box">
+                  <a href="contact.html" class="btn btn-light">Contact<em class="btn-arrow"></em></a>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+      <!-- ============================ CTA End ============================ -->
+      <!-- ============================ Services Start ============================ -->
+      <div class="content-container home-services light-bg diagonal position-relative">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="heading text-center animate-child">
+                <div class="heading-large">
+                  <h2 data-speed="1.1"><span>Services</span></h2>
+                </div>
+                <h3>Services</h3>
+                <p>Vivamus ut dignissim mauris euismod pharetra dolor.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-lg-4">
+              <div class="home-service-head animate-child">
+                <h3>All solutions to help you grow your business</h3>
+                <p>
+                  Quis voluptatibus inventore exercitationem harum minus
+                  obcaecati officiis distinctio quia accusamus sit quae
+                  dignissimos numquam, impedit accusantium labore quas.
+                </p>
+                <div class="home-service-cta d-none d-md-block">
+                  <a href="services.html" class="btn btn-primary">View All Services <em class="btn-arrow"></em></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7 offset-lg-1">
+              <div class="service-list-outer d-flex flex-md-wrap align-items-center">
+                <div class="service-list-wrapper" data-speed="1.3">
+                  <ul class="service-list d-flex flex-md-wrap animate-child">
+                    <li class="service-item">
+                      <div class="service-box">
+                        <div class="service-icon outline-shadow">
+                          <i class="fa-solid fa-droplet"></i>
+                        </div>
+                        <div class="service-box-content">
+                          <h4>Graphic Design</h4>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="service-list-wrapper" data-speed="1.2">
+                  <ul class="service-list d-flex flex-md-wrap animate-child">
+                    <li class="service-item">
+                      <div class="service-box">
+                        <div class="service-icon outline-shadow">
+                          <i class="fa-brands fa-html5"></i>
+                        </div>
+                        <div class="service-box-content">
+                          <h4>Html Conversion</h4>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="service-item">
+                      <div class="service-box">
+                        <div class="service-icon outline-shadow">
+                          <i class="fa-brands fa-react"></i>
+                        </div>
+                        <div class="service-box-content">
+                          <h4>React Js</h4>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="service-list-wrapper" data-speed="1.1">
+                  <ul class="service-list d-flex flex-md-wrap animate-child">
+                    <li class="service-item">
+                      <div class="service-box">
+                        <div class="service-icon outline-shadow">
+                          <i class="fa-brands fa-node-js"></i>
+                        </div>
+                        <div class="service-box-content">
+                          <h4>Node js</h4>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="service-item">
+                      <div class="service-box">
+                        <div class="service-icon outline-shadow">
+                          <i class="fa-solid fa-mobile"></i>
+                        </div>
+                        <div class="service-box-content">
+                          <h4>Mobile App</h4>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="service-item">
+                      <div class="service-box">
+                        <div class="service-icon outline-shadow">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div class="service-box-content">
+                          <h4>eCommerce</h4>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row d-md-none">
+            <div class="col-lg-10 offset-lg-1 animate-child">
+              <div class="view-all-cta text-center">
+                <a href="services.html" class="btn btn-primary">View All services <em class="btn-arrow"></em></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ============================ Services End ============================ -->
 
-        <div class="mouse-cursor cursor-outer"></div>
+      <!-- ============================ Testimonials Start ============================ -->
+      <div class="content-container testimonials-container position-relative">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="heading text-center animate-child">
+                <div class="heading-large">
+                  <h2 data-speed="1.1"><span>Testimonials</span></h2>
+                </div>
+                <h3>Testimonials</h3>
+                <p>Vivamus ut dignissim mauris euismod pharetra dolor.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 animate-child">
+              <div class="swiper testimonial-slider visible-slider full-height-slider">
+                <ul class="testimonial-list swiper-wrapper">
+                  <li class="testimonial-item swiper-slide">
+                    <div class="testimonial-box d-flex flex-column">
+                      <blockquote>
+                        I was very impressed with the quality of work
+                        produced. The job was completed to specification, and
+                        he went above and beyond in bringing the PSD's to
+                        life. I will be using this contractor again.
+                      </blockquote>
+                      <div class="quote-by mt-auto">
+                        <strong>David I.</strong><br /><a href="#" target="_blank">www.domain-name.com</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="testimonial-item swiper-slide">
+                    <div class="testimonial-box d-flex flex-column">
+                      <blockquote>
+                        Was a great experience with 'Lilua' coded it exactly
+                        how I wanted, I'm picky so that says a lot! Thanks!
+                      </blockquote>
+                      <div class="quote-by mt-auto">
+                        <strong>Zackary</strong><br /><a href="#" target="_blank">www.domain-name.com</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="testimonial-item swiper-slide">
+                    <div class="testimonial-box d-flex flex-column">
+                      <blockquote>
+                        Excellent piece of web build work. Went above and
+                        beyond what I asked and very supportive throughout.
+                        Very happy with the outcome and will definitely use
+                        Lilua again.
+                      </blockquote>
+                      <div class="quote-by mt-auto">
+                        <strong>Stuart</strong><br />
+                        <a href="#" target="_blank">www.domain-name.com</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="testimonial-item swiper-slide">
+                    <div class="testimonial-box d-flex flex-column">
+                      <blockquote>
+                        Great solid work turned around in a timely fashion and
+                        written as specified in the requirements. Reliable and
+                        talented contractor!!
+                      </blockquote>
+                      <div class="quote-by mt-auto">
+                        <strong>Pupcake Publisher</strong>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="testimonial-item swiper-slide">
+                    <div class="testimonial-box d-flex flex-column">
+                      <blockquote>
+                        Thanks Mark, excellent work!! Great communication too.
+                        Will hire again!
+                      </blockquote>
+                      <div class="quote-by mt-auto">
+                        <strong>Niek Giavedoni</strong>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ============================ Testimonials End ============================ -->
+
+      <!-- ============================ Stats Start ============================ -->
+      <div class="content-container stats-container light-bg diagonal">
+        <div class="container">
+          <div class="row">
+            <div class="heading text-center animate-child">
+              <div class="heading-large">
+                <h2 data-speed="1.1"><span>Stats</span></h2>
+              </div>
+              <h3>Stats</h3>
+              <p>Vivamus ut dignissim mauris euismod pharetra dolor.</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="swiper mobile-slider visible-slider full-height-slider">
+                <ul class="stats-list d-md-flex flex-md-wrap animate-child swiper-wrapper">
+                  <li class="stats-list-item swiper-slide">
+                    <div class="stat-box d-flex flex-column" data-speed="0.9">
+                      <div class="stat-box-icon outline-shadow">
+                        <i class="fa-solid fa-user-graduate"></i>
+                      </div>
+                      <div class="stat-box-inner mt-auto">
+                        <h3><span class="gradient-text">1</span></h3>
+                        <h6>Years <br />of Experience</h6>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="stats-list-item swiper-slide">
+                    <div class="stat-box d-flex flex-column" data-speed="0.95">
+                      <div class="stat-box-icon outline-shadow">
+                        <i class="fa-solid fa-briefcase"></i>
+                      </div>
+                      <div class="stat-box-inner mt-auto">
+                        <h3><span class="gradient-text">10</span></h3>
+                        <h6>Projects <br />Completed</h6>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="stats-list-item swiper-slide">
+                    <div class="stat-box d-flex flex-column" data-speed="1">
+                      <div class="stat-box-icon outline-shadow">
+                        <i class="fa-solid fa-flag"></i>
+                      </div>
+                      <div class="stat-box-inner mt-auto">
+                        <h3><span class="gradient-text">1</span></h3>
+                        <h6>Countries <br />Served</h6>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="stats-list-item swiper-slide">
+                    <div class="stat-box d-flex flex-column" data-speed="0.95">
+                      <div class="stat-box-icon outline-shadow">
+                        <i class="fa-solid fa-users"></i>
+                      </div>
+                      <div class="stat-box-inner mt-auto">
+                        <h3><span class="gradient-text">4</span></h3>
+                        <h6>Satisfied <br />Clients</h6>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="stats-list-item swiper-slide">
+                    <div class="stat-box d-flex flex-column" data-speed="0.9">
+                      <div class="stat-box-icon outline-shadow">
+                        <i class="fa-solid fa-trophy"></i>
+                      </div>
+                      <div class="stat-box-inner mt-auto">
+                        <h3><span class="gradient-text">1</span></h3>
+                        <h6>Awards <br />Won</h6>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ============================ Stats End ============================ -->
+      <!-- ============================ Latest Blog Start ============================ -->
+      <div class="content-container blog-container">
+        <div class="container">
+          <div class="heading text-center animate-child">
+            <div class="heading-large">
+              <h2 data-speed="1.1"><span>Latest Blog</span></h2>
+            </div>
+            <h3>Latest Blog</h3>
+            <p>Vivamus ut dignissim mauris euismod pharetra dolor.</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+              <div class="swiper mobile-slider visible-slider full-height-slider">
+                <ul class="blog-list d-md-flex flex-md-wrap justify-content-md-between swiper-wrapper">
+                  <li class="blog-item animate-child swiper-slide" data-speed="1.1">
+                    <div class="blog-box d-flex flex-column">
+                      <a href="blog-single.html" class="blog-img parallax-img" data-tilt data-tilt-axis="x"
+                        data-tilt-max="5" data-tilt-reverse="true">
+                        <img src="include/images/item-1.jpg" alt="" data-speed="auto" />
+                      </a>
+                      <div class="blog-content">
+                        <div class="blog-cat">Development</div>
+                        <h4>
+                          Inventore voluptas sapiente deleniti molestias
+                          perspiciatis ipsam totam ipsa odit
+                        </h4>
+                      </div>
+                      <div class="blog-cta mt-auto">
+                        <a href="blog-single.html" class="link">Read more <em class="link-arrow"></em></a>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="blog-item animate-child swiper-slide" data-speed="1.2">
+                    <div class="blog-box d-flex flex-column">
+                      <a href="blog-single.html" class="blog-img parallax-img" data-tilt data-tilt-axis="x"
+                        data-tilt-max="5" data-tilt-reverse="true">
+                        <img src="include/images/item-2.jpg" alt="" data-speed="auto" />
+                      </a>
+                      <div class="blog-content">
+                        <div class="blog-cat">News</div>
+                        <h4>
+                          Consequatur quam rerum deserunt omnis reprehenderit
+                          doloribus aperiam
+                        </h4>
+                      </div>
+                      <div class="blog-cta mt-auto">
+                        <a href="blog-single.html" class="link">Read more <em class="link-arrow"></em></a>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="blog-item animate-child swiper-slide" data-speed="1.1">
+                    <div class="blog-box d-flex flex-column">
+                      <a href="blog-single.html" class="blog-img parallax-img" data-tilt data-tilt-axis="x"
+                        data-tilt-max="5" data-tilt-reverse="true">
+                        <img src="include/images/item-3.jpg" alt="" data-speed="auto" />
+                      </a>
+                      <div class="blog-content">
+                        <div class="blog-cat">Shopping</div>
+                        <h4>
+                          Earum laudantium voluptate rem vel facilis fugiat
+                          quibusdam accusantium quis.
+                        </h4>
+                      </div>
+                      <div class="blog-cta mt-auto">
+                        <a href="blog-single.html" class="link">Read more <em class="link-arrow"></em></a>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="blog-item animate-child swiper-slide" data-speed="1.2">
+                    <div class="blog-box d-flex flex-column">
+                      <a href="blog-single.html" class="blog-img parallax-img" data-tilt data-tilt-axis="x"
+                        data-tilt-max="5" data-tilt-reverse="true">
+                        <img src="include/images/item-4.jpg" alt="" data-speed="auto" />
+                      </a>
+                      <div class="blog-content">
+                        <div class="blog-cat">Development</div>
+                        <h4>
+                          Lorem ipsum dolor sit amet consectetur deserunt
+                          omnis adipisicing elit.
+                        </h4>
+                      </div>
+                      <div class="blog-cta mt-auto">
+                        <a href="blog-single.html" class="link">Read more <em class="link-arrow"></em></a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-10 offset-lg-1 animate-child">
+              <div class="view-all-cta text-center">
+                <a href="blog.html" class="btn btn-primary">View All Posts <em class="btn-arrow"></em></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ============================ Latest Blog End ============================ -->
+      <!-- ============================ Footer Start ============================ -->
+      <footer id="footer" class="d-flex flex-column">
+        <div class="footer-upper">
+          <div class="container">
+            <div class="row animate-child">
+              <div class="col-lg-5 col-md-5">
+                <div class="footer-content">
+                  <div class="sub-heading">Needed a website?</div>
+                  <h3>Let's get started</h3>
+                  <p>
+                    Hello, I am <strong>Fredd Ginez</strong>, Iusto et
+                    consectetur molestiae ullam aperiam quaerat
+                    <strong>fugiat quibusdam</strong>, dolores reprehenderit,
+                    nihil, laboriosam? Debitis quas
+                    <strong>dignissimos nam</strong> corrupti ullam
+                    consequatur ducimus impedit.
+                  </p>
+
+                  <div class="footer-content-cta">
+                    <a href="contact.html" class="btn btn-light">Contact <em class="btn-arrow"></em></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 offset-lg-2 col-md-6 offset-md-1">
+                <div class="quick-contact">
+                  <div class="sub-heading">Let's Talk</div>
+                  <div class="quick-contact-box">
+                    <a href="mailto:freddgineztm@gmail.com">freddgineztm@gmail.com</a>
+                  </div>
+                  <div class="quick-contact-box">
+                    <a href="tel:+51921026466">921 026 466</a>
+                  </div>
+                </div>
+                <div class="quick-contact">
+                  <div class="sub-heading">Let's Meet</div>
+                  458-12, First Floor, Vibhuti Khand,<br />
+                  Maunath Bhanjan,<br />
+                  Peru
+                </div>
+                <div class="quick-contact">
+                  <div class="sub-heading">Let's Connect</div>
+                  <ul class="social-links d-flex">
+                    <li>
+                      <a href="#" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    </li>
+                    <!-- <li>
+                      <a href="#" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    </li> -->
+                    <li>
+                      <a href="#" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+                    </li>
+                    <!-- <li>
+                      <a href="#" target="_blank"><i class="fab fa-codepen" aria-hidden="true"></i></a>
+                    </li> -->
+                    <li>
+                      <a href="#" target="_blank"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom mt-auto">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="footer-bottom-upper d-md-flex justify-content-md-between align-items-md-center">
+                  <ul class="footer-nav d-flex flex-wrap">
+                    <li class="me-lg-5 me-4">
+                      <a href="index.html">Home</a>
+                    </li>
+                    <li class="me-lg-5 me-4">
+                      <a href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="me-lg-5 me-4">
+                      <a href="services.html">Services</a>
+                    </li>
+                    <li class="me-lg-5 me-4"><a href="blog.html">Blog</a></li>
+                    <li class="me-lg-5 me-4">
+                      <a href="contact.html">Contact</a>
+                    </li>
+                    <li class="me-lg-5 me-4 d-lg-none">
+                      <a href="privacy-policy.html">Privacy Policy</a>
+                    </li>
+                    <li class="me-lg-5 me-4 d-lg-none">
+                      <a href="terms-conditions.html">Terms &amp; Conditions</a>
+                    </li>
+                  </ul>
+
+                  <ul class="footer-nav d-flex flex-wrap d-none d-lg-flex">
+                    <li class="ms-lg-5 ms-md-4 me-4 me-md-0">
+                      <a href="privacy-policy.html">Privacy Policy</a>
+                    </li>
+                    <li class="ms-lg-5 ms-md-4 me-4 me-md-0">
+                      <a href="terms-conditions.html">Terms &amp; Conditions</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-bottom-lower d-md-flex justify-content-md-between align-items-md-center">
+                  <a href="index.html" class="footer-logo"><img src="include/images/logo-white.svg" alt="Lilua" /></a>
+
+                  <div class="copyright">&copy; All rights reserved.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- ============================ Footer End ============================ -->
+    </div>
+    <div class="mouse-cursor cursor-outer"></div>
         <div class="mouse-cursor cursor-inner"></div>
 
         <div class="progressbar">
             <a href="#"><span class="text">To Top</span></a>
             <span class="line"></span>
         </div>
-    </div>
-
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/init.js"></script>
+  </div>
+  <!--  Bootstrap Js  -->
+  <script src="include/js/bootstrap.bundle.min.js"></script>
+  <!--  Tilt Js  -->
+  <script src="include/js/vanilla-tilt.min.js"></script>
+  <!-- Lottie Player -->
+  <script src="include/js/lottie-player.js"></script>
+  <!-- Swiper JS -->
+  <script src="include/js/swiper-bundle.min.js"></script>
+  <!--  GSAP libraries here -->
+  <script src="include/js/gsap.min.js"></script>
+  <!--  Write you Js here -->
+  <script src="include/js/custom.js"></script>
 </body>
 
 </html>

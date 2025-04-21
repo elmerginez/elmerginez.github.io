@@ -340,3 +340,132 @@ if (document.querySelector(".text-marquee")) {
 
 
 
+function miwie_tm_preloader() {
+  "use strict";
+
+  var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent);
+  var preloader = document.getElementById("preloader");
+
+  if (!preloader) return;
+
+  if (!isMobile) {
+    setTimeout(function () {
+      preloader.classList.add("preloaded");
+    }, 1000);
+    setTimeout(function () {
+      preloader.remove();
+    }, 2000);
+  } else {
+    preloader.remove();
+  }
+}
+
+function miwie_tm_my_load() {
+  "use strict";
+  var speed = 500;
+  setTimeout(function () {
+    miwie_tm_preloader();
+  }, speed);
+}
+
+miwie_tm_my_load();
+
+function miwie_tm_cursor() {
+  "use strict";
+
+  const myCursor = document.querySelectorAll(".mouse-cursor");
+
+  if (myCursor.length) {
+    const e = document.querySelector(".cursor-inner"),
+          t = document.querySelector(".cursor-outer");
+    
+    let mouseX = 0,
+        mouseY = 0,
+        isMoving = false;
+
+    window.onmousemove = function (event) {
+      if (!isMoving) {
+        t.style.transform = `translate(${event.clientX}px, ${event.clientY}px)`;
+      }
+      e.style.transform = `translate(${event.clientX}px, ${event.clientY}px)`;
+      mouseX = event.clientX;
+      mouseY = event.clientY;
+    };
+
+    // Elementos que activan hover del cursor personalizado
+    const hoverElements = document.querySelectorAll("a, .miwie_tm_testimonials .avatars ul li, .cursor-pointer");
+
+    hoverElements.forEach(el => {
+      el.addEventListener("mouseenter", () => {
+        e.classList.add("cursor-hover");
+        t.classList.add("cursor-hover");
+      });
+
+      el.addEventListener("mouseleave", (event) => {
+        // Si es un <a> dentro de un .cursor-pointer, no quitamos la clase
+        const isLinkInsideCursorPointer = event.target.tagName === "A" && event.target.closest(".cursor-pointer");
+        if (!isLinkInsideCursorPointer) {
+          e.classList.remove("cursor-hover");
+          t.classList.remove("cursor-hover");
+        }
+      });
+    });
+
+    e.style.visibility = "visible";
+    t.style.visibility = "visible";
+  }
+}
+
+miwie_tm_cursor()
+
+function miwie_tm_nav_bg() {
+  "use strict";
+  window.addEventListener("scroll", function () {
+    const menu = document.querySelector(".miwie_tm_header");
+    const progress = document.querySelector(".progressbar");
+    const scrollTop = window.scrollY;
+
+    if (scrollTop >= 100) {
+      menu?.classList.add("animate");
+      progress?.classList.add("animate");
+    } else {
+      menu?.classList.remove("animate");
+      progress?.classList.remove("animate");
+    }
+  });
+}
+
+function miwie_tm_totop() {
+  "use strict";
+  const text = document.querySelector(".progressbar .text");
+  if (text) {
+    text.style.bottom = `${105 + text.offsetWidth}px`;
+  }
+
+  const link = document.querySelector(".progressbar a");
+  if (link) {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+}
+
+function miwie_tm_progress_line() {
+  "use strict";
+  const line = document.querySelector(".progressbar .line");
+  if (!line) return;
+
+  const documentHeight = document.documentElement.scrollHeight;
+  const windowHeight = window.innerHeight;
+  const scrollTop = window.scrollY;
+
+  const value = (scrollTop / (documentHeight - windowHeight)) * 100;
+  line.style.height = `${value}%`;
+}
+window.addEventListener("scroll", miwie_tm_progress_line);
+document.addEventListener("DOMContentLoaded", function () {
+  miwie_tm_nav_bg();
+  miwie_tm_totop();
+  miwie_tm_progress_line();
+});
