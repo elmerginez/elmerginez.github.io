@@ -3969,8 +3969,8 @@ body.dark-theme .service-details-box:after {
     margin-top: -3px;
     width: 6px;
     height: 6px;
-    z-index: 100;
-    background-color: #6244c5;
+    z-index: 10000;
+    background-color: #1154b4;
     -webkit-transition: width .3s ease-in-out, height .3s ease-in-out, margin .3s ease-in-out, opacity .3s ease-in-out;
     transition: width .3s ease-in-out, height .3s ease-in-out, margin .3s ease-in-out, opacity .3s ease-in-out
 }
@@ -3980,7 +3980,7 @@ body.dark-theme .service-details-box:after {
     margin-top: -40px;
     width: 80px;
     height: 80px;
-    background-color: #6244c5;
+    background-color: #1154b4;
     opacity: .3
 }
 
@@ -3989,10 +3989,10 @@ body.dark-theme .service-details-box:after {
     margin-top: -15px;
     width: 30px;
     height: 30px;
-    border: 2px solid #6244c5;
+    border: 2px solid #1154b4;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    z-index: 100;
+    z-index: 10000;
     opacity: .5;
     -webkit-transition: all .08s ease-out;
     transition: all .08s ease-out
@@ -4041,6 +4041,7 @@ body.dark-theme .service-details-box:after {
     bottom: 100px;
     left: 0;
     font-size: 13px;
+    font-weight: 400;
     transform: rotateZ(90deg);
     text-transform: uppercase;
     transform-origin: left;
