@@ -3969,7 +3969,7 @@ body.dark-theme .service-details-box:after {
     margin-top: -3px;
     width: 6px;
     height: 6px;
-    z-index: 10000;
+    z-index: 100000;
     background-color: #1154b4;
     -webkit-transition: width .3s ease-in-out, height .3s ease-in-out, margin .3s ease-in-out, opacity .3s ease-in-out;
     transition: width .3s ease-in-out, height .3s ease-in-out, margin .3s ease-in-out, opacity .3s ease-in-out
@@ -3992,7 +3992,7 @@ body.dark-theme .service-details-box:after {
     border: 2px solid #1154b4;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    z-index: 10000;
+    z-index: 100000;
     opacity: .5;
     -webkit-transition: all .08s ease-out;
     transition: all .08s ease-out
