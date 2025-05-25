@@ -987,6 +987,12 @@ body.dark-theme .light-icon {
 .nav-item .dropdown-toggle.show:before {
   content: "\f068";
 }
+.language-switcher .active-lang {
+  color: var(--primary-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+
 
 /* ================= Header End ================= */
 /* ================= Footer Start ================= */
