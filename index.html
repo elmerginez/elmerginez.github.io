@@ -979,6 +979,42 @@
       <span class="line"></span>
     </div>
   </div>
+  <script>
+  (function () {
+    const supportedLangs = ["en", "es"];
+    const preferredLang = localStorage.getItem("preferredLanguage");
+
+    // Si el valor guardado no es válido, lo eliminamos
+    if (preferredLang && !supportedLangs.includes(preferredLang)) {
+      localStorage.removeItem("preferredLanguage");
+    }
+
+    // Solo ejecutar redirección automática si estamos en "/"
+    const path = window.location.pathname;
+    const validPath = path === "/" || path === "/index.html";
+
+    if (!localStorage.getItem("preferredLanguage") && validPath) {
+      const userLang = navigator.language || navigator.userLanguage;
+
+      if (userLang.startsWith("es")) {
+        localStorage.setItem("preferredLanguage", "es");
+        window.location.href = "/es/";
+      } else {
+        localStorage.setItem("preferredLanguage", "en");
+        // ya está en "/"
+      }
+    }
+
+    // Guardar el idioma cuando el usuario hace clic en el selector
+    document.querySelectorAll(".language-switcher a").forEach(link => {
+      link.addEventListener("click", () => {
+        const lang = link.getAttribute("href").includes("/es") ? "es" : "en";
+        localStorage.setItem("preferredLanguage", lang);
+      });
+    });
+  })();
+</script>
+
   <!--  Bootstrap Js  -->
   <script src="include/js/bootstrap.bundle.min.js"></script>
   <!--  Tilt Js  -->

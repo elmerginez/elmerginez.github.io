@@ -140,9 +140,9 @@
             </div>
 
 
-            <!-- <div class="header-cta d-none d-md-flex">
+            <div class="header-cta d-none d-md-flex">
               <a href="contact.html" class="btn btn-primary">Contacto <em class="btn-arrow"></em></a>
-            </div> -->
+            </div>
           </div>
         </div>
       </div>
@@ -273,7 +273,7 @@
                         <ul class="project-details-list d-flex flex-column">
                           <li class="project-details-item d-flex flex-wrap">
                             <div class="project-details-left">
-                              Nombre del Cliente -
+                              Nombre del Cliente
                             </div>
                             <div class="project-details-right">
                               Lorem Inc.
@@ -281,7 +281,7 @@
                           </li>
                           <li class="project-details-item d-flex flex-wrap">
                             <div class="project-details-left">
-                              Tipo de Proyecto -
+                              Tipo de Proyecto
                             </div>
                             <div class="project-details-right">
                               Aplicación Móvil
@@ -289,7 +289,7 @@
                           </li>
                           <li class="project-details-item d-flex flex-wrap">
                             <div class="project-details-left">
-                              Tecnología -
+                              Tecnología
                             </div>
                             <div class="project-details-right">
                               React Native
@@ -297,7 +297,7 @@
                           </li>
                           <li class="project-details-item d-flex flex-wrap">
                             <div class="project-details-left">
-                              Tiempo de Entrega -
+                              Tiempo de Entrega
                             </div>
                             <div class="project-details-right">2 Meses</div>
                           </li>
@@ -991,6 +991,42 @@
     </div>
 
   </div>
+  <script>
+  (function () {
+    const supportedLangs = ["en", "es"];
+    const preferredLang = localStorage.getItem("preferredLanguage");
+
+    // Si el valor guardado no es válido, lo eliminamos
+    if (preferredLang && !supportedLangs.includes(preferredLang)) {
+      localStorage.removeItem("preferredLanguage");
+    }
+
+    // Solo ejecutar redirección automática si estamos en "/"
+    const path = window.location.pathname;
+    const validPath = path === "/" || path === "/index.html";
+
+    if (!localStorage.getItem("preferredLanguage") && validPath) {
+      const userLang = navigator.language || navigator.userLanguage;
+
+      if (userLang.startsWith("es")) {
+        localStorage.setItem("preferredLanguage", "es");
+        window.location.href = "/es/";
+      } else {
+        localStorage.setItem("preferredLanguage", "en");
+        // ya está en "/"
+      }
+    }
+
+    // Guardar el idioma cuando el usuario hace clic en el selector
+    document.querySelectorAll(".language-switcher a").forEach(link => {
+      link.addEventListener("click", () => {
+        const lang = link.getAttribute("href").includes("/es") ? "es" : "en";
+        localStorage.setItem("preferredLanguage", lang);
+      });
+    });
+  })();
+</script>
+
   <!--  Bootstrap Js  -->
   <script src="/include/js/bootstrap.bundle.min.js"></script>
   <!--  Tilt Js  -->
