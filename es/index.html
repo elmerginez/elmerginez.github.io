@@ -28,7 +28,7 @@
   <title>Elmer Ginez - MiwiE</title>
 
   <link rel="icon" href="/include/images/logo/logo.svg" sizes="32x32" />
-    <link rel="shortcut icon" href="/include/images/logo/logo.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="/include/images/logo/logo.svg" type="image/x-icon">
   <meta name="google-site-verification" content="fwFZ2V0ea_EdqZ1Qz8ARAL9XecEDdKmw4x8GD2is3n4" />
   <link rel="alternate" href="https://elmerginez.github.io/" hreflang="en" />
   <link rel="alternate" href="https://elmerginez.github.io/es/" hreflang="es" />
@@ -993,40 +993,40 @@
 
   </div>
   <script>
-  (function () {
-    const supportedLangs = ["en", "es"];
-    const preferredLang = localStorage.getItem("preferredLanguage");
+    (function () {
+      const supportedLangs = ["en", "es"];
+      const preferredLang = localStorage.getItem("preferredLanguage");
 
-    // Si el valor guardado no es válido, lo eliminamos
-    if (preferredLang && !supportedLangs.includes(preferredLang)) {
-      localStorage.removeItem("preferredLanguage");
-    }
-
-    // Solo ejecutar redirección automática si estamos en "/"
-    const path = window.location.pathname;
-    const validPath = path === "/" || path === "/index.html";
-
-    if (!localStorage.getItem("preferredLanguage") && validPath) {
-      const userLang = navigator.language || navigator.userLanguage;
-
-      if (userLang.startsWith("es")) {
-        localStorage.setItem("preferredLanguage", "es");
-        window.location.href = "/es/";
-      } else {
-        localStorage.setItem("preferredLanguage", "en");
-        // ya está en "/"
+      // Si el valor guardado no es válido, lo eliminamos
+      if (preferredLang && !supportedLangs.includes(preferredLang)) {
+        localStorage.removeItem("preferredLanguage");
       }
-    }
 
-    // Guardar el idioma cuando el usuario hace clic en el selector
-    document.querySelectorAll(".language-switcher a").forEach(link => {
-      link.addEventListener("click", () => {
-        const lang = link.getAttribute("href").includes("/es") ? "es" : "en";
-        localStorage.setItem("preferredLanguage", lang);
+      // Solo ejecutar redirección automática si estamos en "/"
+      const path = window.location.pathname;
+      const validPath = path === "/" || path === "/index.html";
+
+      if (!localStorage.getItem("preferredLanguage") && validPath) {
+        const userLang = navigator.language || navigator.userLanguage;
+
+        if (userLang.startsWith("es")) {
+          localStorage.setItem("preferredLanguage", "es");
+          window.location.href = "/es/";
+        } else {
+          localStorage.setItem("preferredLanguage", "en");
+          // ya está en "/"
+        }
+      }
+
+      // Guardar el idioma cuando el usuario hace clic en el selector
+      document.querySelectorAll(".language-switcher a").forEach(link => {
+        link.addEventListener("click", () => {
+          const lang = link.getAttribute("href").includes("/es") ? "es" : "en";
+          localStorage.setItem("preferredLanguage", lang);
+        });
       });
-    });
-  })();
-</script>
+    })();
+  </script>
 
   <!--  Bootstrap Js  -->
   <script src="/include/js/bootstrap.bundle.min.js"></script>
