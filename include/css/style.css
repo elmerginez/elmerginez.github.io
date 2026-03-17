@@ -4076,3 +4076,76 @@ body.dark-theme .service-details-box:after {
     text-decoration: none;
     color: #000
 }
+
+
+/* hero anim */
+.container-i-h {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .background-circle-i-h {
+      background: #28292d;
+      border-radius: 50% 0;
+      width: 550px;
+      height: 550px;
+      z-index: 1;
+    }
+
+    .hoodie-guy-animation-class-i-h {
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hoodie-guy-i-h {
+      position: absolute;
+
+      background: url(/include/images/hero/fredx.png);
+      /* border-radius: 50%; */
+      height: 100% !important;
+      width: 80%;
+      background-size: cover;
+      z-index: 3;
+    }
+
+    .circle-i-h {
+      position: relative;
+      top: 10%;
+      transform-style: preserve-3d;
+      animation: animateCircle 40s linear infinite;
+    }
+
+    @keyframes animateCircle {
+      0% {
+        transform: perspective(1000px) rotateY(0deg) rotateX(15deg) translateY(-30px);
+        z-index: 2;
+      }
+
+      100% {
+        transform: perspective(1000px) rotateY(360deg) rotateX(15deg) translateY(-30px);
+        z-index: 4;
+      }
+    }
+
+    .circle-i-h span {
+      position: absolute;
+      transform-origin: center;
+      transform-style: preserve-3d;
+      transform: rotateY(calc(var(--i) * calc(360deg / 9))) translateZ(230px);
+      height: 50px;
+      width: 50px;
+    }
+
+    .circle-i-h span img {
+      position: relative;
+      object-fit: cover;
+      height: 50px;
+      width: 50px;
+    }
