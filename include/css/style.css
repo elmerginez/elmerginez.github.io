@@ -1,13 +1,29 @@
 :root {
-  --primary-color: #ff6519;
-  --light-color: #f2f2e9;
-  --white: #fff;
-  --black: #000529;
+  /* Un Violeta/Indigo vibrante que funciona en ambos mundos */
+  --primary-color: #6366f1; 
+  --light-color: #f8fafc;
+  --white: #ffffff;
+  /* Azul Medianoche elegante */
+  --black: #000529; 
+  
   --primary-font: "Mulish", sans-serif;
   --secondary-font: "DM Serif Display", serif;
   --custom-ease: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
-  --shadow: 0 0 16px rgba(0, 0, 0, 0.16);
-  --gradient-color: linear-gradient(90deg, rgb(5 17 124) 0%, rgb(17 84 180) 100%);
+  --shadow: 0 8px 32px rgba(0, 5, 41, 0.1);
+  
+  /* Gradiente profesional y sobrio */
+  --gradient-color: linear-gradient(90deg, #4338ca 0%, #6366f1 100%);
+}
+
+body.dark-theme {
+  /* Cambiamos el acento a un Rosa/Magenta para que combine con tu nuevo gradiente */
+  --primary-color: #ff0066; 
+  --black: #050505;
+  --black-alt: #121212;
+  --shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  
+  /* Tu gradiente Neón: ahora el primary-color (#ff0066) es parte de él */
+  --gradient-color: linear-gradient(90deg, #fd02e0 0%, #ff0066 100%);
 }
 
 /* =================animate css starts here================= */
@@ -816,28 +832,29 @@ body.dark-theme .light-icon {
 /* ================= Header Start ================= */
 #header {
   color: var(--black);
-  background: transparent;
   position: fixed;
   left: 0;
   top: 0;
   right: 0;
   padding: 0;
-  z-index: 9999;
+  z-index: 99;
   transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
   -webkit-transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
   display: flex;
   align-items: center;
+   backdrop-filter: blur(12px);
 }
 
 .fixed #header {
-  background: var(--white);
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(12px);
 }
 
 .navbar {
   padding: 0;
   width: 100%;
   height: 80px;
+  backdrop-filter: blur(12px);
 }
 
 .navbar-brand {
@@ -845,7 +862,8 @@ body.dark-theme .light-icon {
   padding: 0;
   margin: 0;
   position: relative;
-  z-index: 999;
+  z-index: 99;
+   backdrop-filter: blur(12px);
 }
 
 .navbar-brand img {
@@ -906,6 +924,7 @@ body.dark-theme .light-icon {
     transition: all 0.1s ease-in;
     -moz-transition: all 0.1s ease-in;
     -webkit-transition: all 0.1s ease-in;
+     backdrop-filter: blur(12px);
   }
 
   .fixed .navbar-nav>li>.dropdown-menu {
@@ -3646,13 +3665,12 @@ textarea.form-control,
 /* ======================================================
 -----------------Dark Theme Css Start--------------------
 ====================================================== */
-body.dark-theme {
-  /* --white:#f2f2e9; */
-  --black: #1c1d25;
-  --black-alt: #2b303b;
+/* body.dark-theme {
+  --black: #000000;
+  --black-alt: #1e2026;
   --shadow: 0 0 16px rgba(0, 0, 0, 0.25);
-  --gradient-color: linear-gradient(90deg, #fd7702 0%, #ff0066 100%);
-}
+  --gradient-color: linear-gradient(90deg, #fd02e0 0%, #ff0066 100%);
+} */
 
 body.dark-theme .btn.btn-dark:before,
 body.dark-theme .btn.btn-dark:after {
@@ -3675,9 +3693,9 @@ body.dark-theme .pagination .page-link {
 }
 
 body.dark-theme.fixed #header {
-  background: var(--black);
   color: var(--white);
   box-shadow: 0 5px 8px rgb(0 0 0 / 25%);
+  backdrop-filter: blur(12px);
 }
 
 body.dark-theme .hero-bg,
@@ -3975,7 +3993,7 @@ body.dark-theme .service-details-box:after {
     margin-top: -3px;
     width: 6px;
     height: 6px;
-    z-index: 100000;
+    z-index: 99999;
     background-color: #1154b4;
     -webkit-transition: width .3s ease-in-out, height .3s ease-in-out, margin .3s ease-in-out, opacity .3s ease-in-out;
     transition: width .3s ease-in-out, height .3s ease-in-out, margin .3s ease-in-out, opacity .3s ease-in-out
