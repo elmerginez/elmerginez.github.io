@@ -3,20 +3,24 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
 
 /************** Dark Mode switcher start **************/
 const bodyParent = document.querySelector('body');
-const button = document.querySelector('.theme-toggler');
+const themeButton = document.querySelector('.theme-toggler');
 function toggleDark() {
-  if (bodyParent.classList.contains('dark-theme')) {
-    bodyParent.classList.remove('dark-theme');
-    localStorage.setItem("theme", "light");
-  } else {
-    bodyParent.classList.add('dark-theme');
-    localStorage.setItem("theme", "dark");
+  if (bodyParent) {
+    if (bodyParent.classList.contains('dark-theme')) {
+      bodyParent.classList.remove('dark-theme');
+      localStorage.setItem("theme", "light");
+    } else {
+      bodyParent.classList.add('dark-theme');
+      localStorage.setItem("theme", "dark");
+    }
   }
 }
-if (localStorage.getItem("theme") === "dark") {
+if (localStorage.getItem("theme") === "dark" && bodyParent) {
   bodyParent.classList.add('dark-theme');
 }
-document.querySelector('.theme-toggler').addEventListener('click', toggleDark);
+if (themeButton) {
+  themeButton.addEventListener('click', toggleDark);
+}
 
 /************** Smooth Scroll Intialisation start **************/
 // Create a media condition that targets viewports at least 768px wide
@@ -102,13 +106,15 @@ ScrollTrigger.matchMedia({
 if (document.querySelector("#btn-hero")) {
   const scrollButton = document.querySelector('#btn-hero');
   const sectionCases = document.querySelector('#featured-work');
-  scrollButton.addEventListener('click', () => {
-    console.warn(sectionCases);
-    gsap.to(window, {
-      duration: 0.5,
-      scrollTo: sectionCases
+  if (scrollButton && sectionCases) {
+    scrollButton.addEventListener('click', (e) => {
+      e.preventDefault();
+      gsap.to(window, {
+        duration: 0.5,
+        scrollTo: sectionCases
+      });
     });
-  });
+  }
 }
 /************** Scroll to script for Home hero end **************/
 
@@ -157,26 +163,26 @@ if (document.querySelector(".testimonial2-slider")) {
 /* Slider for mobile view only */
 if (document.querySelector(".mobile-slider")) {
   var init = false;
-  var swiperMob;
+  var swiperMob = null;
   function mobSlider() {
     if (window.innerWidth <= 767) {
       if (!init) {
         init = true;
-        swiper = new Swiper(".mobile-slider", {
+        swiperMob = new Swiper(".mobile-slider", {
           slidesPerView: "auto",
           centeredSlides: false,
-          spaceBetween: 40,
+          spaceBetween: 20,
           loop: false,
         });
       }
-    } else if (init) {
-      swiperMob.destroy();
+    } else if (init && swiperMob) {
+      swiperMob.destroy(true, true);
+      swiperMob = null;
       init = false;
     }
   }
   mobSlider();
   window.addEventListener("resize", mobSlider);
-
 }
 
 /************** Swiper js script for all sliders end **************/
@@ -340,7 +346,7 @@ if (document.querySelector(".text-marquee")) {
 
 
 
-function miwie_tm_preloader() {
+function eg_preloader() {
   "use strict";
 
   var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent);
@@ -360,17 +366,17 @@ function miwie_tm_preloader() {
   }
 }
 
-function miwie_tm_my_load() {
+function eg_my_load() {
   "use strict";
   var speed = 500;
   setTimeout(function () {
-    miwie_tm_preloader();
+    eg_preloader();
   }, speed);
 }
 
-miwie_tm_my_load();
+eg_my_load();
 
-function miwie_tm_cursor() {
+function eg_cursor() {
   "use strict";
 
   const myCursor = document.querySelectorAll(".mouse-cursor");
@@ -393,7 +399,7 @@ function miwie_tm_cursor() {
     };
 
     // Elementos que activan hover del cursor personalizado
-    const hoverElements = document.querySelectorAll("a, .miwie_tm_testimonials .avatars ul li, .cursor-pointer");
+    const hoverElements = document.querySelectorAll("a, .testimonials .avatars ul li, .cursor-pointer");
 
     hoverElements.forEach(el => {
       el.addEventListener("mouseenter", () => {
@@ -416,12 +422,12 @@ function miwie_tm_cursor() {
   }
 }
 
-miwie_tm_cursor()
+eg_cursor()
 
-function miwie_tm_nav_bg() {
+function eg_nav_bg() {
   "use strict";
   window.addEventListener("scroll", function () {
-    const menu = document.querySelector(".miwie_tm_header");
+    const menu = document.querySelector("#header") || document.querySelector(".navbar");
     const progress = document.querySelector(".progressbar");
     const scrollTop = window.scrollY;
 
@@ -435,7 +441,7 @@ function miwie_tm_nav_bg() {
   });
 }
 
-function miwie_tm_totop() {
+function eg_totop() {
   "use strict";
   const text = document.querySelector(".progressbar .text");
   if (text) {
@@ -451,7 +457,7 @@ function miwie_tm_totop() {
   }
 }
 
-function miwie_tm_progress_line() {
+function eg_progress_line() {
   "use strict";
   const line = document.querySelector(".progressbar .line");
   if (!line) return;
@@ -463,9 +469,9 @@ function miwie_tm_progress_line() {
   const value = (scrollTop / (documentHeight - windowHeight)) * 100;
   line.style.height = `${value}%`;
 }
-window.addEventListener("scroll", miwie_tm_progress_line);
+window.addEventListener("scroll", eg_progress_line);
 document.addEventListener("DOMContentLoaded", function () {
-  miwie_tm_nav_bg();
-  miwie_tm_totop();
-  miwie_tm_progress_line();
+  eg_nav_bg();
+  eg_totop();
+  eg_progress_line();
 });

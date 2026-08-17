@@ -10,21 +10,30 @@
   <meta name="keywords" content="Elmer Ginez, developer, GitHub Pages, portfolio, programming, Nezma, Nezma code" />
   <meta name="author" content="Elmer Ginez" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Elmer Ginez" />
-  <meta property="og:description" content="This is my web portfolio. Visit it now!" />
-  <meta property="og:image" content="https://elmerginez.github.io/assets/img/logo/logo.svg" />
-  <meta property="og:url" content="https://elmerginez.github.io" />
-  <link rel="canonical" href="https://elmerginez.github.io/" />
+  <meta property="og:title" content="Elmer Ginez - Web Developer" />
+  <meta property="og:description" content="Portfolio of Elmer Ginez (Nezma Code), full-stack developer specialized in modern interfaces and open source projects." />
+  <meta property="og:image" content="https://elmerginez.github.io/include/images/logo/logo.svg" />
+  <meta property="og:url" content="https://elmerginez.github.io/en/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Elmer Ginez | Nezma Code" />
+  <meta name="twitter:description" content="Web Developer specialized in high-impact digital experiences." />
+  <meta name="twitter:image" content="https://elmerginez.github.io/include/images/logo/logo.svg" />
+  <link rel="canonical" href="https://elmerginez.github.io/en/" />
   <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "Person",
-        "name": "Elmer Ginez - Nezma",
-        "url": "https://elmerginez.github.io",
-        "logo": "https://www.ejemplo.com/favicon.ico"
-      }
-    </script>
-  <title>Elmer Ginez - Nezma</title>
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Elmer Ginez",
+    "alternateName": "Nezma Code",
+    "url": "https://elmerginez.github.io/en/",
+    "image": "https://elmerginez.github.io/include/images/logo/logo.svg",
+    "jobTitle": "Full-stack Developer",
+    "sameAs": [
+      "https://github.com/elmerginez"
+    ]
+  }
+  </script>
+  <title>Elmer Ginez - Full-stack Developer | Nezma Code</title>
 
   <link rel="icon" href="/include/images/logo/logo.svg" sizes="32x32" />
   <meta name="google-site-verification" content="fwFZ2V0ea_EdqZ1Qz8ARAL9XecEDdKmw4x8GD2is3n4" />
@@ -37,7 +46,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Mulish:wght@300;400;700;900&display=swap"
     rel="stylesheet" />
   <!-- Bootstrap Css -->
   <link rel="stylesheet" href="/include/css/bootstrap.min.css" type="text/css" />
@@ -46,7 +55,6 @@
   <!-- Write your Css here -->
   <link href="/include/css/style.css" rel="stylesheet" type="text/css" />
   <!-- Script for Font Awesome icons-->
-  <!-- <script src="https://kit.fontawesome.com/7a2873b897.js" crossorigin="anonymous" defer></script> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
@@ -71,20 +79,18 @@
           <div class="collapse navbar-collapse justify-content-center" id="mainNav">
             <div class="navbar-inside">
               <ul class="navbar-nav">
-                <li class="nav-item dropdown active">
-                  <a class="nav-link" href="#">Home</a>
-         
+                <li class="nav-item active">
+                  <a class="nav-link" href="#header">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Projects</a>
+                  <a class="nav-link" href="#featured-work">Projects</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="#footer">Contact</a>
                 </li>
-             
               </ul>
               <!-- <div class="navbar-bottom mt-auto d-md-none">
                 <a href="#" class="btn btn-primary btn-block">Contact <em class="btn-arrow"></em></a>
@@ -148,8 +154,8 @@
                 <ul class="hero-info-list d-flex align-items-start">
                   <li class="hero-info-item">
                     <div class="hero-info-box d-flex align-items-center">
-                      <h3><span class="gradient-text">1</span></h3>
-                      <h6>Years <br />of Experience</h6>
+                      <h3><span class="gradient-text">+1</span></h3>
+                      <h6>Year <br />of Coding & Practice</h6>
                     </div>
                   </li>
                   <li class="hero-info-item">
@@ -173,23 +179,20 @@
                             <div class="hoodie-guy-i-h">
                             </div>
                             <div class="circle-i-h">
-                              <span style="--i:1;"><img src="/include/images/hero/flutter-svgrepo-com.svg" height="50px"></span>
-                              <span style="--i:2;"><img src="/include/images/hero/python-svgrepo-com.svg" height="50px"></span>
-                              <span style="--i:3;"><img src="/include/images/hero/bash-icon-svgrepo-com.svg" height="50px"></span>
-                              <span style="--i:4;"><img src="/include/images/hero/nodejs-icon-svgrepo-com.svg" height="50px"></span>
-                              <span style="--i:5;"><img src="/include/images/hero/codeigniter-svgrepo-com.svg" height="50px"></span>
-                              <span style="--i:6;"><img src="/include/images/hero/html-5-svgrepo-com.svg" height="50px"></span>
-                              <span style="--i:7;"><img src="/include/images/hero/mysql-svgrepo-com.svg" height="50px"></span>
-                              <span style="--i:8;"><img src="/include/images/hero/css-3-svgrepo-com.svg" height="50px"></span>
-                              <span style="--i:9;"><img src="/include/images/hero/javascript-svgrepo-com.svg" height="50px"></span>
+                              <span style="--i:1;"><img src="/include/images/hero/react-svgrepo-com.svg" height="50px" alt="React"></span>
+                              <span style="--i:2;"><img src="/include/images/hero/nodejs-icon-svgrepo-com.svg" height="50px" alt="Node.js"></span>
+                              <span style="--i:3;"><img src="/include/images/hero/typescript-icon-svgrepo-com.svg" height="50px" alt="TypeScript"></span>
+                              <span style="--i:4;"><img src="/include/images/hero/javascript-svgrepo-com.svg" height="50px" alt="JavaScript"></span>
+                              <span style="--i:5;"><img src="/include/images/hero/python-svgrepo-com.svg" height="50px" alt="Python"></span>
+                              <span style="--i:6;"><img src="/include/images/hero/mysql-svgrepo-com.svg" height="50px" alt="MySQL"></span>
+                              <span style="--i:7;"><img src="/include/images/hero/tailwindcss-icon-svgrepo-com.svg" height="50px" alt="TailwindCSS"></span>
+                              <span style="--i:8;"><img src="/include/images/hero/html-5-svgrepo-com.svg" height="50px" alt="HTML5"></span>
+                              <span style="--i:9;"><img src="/include/images/hero/bash-icon-svgrepo-com.svg" height="50px" alt="Git & Bash"></span>
                             </div>
                           </div>
                        
                       </div>
                     </div>
-                  </div>
-                  <div class="hero-availability fa-spin" data-speed="1.2">
-                    <img src="/include/images/available-circle.svg" alt="Avaialble" />
                   </div>
                   <div class="bg-shape fa-spin fa-spin-reverse" data-speed="1.15">
                     <svg id="sw-js-blob-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" version="1.1">
@@ -210,10 +213,7 @@
             </div>
           </div>
         </div>
-        <div class="hero-bg">
-          <lottie-player src="/include/animation/gradient-background.json" background="transparent" speed="1" loop
-            autoplay preserveAspectRatio="xMidYMid slice"></lottie-player>
-        </div>
+        <div class="hero-bg"></div>
         <div class="text-marquee animate-child bottom" data-speed="1.1">
           <div class="text-marquee-wrapper">
             <span class="text marquee-text outline">full stack developer</span>
@@ -226,6 +226,194 @@
         </div>
       </div>
       <!-- ============================ Hero End ============================ -->
+
+      <!-- ============================ About Start ============================ -->
+      <div id="about" class="content-container home-services light-bg diagonal position-relative">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="heading text-center animate-child">
+                <div class="heading-large">
+                  <h2 data-speed="1.1"><span>About Me</span></h2>
+                </div>
+                <h3>My Approach</h3>
+                <p>Building digital solutions with a passion for learning and innovation.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="col-lg-5">
+              <div class="home-service-head animate-child">
+                <h3>Full-stack Developer with a <span class="gradient-text">self-taught mindset</span></h3>
+                <p>
+                  I am a passionate developer focused on building functional, intuitive, and high-performance applications. My continuous learning approach enables me to quickly adapt to modern tools and best practices, crafting software from robust backend logic to clean UI interfaces.
+                </p>
+                <p>
+                  I'm driven by solving real-world problems, collaborating on creative ideas, and engineering software that creates positive impact.
+                </p>
+                <div class="home-service-cta mb-4 mb-md-0">
+                  <a href="assets/cv-elmer-ginez.pdf" target="_blank" class="btn btn-primary">View Full CV <em
+                      class="btn-arrow"></em></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 offset-lg-1">
+              <div class="service-list-outer d-flex flex-md-wrap align-items-center">
+
+                <div class="service-list-wrapper" data-speed="1.3">
+                  <ul class="service-list d-flex flex-md-wrap animate-child">
+                    <li class="service-item">
+                      <div class="service-box">
+                        <div class="service-icon outline-shadow">
+                          <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <div class="service-box-content">
+                          <h4>Web Systems</h4>
+                          <p>Web Apps & SaaS</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="service-list-wrapper" data-speed="1.2">
+                  <ul class="service-list d-flex flex-md-wrap animate-child">
+                    <li class="service-item">
+                      <div class="service-box">
+                        <div class="service-icon outline-shadow">
+                          <i class="fa-solid fa-gears"></i>
+                        </div>
+                        <div class="service-box-content">
+                          <h4>Automation</h4>
+                          <p>Backend & Logic</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="service-item">
+                      <div class="service-box">
+                        <div class="service-icon outline-shadow">
+                          <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <div class="service-box-content">
+                          <h4>AI Integration</h4>
+                          <p>APIs & Solutions</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="service-list-wrapper" data-speed="1.1">
+                  <ul class="service-list d-flex flex-md-wrap animate-child">
+                    <li class="service-item">
+                      <div class="service-box">
+                        <div class="service-icon outline-shadow">
+                          <i class="fa-solid fa-gauge-high"></i>
+                        </div>
+                        <div class="service-box-content">
+                          <h4>Performance</h4>
+                          <p>Scalability & UX</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ============================ About End ============================ -->
+
+      <!-- ============================ Skills Start ============================ -->
+      <div class="content-container skills-container light-bg diagonal">
+        <div class="container">
+          <div class="row">
+            <div class="heading text-center animate-child">
+              <div class="heading-large">
+                <h2 data-speed="1.1"><span>Skills</span></h2>
+              </div>
+              <h3>My Skills</h3>
+              <p>Technologies and tools I use to bring digital products to life.</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="swiper mobile-slider visible-slider full-height-slider">
+                <ul class="stats-list d-md-flex flex-md-wrap animate-child swiper-wrapper">
+
+                  <li class="stats-list-item swiper-slide">
+                    <div class="stat-box d-flex flex-column" data-speed="0.9">
+                      <div class="stat-box-icon outline-shadow">
+                        <i class="fa-solid fa-code"></i>
+                      </div>
+                      <div class="stat-box-inner mt-auto">
+                        <h3><span class="gradient-text">Frontend</span></h3>
+                        <h6>React, Next.js, JS/TS <br />& Tailwind CSS</h6>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="stats-list-item swiper-slide">
+                    <div class="stat-box d-flex flex-column" data-speed="0.95">
+                      <div class="stat-box-icon outline-shadow">
+                        <i class="fa-solid fa-server"></i>
+                      </div>
+                      <div class="stat-box-inner mt-auto">
+                        <h3><span class="gradient-text">Backend</span></h3>
+                        <h6>Node.js, Express, Python <br />& REST APIs</h6>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="stats-list-item swiper-slide">
+                    <div class="stat-box d-flex flex-column" data-speed="1">
+                      <div class="stat-box-icon outline-shadow">
+                        <i class="fa-solid fa-database"></i>
+                      </div>
+                      <div class="stat-box-inner mt-auto">
+                        <h3><span class="gradient-text">Databases</span></h3>
+                        <h6>MySQL, PostgreSQL <br />& Relational Models</h6>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="stats-list-item swiper-slide">
+                    <div class="stat-box d-flex flex-column" data-speed="0.95">
+                      <div class="stat-box-icon outline-shadow">
+                        <i class="fa-solid fa-terminal"></i>
+                      </div>
+                      <div class="stat-box-inner mt-auto">
+                        <h3><span class="gradient-text">Dev Tools</span></h3>
+                        <h6>Git, GitHub, Linux/Bash <br />& DevTools</h6>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="stats-list-item swiper-slide">
+                    <div class="stat-box d-flex flex-column" data-speed="0.9">
+                      <div class="stat-box-icon outline-shadow">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                      </div>
+                      <div class="stat-box-inner mt-auto">
+                        <h3><span class="gradient-text">UI/UX</span></h3>
+                        <h6>Responsive Design <br />& Clean Code</h6>
+                      </div>
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ============================ Skills End ============================ -->
+
       <!-- ============================ Portfolio Start ============================ -->
       <div class="content-container home-portfolio position-relative" id="featured-work">
         <div class="container">
@@ -236,7 +424,7 @@
                   <h2 data-speed="1.1"><span>Featured Work</span></h2>
                 </div>
                 <h3>Featured Work</h3>
-                <p>Explore some of my latest work.</p>
+                <p>Explore some of my full-stack web development projects.</p>
               </div>
             </div>
           </div>
@@ -247,45 +435,45 @@
                   <div class="project-box d-flex flex-wrap align-items-end">
                     <div class="project-box-left">
                       <div class="project-img parallax-img">
-                        <img src="/include/images/project1.jpg" alt="" data-speed="auto" />
+                        <img src="/include/images/project1.jpg" alt="NexoStore E-Commerce" data-speed="auto" />
                         <div class="project-title" data-speed="1.15">
-                          <h4>Shop App</h4>
+                          <h4>NexoStore</h4>
                         </div>
                       </div>
                       <div class="project-title" data-speed="1.15">
-                        <h4>Shop App</h4>
+                        <h4>NexoStore</h4>
                       </div>
                       <div class="project-details" data-speed="1.2">
                         <ul class="project-details-list d-flex flex-column">
                           <li class="project-details-item d-flex flex-wrap">
                             <div class="project-details-left">
-                              Client Name -
+                              Type
                             </div>
                             <div class="project-details-right">
-                              Lorem Inc.
+                              Full-stack Web App
                             </div>
                           </li>
                           <li class="project-details-item d-flex flex-wrap">
                             <div class="project-details-left">
-                              Project Type -
+                              Technology
                             </div>
                             <div class="project-details-right">
-                              Mobile App
+                              React, Node.js, PostgreSQL
                             </div>
                           </li>
                           <li class="project-details-item d-flex flex-wrap">
                             <div class="project-details-left">
-                              Technology -
+                              Styling
                             </div>
                             <div class="project-details-right">
-                              React Native
+                              Tailwind CSS
                             </div>
                           </li>
                           <li class="project-details-item d-flex flex-wrap">
                             <div class="project-details-left">
-                              Turnaround -
+                              Status
                             </div>
-                            <div class="project-details-right">2 Months</div>
+                            <div class="project-details-right">Completed</div>
                           </li>
                         </ul>
                       </div>
@@ -293,18 +481,13 @@
                     <div class="project-box-right">
                       <div class="project-body">
                         <p>
-                          <strong>Consequatur quam rerum deserunt omnis
-                            reprehenderit doloribus aperiam
-                          </strong>
+                          <strong>E-Commerce platform with an administrative dashboard and interactive catalog</strong>
                         </p>
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Eum eveniet, fuga delectus iusto ipsam
-                          officiis, voluptate tempore facere maxime
-                          exercitationem.
+                          Full-stack web application featuring smooth product browsing, dynamic shopping cart, secure authentication, and an administrative panel for order and inventory management.
                         </p>
                         <div class="project-cta">
-                          <a href="/portfolio-single.html" class="link">Know more <em class="link-arrow"></em></a>
+                          <a href="https://github.com/elmerginez" target="_blank" rel="noopener noreferrer" class="link">View Repository <em class="link-arrow"></em></a>
                         </div>
                       </div>
                     </div>
@@ -314,41 +497,45 @@
                   <div class="project-box d-flex flex-wrap align-items-end">
                     <div class="project-box-left">
                       <div class="project-img parallax-img">
-                        <img src="/include/images/project2.jpg" alt="" data-speed="auto" />
+                        <img src="/include/images/project2.jpg" alt="DataPulse Analytics" data-speed="auto" />
                         <div class="project-title" data-speed="1.15">
-                          <h4>Brand Design</h4>
+                          <h4>DataPulse Analytics</h4>
                         </div>
                       </div>
                       <div class="project-title" data-speed="1.15">
-                        <h4>Brand Design</h4>
+                        <h4>DataPulse Analytics</h4>
                       </div>
                       <div class="project-details" data-speed="1.2">
                         <ul class="project-details-list d-flex flex-column">
                           <li class="project-details-item d-flex flex-wrap">
                             <div class="project-details-left">
-                              Client Name -
+                              Type
                             </div>
                             <div class="project-details-right">
-                              Lorem Inc.
+                              Backend & Dashboard
                             </div>
                           </li>
                           <li class="project-details-item d-flex flex-wrap">
                             <div class="project-details-left">
-                              Project Type -
+                              Technology
                             </div>
-                            <div class="project-details-right">Branding</div>
+                            <div class="project-details-right">
+                              Python, FastAPI, MySQL
+                            </div>
                           </li>
                           <li class="project-details-item d-flex flex-wrap">
                             <div class="project-details-left">
-                              Technology -
+                              Frontend
                             </div>
-                            <div class="project-details-right">Photoshop</div>
+                            <div class="project-details-right">
+                              TypeScript & Chart.js
+                            </div>
                           </li>
                           <li class="project-details-item d-flex flex-wrap">
                             <div class="project-details-left">
-                              Turnaround -
+                              Status
                             </div>
-                            <div class="project-details-right">20 Days</div>
+                            <div class="project-details-right">Completed</div>
                           </li>
                         </ul>
                       </div>
@@ -356,31 +543,87 @@
                     <div class="project-box-right">
                       <div class="project-body">
                         <p>
-                          <strong>Consequatur quam rerum deserunt omnis
-                            reprehenderit doloribus aperiam
-                          </strong>
+                          <strong>High-performance REST API and interactive analytics dashboard for metric visualization</strong>
                         </p>
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Eum eveniet, fuga delectus iusto ipsam
-                          officiis, voluptate tempore facere maxime
-                          exercitationem.
+                          System engineered to process and structure real-time data using optimized Python endpoints, rendered on a clean dashboard with advanced filtering and dynamic chart visualizers.
                         </p>
                         <div class="project-cta">
-                          <a href="portfolio-single.html" class="link">Know more <em class="link-arrow"></em></a>
+                          <a href="https://github.com/elmerginez" target="_blank" rel="noopener noreferrer" class="link">View Repository <em class="link-arrow"></em></a>
                         </div>
                       </div>
                     </div>
                   </div>
                 </li>
-                
+                <li class="project-list-item d-flex flex-column animate-child">
+                  <div class="project-box d-flex flex-wrap align-items-end">
+                    <div class="project-box-left">
+                      <div class="project-img parallax-img">
+                        <img src="/include/images/project3.jpg" alt="TaskFlow Manager" data-speed="auto" />
+                        <div class="project-title" data-speed="1.15">
+                          <h4>TaskFlow Manager</h4>
+                        </div>
+                      </div>
+                      <div class="project-title" data-speed="1.15">
+                        <h4>TaskFlow Manager</h4>
+                      </div>
+                      <div class="project-details" data-speed="1.2">
+                        <ul class="project-details-list d-flex flex-column">
+                          <li class="project-details-item d-flex flex-wrap">
+                            <div class="project-details-left">
+                              Type
+                            </div>
+                            <div class="project-details-right">
+                              SaaS Web Platform
+                            </div>
+                          </li>
+                          <li class="project-details-item d-flex flex-wrap">
+                            <div class="project-details-left">
+                              Technology
+                            </div>
+                            <div class="project-details-right">
+                              Next.js, TypeScript, PostgreSQL
+                            </div>
+                          </li>
+                          <li class="project-details-item d-flex flex-wrap">
+                            <div class="project-details-left">
+                              Styling
+                            </div>
+                            <div class="project-details-right">
+                              Tailwind CSS
+                            </div>
+                          </li>
+                          <li class="project-details-item d-flex flex-wrap">
+                            <div class="project-details-left">
+                              Status
+                            </div>
+                            <div class="project-details-right">Completed</div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="project-box-right">
+                      <div class="project-body">
+                        <p>
+                          <strong>Agile project and task manager with interactive Kanban boards</strong>
+                        </p>
+                        <p>
+                          Productivity tool designed to streamline workflows, create and organize tasks with drag-and-drop mechanics, set priorities, and securely persist data with modern scalability.
+                        </p>
+                        <div class="project-cta">
+                          <a href="https://github.com/elmerginez" target="_blank" rel="noopener noreferrer" class="link">View Repository <em class="link-arrow"></em></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
           <div class="row">
             <div class="col-lg-10 offset-lg-1 animate-child">
               <div class="view-all-cta text-center">
-                <a href="portfolio.html" class="btn btn-primary">View All Projects <em class="btn-arrow"></em></a>
+                <a href="https://github.com/elmerginez?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View All Projects on GitHub <em class="btn-arrow"></em></a>
               </div>
             </div>
           </div>
@@ -398,14 +641,14 @@
                   <div class="sub-heading">Needed a website?</div>
                   <h3>Let's get started</h3>
                   <p>
-                    Hello, I'm <strong>Fredd Ginez</strong>. I specialize in creating <strong>professional</strong>,
+                    Hello, I'm <strong>Elmer Ginez</strong>. I specialize in creating <strong>professional</strong>,
                     <strong>custom-built websites</strong> and full-stack solutions that are <strong>efficient</strong>,
                     <strong>scalable</strong>, and tailored to your business needs. Let's build something that truly
                     makes a difference.
-                    <!-- Hola, soy <strong>Fredd Ginez</strong>. Me especializo en crear <strong>sitios web profesionales</strong>, <strong>hechos a medida</strong>, y soluciones full-stack que son <strong>eficientes</strong>, <strong>escalables</strong> y adaptadas a las necesidades de tu negocio. Construyamos algo que realmente marque la diferencia. -->
+                    <!-- Hola, soy <strong>Elmer Ginez</strong>. Me especializo en crear <strong>sitios web profesionales</strong>, <strong>hechos a medida</strong>, y soluciones full-stack que son <strong>eficientes</strong>, <strong>escalables</strong> y adaptadas a las necesidades de tu negocio. Construyamos algo que realmente marque la diferencia. -->
                   </p>
                   <div class="footer-content-cta">
-                    <a href="contact.html" class="btn btn-light">Contact <em class="btn-arrow"></em></a>
+                    <a href="https://wa.me/51921026466" target="_blank" rel="noopener noreferrer" class="btn btn-light">Chat on WhatsApp <em class="btn-arrow"></em></a>
                   </div>
                 </div>
               </div>
@@ -416,38 +659,24 @@
                     <a href="mailto:freddgineztm@gmail.com">freddgineztm@gmail.com</a>
                   </div>
                   <div class="quick-contact-box">
-                    <a href="tel:+51921026466">921 026 466</a>
+                    <a href="https://wa.me/51921026466" target="_blank" rel="noopener noreferrer">WhatsApp</a>
                   </div>
                 </div>
-                <div class="quick-contact">
+                <!-- <div class="quick-contact">
                   <div class="sub-heading">Let's Meet</div>
-                  458-12, First Floor, Vibhuti Khand,<br />
-                  Maunath Bhanjan,<br />
-                  Peru
-                </div>
+                  Puno, Peru
+                </div> -->
                 <div class="quick-contact">
                   <div class="sub-heading">Let's Connect</div>
                   <ul class="social-links d-flex">
                     <li>
-                      <a href="#" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                      <a href="https://github.com/elmerginez" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
                     </li>
                     <li>
-                      <a href="#" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                    </li>
-                    <!-- <li>
-                      <a href="#" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                    </li> -->
-                    <li>
-                      <a href="#" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                      <a href="https://www.linkedin.com/in/elmerginez" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
                     </li>
                     <li>
-                      <a href="#" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
-                    </li>
-                    <!-- <li>
-                      <a href="#" target="_blank"><i class="fab fa-codepen" aria-hidden="true"></i></a>
-                    </li> -->
-                    <li>
-                      <a href="#" target="_blank"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+                      <a href="https://wa.me/51921026466" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
                     </li>
                   </ul>
                 </div>
@@ -459,40 +688,14 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-12">
-                <div class="footer-bottom-upper d-md-flex justify-content-md-between align-items-md-center">
-                  <ul class="footer-nav d-flex flex-wrap">
-                    <li class="me-lg-5 me-4">
-                      <a href="index.html">Home</a>
-                    </li>
-                    <li class="me-lg-5 me-4">
-                      <a href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="me-lg-5 me-4">
-                      <a href="services.html">Services</a>
-                    </li>
-                    <li class="me-lg-5 me-4"><a href="blog.html">Blog</a></li>
-                    <li class="me-lg-5 me-4">
-                      <a href="contact.html">Contact</a>
-                    </li>
-                    <li class="me-lg-5 me-4 d-lg-none">
-                      <a href="privacy-policy.html">Privacy Policy</a>
-                    </li>
-                    <li class="me-lg-5 me-4 d-lg-none">
-                      <a href="terms-conditions.html">Terms &amp; Conditions</a>
-                    </li>
-                  </ul>
-
-                  <ul class="footer-nav d-flex flex-wrap d-none d-lg-flex">
-                    <p>Designed & developed by <strong>Fredd Ginez</strong> — Made with <span
-                        style="color: red;">&#10084;</span> and lots of coffee ☕</p>
-
-                  </ul>
-                </div>
                 <div class="footer-bottom-lower d-md-flex justify-content-md-between align-items-md-center">
-                  <a href="index.html" class="footer-logo"><img style="height: 32px; width: 32px"
-                      src="/include/images/logo/logo.svg" alt="Nezma" /></a>
+                  <a href="/en/" class="footer-logo"><img style="height: 32px; width: 32px"
+                      src="/include/images/logo/logo.svg" alt="Elmer Ginez" /></a>
 
-                  <div class="copyright">&copy; All rights reserved.</div>
+                  <div class="copyright">
+                    <p>&copy; All rights reserved. Designed & developed by <strong>Elmer Ginez</strong> — Made with <span
+                        style="color: red;">&#10084;</span> and lots of coffee ☕</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -514,31 +717,13 @@
     const supportedLangs = ["en", "es"];
     const preferredLang = localStorage.getItem("preferredLanguage");
 
-    // Si el valor guardado no es válido, lo eliminamos
     if (preferredLang && !supportedLangs.includes(preferredLang)) {
       localStorage.removeItem("preferredLanguage");
     }
 
-    // Solo ejecutar redirección automática si estamos en "/"
-    const path = window.location.pathname;
-    const validPath = path === "/" || path === "/index.html";
-
-    if (!localStorage.getItem("preferredLanguage") && validPath) {
-      const userLang = navigator.language || navigator.userLanguage;
-
-      if (userLang.startsWith("es")) {
-        localStorage.setItem("preferredLanguage", "es");
-        window.location.href = "/es/";
-      } else {
-        localStorage.setItem("preferredLanguage", "en");
-        // ya está en "/"
-      }
-    }
-
-    // Guardar el idioma cuando el usuario hace clic en el selector
     document.querySelectorAll(".language-switcher a").forEach(link => {
       link.addEventListener("click", () => {
-        const lang = link.getAttribute("href").includes("/es") ? "es" : "en";
+        const lang = link.getAttribute("href").includes("/en") ? "en" : "es";
         localStorage.setItem("preferredLanguage", lang);
       });
     });
