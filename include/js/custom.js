@@ -1,5 +1,11 @@
-
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
+// Safely register GSAP plugins that exist in the bundle
+const pluginsToRegister = [];
+if (typeof ScrollTrigger !== 'undefined') pluginsToRegister.push(ScrollTrigger);
+if (typeof ScrollToPlugin !== 'undefined') pluginsToRegister.push(ScrollToPlugin);
+if (typeof ScrollSmoother !== 'undefined') pluginsToRegister.push(ScrollSmoother);
+if (typeof gsap !== 'undefined' && pluginsToRegister.length) {
+  gsap.registerPlugin(...pluginsToRegister);
+}
 
 /************** Dark Mode switcher start **************/
 const bodyParent = document.querySelector('body');
@@ -25,11 +31,10 @@ if (themeButton) {
 /************** Smooth Scroll Intialisation start **************/
 // Create a media condition that targets viewports at least 768px wide
 const mediaQuery = window.matchMedia('(min-width: 768px)')
-// Check if the media query is true
-if (mediaQuery.matches) {
-  let smoother = ScrollSmoother.create({
-    smooth: 3,
-    normalizeScroll: true,
+if (mediaQuery.matches && typeof ScrollSmoother !== 'undefined') {
+  ScrollSmoother.create({
+    smooth: 2,
+    normalizeScroll: false,
     effects: true,
   });
 }
@@ -109,10 +114,12 @@ if (document.querySelector("#btn-hero")) {
   if (scrollButton && sectionCases) {
     scrollButton.addEventListener('click', (e) => {
       e.preventDefault();
-      gsap.to(window, {
-        duration: 0.5,
-        scrollTo: sectionCases
-      });
+      if (typeof ScrollSmoother !== 'undefined' && ScrollSmoother.get()) {
+        ScrollSmoother.get().scrollTo(sectionCases, true, 'top 80px');
+      } else {
+        const targetPos = sectionCases.getBoundingClientRect().top + window.pageYOffset - 80;
+        window.scrollTo({ top: targetPos, behavior: 'smooth' });
+      }
     });
   }
 }
@@ -189,53 +196,95 @@ if (document.querySelector(".mobile-slider")) {
 
 
 
-/************** Add class to body when navigation open below 1200px screensize start **************/
-if (document.querySelector(".navbar-toggler")) {
-  document.querySelector(".navbar-toggler").addEventListener("click", function () {
-    document.querySelector("body").classList.toggle("nav-open");
+/************** Navigation toggle start **************/
+const navbarToggler = document.querySelector(".navbar-toggler");
+const navbarCollapse = document.getElementById("mainNav") || document.querySelector(".navbar-collapse");
+if (navbarToggler && navbarCollapse) {
+  navbarToggler.addEventListener("click", function () {
+    const isExpanded = document.body.classList.toggle("nav-open");
+    navbarToggler.classList.toggle("collapsed", !isExpanded);
+    navbarCollapse.classList.toggle("show", isExpanded);
+    navbarToggler.setAttribute("aria-expanded", isExpanded);
+  });
+
+  // Close mobile navigation when a nav link is clicked
+  const navLinks = navbarCollapse.querySelectorAll(".nav-link");
+  navLinks.forEach(link => {
+    link.addEventListener("click", function () {
+      if (document.body.classList.contains("nav-open")) {
+        document.body.classList.remove("nav-open");
+        navbarToggler.classList.add("collapsed");
+        navbarCollapse.classList.remove("show");
+        navbarToggler.setAttribute("aria-expanded", "false");
+      }
+    });
   });
 }
 
-/************** Add class to body when navigation open below 1200px screensize end **************/
+// Dropdown support
+document.querySelectorAll(".dropdown-toggle").forEach(toggle => {
+  toggle.addEventListener("click", function (e) {
+    e.preventDefault();
+    this.classList.toggle("show");
+    const menu = this.nextElementSibling;
+    if (menu) {
+      menu.classList.toggle("show");
+    }
+  });
+});
+/************** Navigation toggle end **************/
 
-/************** Add class to body when user start to scroll**************/
-window.onscroll = function () {
-  fixHeader()
-};
-var body = document.getElementsByTagName("body")[0];
-var sticky = body.offsetTop + 10;
+/************** Add class to body when user starts to scroll **************/
+window.addEventListener("scroll", fixHeader);
+var bodyEl = document.body;
 
 function fixHeader() {
-  if (window.pageYOffset > sticky) {
-    body.classList.add("fixed");
+  if (window.pageYOffset > 10) {
+    bodyEl.classList.add("header-fixed");
   } else {
-    body.classList.remove("fixed");
+    bodyEl.classList.remove("header-fixed");
   }
 }
-/************** Add class to body when user start to scroll**************/
+/************** Add class to body when user starts to scroll **************/
 
+/************** Smooth scrolling for anchor links (Sobre mi, Proyectos, Contacto) **************/
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    const href = this.getAttribute('href');
+    if (href === '#' || href === '') return;
+    const target = document.querySelector(href);
+    if (target) {
+      e.preventDefault();
+      const headerOffset = 80;
+      if (typeof ScrollSmoother !== 'undefined' && ScrollSmoother.get()) {
+        ScrollSmoother.get().scrollTo(target, true, 'top 80px');
+      } else {
+        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+        window.scrollTo({
+          top: href === '#header' ? 0 : targetPosition,
+          behavior: 'smooth'
+        });
+      }
+    }
+  });
+});
+/************** Smooth scrolling for anchor links end **************/
 
-/************** Bootstrap form validation start **************/
-// Example starter JavaScript for disabling form submissions if there are invalid fields
+/************** Form validation start **************/
 (() => {
-  'use strict'
-
-  // Fetch all the forms we want to apply custom Bootstrap validation styles to
-  const forms = document.querySelectorAll('.needs-validation')
-
-  // Loop over them and prevent submission
+  'use strict';
+  const forms = document.querySelectorAll('.needs-validation');
   Array.from(forms).forEach(form => {
     form.addEventListener('submit', event => {
       if (!form.checkValidity()) {
-        event.preventDefault()
-        event.stopPropagation()
+        event.preventDefault();
+        event.stopPropagation();
       }
-
-      form.classList.add('was-validated')
-    }, false)
-  })
+      form.classList.add('was-validated');
+    }, false);
+  });
 })();
-/************** Bootstrap form validation end **************/
+/************** Form validation end **************/
 
 
 
@@ -348,33 +397,25 @@ if (document.querySelector(".text-marquee")) {
 
 function eg_preloader() {
   "use strict";
-
-  var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent);
   var preloader = document.getElementById("preloader");
-
   if (!preloader) return;
 
-  if (!isMobile) {
-    setTimeout(function () {
-      preloader.classList.add("preloaded");
-    }, 1000);
-    setTimeout(function () {
+  preloader.classList.add("preloaded");
+  setTimeout(function () {
+    if (preloader.parentNode) {
       preloader.remove();
-    }, 2000);
-  } else {
-    preloader.remove();
-  }
+    }
+  }, 600);
 }
 
 function eg_my_load() {
   "use strict";
-  var speed = 500;
-  setTimeout(function () {
-    eg_preloader();
-  }, speed);
+  setTimeout(eg_preloader, 350);
 }
 
 eg_my_load();
+window.addEventListener("load", eg_preloader);
+setTimeout(eg_preloader, 1000);
 
 function eg_cursor() {
   "use strict";
@@ -383,11 +424,11 @@ function eg_cursor() {
 
   if (myCursor.length) {
     const e = document.querySelector(".cursor-inner"),
-          t = document.querySelector(".cursor-outer");
-    
+      t = document.querySelector(".cursor-outer");
+
     let mouseX = 0,
-        mouseY = 0,
-        isMoving = false;
+      mouseY = 0,
+      isMoving = false;
 
     window.onmousemove = function (event) {
       if (!isMoving) {
