@@ -24,9 +24,9 @@ function toggleDark() {
 if (localStorage.getItem("theme") === "dark" && bodyParent) {
   bodyParent.classList.add('dark-theme');
 }
-if (themeButton) {
-  themeButton.addEventListener('click', toggleDark);
-}
+document.querySelectorAll('.theme-toggler').forEach(btn => {
+  btn.addEventListener('click', toggleDark);
+});
 
 /************** Smooth Scroll Intialisation start **************/
 // Create a media condition that targets viewports at least 768px wide
@@ -56,7 +56,8 @@ ScrollTrigger.matchMedia({
     });
     /************** Animation on scroll for ipad and dekstop view end **************/
     /************** Service page animation on scroll for Services blocks start **************/
-    const headerHeight = document.getElementById("header").offsetHeight - 1;
+    const headerEl = document.getElementById("header");
+    const headerHeight = headerEl && headerEl.offsetHeight ? headerEl.offsetHeight - 1 : 0;
     gsap.utils.toArray(".service-details-container:not(.last)").forEach((serviceBlock) => {
       ScrollTrigger.create({
         trigger: serviceBlock,
@@ -115,9 +116,9 @@ if (document.querySelector("#btn-hero")) {
     scrollButton.addEventListener('click', (e) => {
       e.preventDefault();
       if (typeof ScrollSmoother !== 'undefined' && ScrollSmoother.get()) {
-        ScrollSmoother.get().scrollTo(sectionCases, true, 'top 80px');
+        ScrollSmoother.get().scrollTo(sectionCases, true, 'top 20px');
       } else {
-        const targetPos = sectionCases.getBoundingClientRect().top + window.pageYOffset - 80;
+        const targetPos = sectionCases.getBoundingClientRect().top + window.pageYOffset - 20;
         window.scrollTo({ top: targetPos, behavior: 'smooth' });
       }
     });
@@ -250,18 +251,19 @@ function fixHeader() {
 /************** Smooth scrolling for anchor links (Sobre mi, Proyectos, Contacto) **************/
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
+    if (this.classList.contains('nano-hud-link')) return;
     const href = this.getAttribute('href');
     if (href === '#' || href === '') return;
     const target = document.querySelector(href);
     if (target) {
       e.preventDefault();
-      const headerOffset = 80;
+      const isTop = href === '#header' || href === '#hero';
       if (typeof ScrollSmoother !== 'undefined' && ScrollSmoother.get()) {
-        ScrollSmoother.get().scrollTo(target, true, 'top 80px');
+        ScrollSmoother.get().scrollTo(target, true, isTop ? 'top top' : 'top 20px');
       } else {
-        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - 20;
         window.scrollTo({
-          top: href === '#header' ? 0 : targetPosition,
+          top: isTop ? 0 : targetPosition,
           behavior: 'smooth'
         });
       }
@@ -511,8 +513,90 @@ function eg_progress_line() {
   line.style.height = `${value}%`;
 }
 window.addEventListener("scroll", eg_progress_line);
+/************** Nano HUD Scroll-Spy & Smooth Navigation **************/
+function initNanoHud() {
+  const hudLinks = document.querySelectorAll('.nano-hud-link');
+  if (!hudLinks.length) return;
+
+  // Re-bind theme togglers to ensure Nano-HUD theme toggle always works
+  document.querySelectorAll('.theme-toggler').forEach(btn => {
+    btn.removeEventListener('click', toggleDark);
+    btn.addEventListener('click', toggleDark);
+  });
+
+  const sections = ['hero', 'about', 'featured-work', 'footer'];
+
+  function setActive(id) {
+    hudLinks.forEach(link => {
+      if (link.getAttribute('data-section') === id) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  }
+
+  function updateActiveSection() {
+    const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+    const windowHeight = window.innerHeight;
+    const docHeight = document.documentElement.scrollHeight;
+
+    // Boundary: Top of page
+    if (scrollY < 100) {
+      setActive('hero');
+      return;
+    }
+
+    // Boundary: Near bottom of page
+    if (windowHeight + scrollY >= docHeight - 120) {
+      setActive('footer');
+      return;
+    }
+
+    let activeId = 'hero';
+    for (let i = sections.length - 1; i >= 0; i--) {
+      const sectionEl = document.getElementById(sections[i]);
+      if (sectionEl) {
+        const rect = sectionEl.getBoundingClientRect();
+        if (rect.top <= windowHeight * 0.45) {
+          activeId = sections[i];
+          break;
+        }
+      }
+    }
+    setActive(activeId);
+  }
+
+  window.addEventListener('scroll', updateActiveSection, { passive: true });
+  updateActiveSection();
+
+  // Smooth scroll handler for HUD links
+  hudLinks.forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      const sectionId = this.getAttribute('data-section');
+      const target = document.getElementById(sectionId);
+      if (!target) return;
+
+      setActive(sectionId);
+
+      if (typeof ScrollSmoother !== 'undefined' && ScrollSmoother.get()) {
+        ScrollSmoother.get().scrollTo(target, true, sectionId === 'hero' ? 'top top' : 'top 20px');
+      } else {
+        const topPos = sectionId === 'hero' ? 0 : target.getBoundingClientRect().top + window.pageYOffset - 20;
+        window.scrollTo({
+          top: topPos,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   eg_nav_bg();
   eg_totop();
   eg_progress_line();
+  initNanoHud();
 });
+initNanoHud();
