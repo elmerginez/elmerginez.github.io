@@ -556,7 +556,7 @@ function initNanoHud() {
     let activeId = 'hero';
     for (let i = sections.length - 1; i >= 0; i--) {
       const sectionEl = document.getElementById(sections[i]);
-      if (sectionEl) {
+      if (sectionEl && sectionEl.offsetHeight > 0) {
         const rect = sectionEl.getBoundingClientRect();
         if (rect.top <= windowHeight * 0.45) {
           activeId = sections[i];
